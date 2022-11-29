@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <DesignSystem/>,
   },
   {
-    path: "/design-system",
+    path: "/calendar",
     element: <CalendarPage/>,
   },
 ]);
