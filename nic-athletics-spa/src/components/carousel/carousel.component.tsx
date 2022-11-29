@@ -8,8 +8,7 @@ import { CarouselProgressBar } from './carousel-progress-bar/carousel-progress-b
 import './carousel.styles.scss';
 import { CAROUSEL_DATA } from './mock-carousel.data';
 
-type Props = {
-};
+type Props = {};
 export const Carousel = (props: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
 
@@ -24,34 +23,25 @@ export const Carousel = (props: Props) => {
   };
   useEffect(() => {
     const slideInterval = setTimeout(() => {
-      setCurrentItem((currentItem) =>
-        currentItem < size - 1 ? currentItem + 1 : 0
-      );
+      setCurrentItem((currentItem) => (currentItem < size - 1 ? currentItem + 1 : 0));
     }, 3000);
     return () => clearInterval(slideInterval);
   }, []);
 
   return (
-    <div className="carousel row">
+    <div className='carousel row'>
       {CAROUSEL_DATA.map((slide, index) => {
         return (
-          <div
-            className={`${
-              index === currentItem ? 'slide active wrapper' : 'slide'
-            }`}
-            key={index}
-          >
-            <div className="carousel-item">
-              <img src={slide.url} alt="travel image" className="image" />
-              <div className="carousel__content">
-                <div className="carousel__text">
-                  <p className="carousel__category paragraph--large--bold ">
-                    {slide.category}
-                  </p>
-                  <h5 className="heading carousel__title">{slide.title}</h5>
+          <div className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`} key={index}>
+            <div className='carousel-item'>
+              <img src={slide.url} alt='travel image' className='image' />
+              <div className='carousel__content'>
+                <div className='carousel__text'>
+                  <p className='carousel__category paragraph--large--bold '>{slide.category}</p>
+                  <h5 className='heading carousel__title'>{slide.title}</h5>
                 </div>
-                <div className="carousel__cta">
-                  <Button className="primary">Learn more</Button>
+                <div className='carousel__cta'>
+                  <Button className='primary'>Learn more</Button>
                 </div>
               </div>
             </div>

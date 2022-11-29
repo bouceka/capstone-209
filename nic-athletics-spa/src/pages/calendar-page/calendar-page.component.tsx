@@ -11,7 +11,9 @@ export const CalendarPage = (props: Props) => {
   return (
     <>
       <Header />
-      <Calendar />
+			<div style={{marginTop: '2.4rem', marginBottom: '2.4rem'}}>
+      <Calendar  />
+			</div>
       <Footer />
     </>
   );
