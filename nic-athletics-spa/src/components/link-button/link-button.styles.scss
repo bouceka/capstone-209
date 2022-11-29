@@ -1,0 +1,23 @@
+@use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+.link {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-primary-600;
+  }
+  &:hover {
+    text-decoration: underline;
+    color: $color-primary-900;
+  }
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+  &.disabled {
+    opacity: 38%;
+    pointer-events: none;
+  }
+}
