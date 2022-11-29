@@ -1,4 +1,4 @@
-@use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/' as *;
 
 .calendar {
   padding: 1.6rem;
@@ -6,6 +6,7 @@
   flex-direction: column;
   background-color: $background-color-primary;
   border-radius: 0.5rem;
+	@extend .elevation-00;
 
   &-body {
     display: flex;
