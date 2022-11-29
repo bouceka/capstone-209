@@ -12,7 +12,8 @@ export const CTA = (props: Props) => {
           <div className='cta__text'>
             <h4 className='heading--bold'>Do you want to join us?</h4>
             <p className='paragraph--large'>
-              Join one of our teams, have fun and make our community bigger. NIC will help you with registration to the Comox leagues.
+              Join one of our teams, have fun and make our community bigger. NIC will help you with registration to the
+              Comox leagues.
             </p>
           </div>
           <Button className='secondary'>Sign Up</Button>

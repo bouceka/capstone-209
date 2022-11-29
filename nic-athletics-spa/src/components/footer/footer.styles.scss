@@ -9,8 +9,8 @@ footer {
     & .row {
       display: flex;
       justify-content: space-between;
-	  align-items: center;
-	  justify-content: space-between;
+      align-items: center;
+      justify-content: space-between;
     }
     &__image {
       height: 9.6rem;
@@ -27,7 +27,7 @@ footer {
 
     & .column {
       color: $text-white-primary;
-	  text-align: center;
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;

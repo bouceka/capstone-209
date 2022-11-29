@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 body {
   font-family: 'Switzer', sans-serif;
@@ -6,10 +6,8 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: $text-black-primary;
-	background-color: $background-color-secondary
+  background-color: $background-color-secondary;
 }
-
-
 
 @include display('large', 5.2rem, 5.6rem);
 @include display('small', 4.4rem, 4.8rem);
@@ -23,10 +21,8 @@ body {
 
 @include caption('large', 1.2rem, 1.6rem);
 @include caption('medium', 1rem, 1.4rem);
-@include caption('small', .8rem, 1.2rem);
+@include caption('small', 0.8rem, 1.2rem);
 
 @include paragraph('large', 1.8rem, 2.8rem);
 @include paragraph('medium', 1.6rem, 2.4rem);
 @include paragraph('small', 1.4rem, 2rem);
-
-

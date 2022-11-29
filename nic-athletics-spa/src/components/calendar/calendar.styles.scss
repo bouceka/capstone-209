@@ -6,7 +6,7 @@
   flex-direction: column;
   background-color: $background-color-primary;
   border-radius: 0.5rem;
-	@extend .elevation-00;
+  @extend .elevation-00;
 
   &-body {
     display: flex;
@@ -31,9 +31,9 @@
   }
 
   &-head {
-	display: flex;
-	flex-direction: column;
-	gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
   &__button {

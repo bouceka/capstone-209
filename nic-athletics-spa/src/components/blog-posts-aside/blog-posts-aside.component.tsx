@@ -6,22 +6,18 @@ export interface Props {}
 
 export function BlogPostsAside(props: Props) {
   return (
-    <aside className="blog-posts-aside">
+    <aside className='blog-posts-aside'>
       {CAROUSEL_DATA.map(
         (post, index) =>
           index > 0 && (
-            <div key={index} className="blog-posts-aside__item">
-              <img src={post.featuredImage} alt="" />
-              <div className="blog-posts-aside__text">
+            <div key={index} className='blog-posts-aside__item'>
+              <img src={post.featuredImage} alt='' />
+              <div className='blog-posts-aside__text'>
                 <h6>{post.title}</h6>
-                <div className="blog-posts-aside__overline">
-                  <span className="blog-posts-aside__date">
-                    {format(new Date(), 'MMM dd, yyyy')}
-                  </span>
-                  <span className="blog-posts-aside__divider"></span>
-                  <span className="blog-posts-aside__category">
-                    {post.category}
-                  </span>
+                <div className='blog-posts-aside__overline'>
+                  <span className='blog-posts-aside__date'>{format(new Date(), 'MMM dd, yyyy')}</span>
+                  <span className='blog-posts-aside__divider'></span>
+                  <span className='blog-posts-aside__category'>{post.category}</span>
                 </div>
               </div>
             </div>

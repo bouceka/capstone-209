@@ -19,16 +19,16 @@ const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
         <div className='page-grid'>
           <Carousel />
 
-          <div style={{display: 'flex', marginTop: '24px', gap: '2.4rem'}}>
+          <div style={{ display: 'flex', marginTop: '24px', gap: '2.4rem' }}>
             <TableResultsLarge />
             <BlogPostsAside />
           </div>
         </div>
       </div>
-          <CTA />
-					<div style={{display: 'flex', marginTop: '24px', gap: '2.4rem'}}></div>
-          <VideoCarousel />
-          <TrustedCompanies />
+      <CTA />
+      <div style={{ display: 'flex', marginTop: '24px', gap: '2.4rem' }}></div>
+      <VideoCarousel />
+      <TrustedCompanies />
       <Footer />
     </>
   );

@@ -11,13 +11,7 @@ export interface Event {
   result: string;
 }
 
-export type SportType =
-  | 'Soccer'
-  | 'Volleyball'
-  | 'IceHockey'
-  | 'Football'
-  | 'Baseball'
-  | 'Basketball';
+export type SportType = 'Soccer' | 'Volleyball' | 'IceHockey' | 'Football' | 'Baseball' | 'Basketball';
 
 export const MOC_EVENTS: Event[] = [
   {

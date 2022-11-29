@@ -18,14 +18,20 @@ export const CalendarDayItem = (props: Props) => {
       if (isSameDay(parseISO(event.date), props.date) && countEvent <= 1) {
         countEvent++;
         return <CalendarEvent key={index} event={event} />;
-      } else if(isSameDay(parseISO(event.date), props.date) && countEvent > 1){
-		return <LinkButton key={index} className='u-center-text ' size='small'>Show More</LinkButton>
-	  }
+      } else if (isSameDay(parseISO(event.date), props.date) && countEvent > 1) {
+        return (
+          <LinkButton key={index} className='u-center-text ' size='small'>
+            Show More
+          </LinkButton>
+        );
+      }
     });
   };
 
   return (
-    <div className={`calendar-day-item ${isToday(props.date) ? 'today' : ''} ${props.isCurrentMonth ? '' : 'disabled'}`}>
+    <div
+      className={`calendar-day-item ${isToday(props.date) ? 'today' : ''} ${props.isCurrentMonth ? '' : 'disabled'}`}
+    >
       <time className='paragraph--medium--bold' dateTime={format(props.date, 'yyyy-MM-dd')}>
         {format(props.date, 'd')}
       </time>

@@ -123,7 +123,7 @@ export const DesignSystem = () => {
       <div style={{ margin: '10px' }}>
         <TrustedCompanies />
       </div>
-      <div className='row' style={{display: 'flex', gap: '1.6rem' }}>
+      <div className='row' style={{ display: 'flex', gap: '1.6rem' }}>
         <TableResultsLarge />
         <BlogPostsAside />
       </div>

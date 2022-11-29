@@ -51,32 +51,31 @@
 }
 
 .slide {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
   opacity: 0;
-  transition-duration: .5s ease;
+  transition-duration: 0.5s ease;
 }
 
 // TODO: Fix animation transition -> Keyframes is not the a good solution
 @keyframes fadeEffect {
-	from {
-		opacity: 0.7;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .slide.active {
-	z-index: 1;
+  z-index: 1;
   opacity: 1;
-	animation: fadeEffect .5s ease;
-  transition-duration: .5s;
+  animation: fadeEffect 0.5s ease;
+  transition-duration: 0.5s;
 }
 
-
-.wrapper::after  {
+.wrapper::after {
   content: '';
   position: absolute;
   left: 0;
@@ -84,6 +83,11 @@
   height: 100%;
   width: 100%;
   border-radius: 0.5rem;
-  background-image: linear-gradient(6deg, rgba(255, 255, 255, 0.75) 22.46%, rgba(230, 215, 0, 0.3) 35.46%, rgba(230, 214, 0, 0) 99.34%),
+  background-image: linear-gradient(
+      6deg,
+      rgba(255, 255, 255, 0.75) 22.46%,
+      rgba(230, 215, 0, 0.3) 35.46%,
+      rgba(230, 214, 0, 0) 99.34%
+    ),
     linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }

@@ -5,18 +5,18 @@ import { ReactComponent as ChevronRight } from '../../../assets/icons/chevron-ri
 import './carousel-buttons.styles.scss';
 
 interface Props {
-	nextItem: () => void,
-	prevItem: () => void,
+  nextItem: () => void;
+  prevItem: () => void;
 }
 
-export const CarouselButtons = ({prevItem, nextItem}: Props) => {
+export const CarouselButtons = ({ prevItem, nextItem }: Props) => {
   return (
     <div className='badge'>
-      <button className="badge-button left ">
+      <button className='badge-button left '>
         <ChevronLeft onClick={prevItem} />
       </button>
-      <button className="badge-button right">
-        <ChevronRight onClick={nextItem}  />
+      <button className='badge-button right'>
+        <ChevronRight onClick={nextItem} />
       </button>
     </div>
   );

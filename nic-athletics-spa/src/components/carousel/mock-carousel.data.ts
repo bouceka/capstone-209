@@ -28,12 +28,12 @@ export const CAROUSEL_DATA: BlogPost[] = [
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto dolore delectus aliquam est illo consectetur iste repellendus dolores nemo odit enim nobis distinctio rerum perferendis nihil labore voluptate modi.',
   },
-//   {
-//     id: '4',
-//     title: 'Soccer kicks off spring at HIGHLAND Field tonight',
-//     category: 'Ice Hockey',
-//     featuredImage: 'url',
-//     content:
-//       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto dolore delectus aliquam est illo consectetur iste repellendus dolores nemo odit enim nobis distinctio rerum perferendis nihil labore voluptate modi.',
-//   },
+  //   {
+  //     id: '4',
+  //     title: 'Soccer kicks off spring at HIGHLAND Field tonight',
+  //     category: 'Ice Hockey',
+  //     featuredImage: 'url',
+  //     content:
+  //       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto dolore delectus aliquam est illo consectetur iste repellendus dolores nemo odit enim nobis distinctio rerum perferendis nihil labore voluptate modi.',
+  //   },
 ];

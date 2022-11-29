@@ -8,7 +8,7 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 export const LinkButton = ({ children, size, ...props }: Props) => {
   return (
-    <a href="#!" {...props} className={`link paragraph--${size} ${props.className}`}>
+    <a href='#!' {...props} className={`link paragraph--${size} ${props.className}`}>
       {children}
     </a>
   );

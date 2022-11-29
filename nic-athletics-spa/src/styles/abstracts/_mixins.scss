@@ -14,13 +14,13 @@
 }
 
 @mixin body-text($fontWeight, $fontSize, $lineHeight) {
-	font-weight: $fontWeight;
-	font-size:$fontSize;
-	line-height: $lineHeight ;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
 }
 
 @mixin background-opacity($color, $opacity) {
-    background-color: rgba($color, $opacity);
+  background-color: rgba($color, $opacity);
 }
 
 @mixin respond($breakpoint) {

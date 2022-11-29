@@ -12,9 +12,7 @@ function App() {
 
   return (
     <>
-      <Routes>
-
-      </Routes>
+      <Routes></Routes>
       <DesignSystem />
     </>
   );
