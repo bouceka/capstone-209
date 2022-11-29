@@ -1,0 +1,57 @@
+@use '../../styles/abstracts' as *;
+
+.video-carousel {
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 1.6rem;
+    color: $background-color-primary;
+    border: 1.5px solid $color-primary-700;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: transparent;
+
+    border-radius: 2px;
+
+    &:hover {
+      @include background-opacity($color-primary-800, 0.1);
+    }
+
+    &:active {
+      @include background-opacity($color-primary-800, 0.15);
+    }
+
+    & > svg > path {
+      stroke: $color-primary-700;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .video-thumbnail {
+    height: 40rem;
+    width: 56.8rem;
+    background-color: $color-neutral-900;
+  }
+
+  &__header {
+    border-bottom: 4px solid $color-primary-700;
+    margin-bottom: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.8rem;
+
+    & h2 {
+      color: $color-primary-600;
+    }
+  }
+}
