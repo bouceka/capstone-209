@@ -1,0 +1,37 @@
+@use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+.header {
+  background-color: $color-primary-900;
+
+  // height: calc(3rem + 40px);
+  //   & .main-nav {
+  //   }
+
+  &__image {
+    display: flex;
+    height: 7.2rem;
+  }
+  .college-label {
+    background-color: $background-color-secondary;
+    text-align: center;
+    @include body-text(600, 1.6rem, 2.4rem);
+    letter-spacing: 0.9rem;
+    padding: 0.8rem 0;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9.6rem;
+
+    &-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 4.8rem;
+      height: 100%;
+    }
+  }
+}
