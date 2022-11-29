@@ -1,0 +1,20 @@
+// @flow
+import * as React from 'react';
+import './carousel-progress-bar.styles.scss';
+
+interface Props {
+  size: number;
+  currentIndex: number;
+}
+
+export const CarouselProgressBar = ({ size, currentIndex }: Props) => {
+  return (
+    <div className="carousel-progress-bar">
+      {Array(size + 1)
+        .fill(null)
+        .map((dot, index) => (
+          <span className={index === currentIndex ? 'active' : ''} key={index}></span>
+        ))}
+    </div>
+  );
+};

@@ -1,0 +1,26 @@
+@use '../../../styles/abstracts/variables' as *;
+
+
+.carousel-progress-bar {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 3.2rem;
+	padding: .8rem;
+	background-color: $color-neutral-200;
+	display: flex;
+	gap: 1.2rem;
+	border-radius: 2px;
+	z-index: 12;
+
+	& > span {
+		height: 1.2rem;
+		width: 1.2rem;
+		border-radius: 50%;
+		display: inline-block;
+		background-color: $text-white-primary;
+		&.active {
+			background-color: $color-primary-600;
+		}
+	}
+}
