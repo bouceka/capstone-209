@@ -1,0 +1,21 @@
+@use '../../../styles/abstracts/variables' as *;
+
+.calendar {
+
+
+  &__th {
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+	height: 3.2rem;
+	width: 16rem;
+	text-align: center;
+    background-color: $color-primary-600;
+	box-shadow: 2px 0 0 0 $color-neutral-200, 0 2px 0 0 $color-neutral-200, 2px 2px 0 0 $color-neutral-200,
+	2px 0 0 0 $color-neutral-200 inset, 0 2px 0 0 $color-neutral-200 inset;
+	color: $text-white-primary;
+
+  }
+}
