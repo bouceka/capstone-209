@@ -1,0 +1,73 @@
+@use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+footer {
+  & .content {
+    background-color: $color-primary-900;
+    padding: 4rem;
+
+    & .row {
+      display: flex;
+      justify-content: space-between;
+	  align-items: center;
+	  justify-content: space-between;
+    }
+    &__image {
+      height: 9.6rem;
+      width: fit-content;
+    }
+
+    & .link-group {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      gap: 3.2rem;
+      white-space: nowrap;
+    }
+
+    & .column {
+      color: $text-white-primary;
+	  text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+      flex: 1;
+    }
+  }
+
+  & .social {
+    padding: 3.2rem 0;
+    background-color: $background-color-secondary;
+
+    & .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__media {
+      display: flex;
+      gap: 1.6rem;
+    }
+    &__terms {
+      display: flex;
+      gap: 1.6rem;
+    }
+  }
+
+  .#{&}-link:visited,
+  .#{&}-link:link {
+    color: $text-white-primary;
+    text-decoration: none;
+    @include body-text(600, 1.6rem, 2.4rem);
+    transition: all 0.2s;
+  }
+
+  .#{&}-link:hover,
+  .#{&}-link:active {
+    color: $color-secondary-600;
+  }
+  .#{&}-link:active {
+    color: $color-secondary-800;
+  }
+}
