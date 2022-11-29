@@ -1,13 +1,5 @@
 @use '../abstracts' as *;
 
-body {
-  font-family: 'Switzer', sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: $text-black-primary;
-  background-color: $background-color-secondary;
-}
 
 @include display('large', 5.2rem, 5.6rem);
 @include display('small', 4.4rem, 4.8rem);

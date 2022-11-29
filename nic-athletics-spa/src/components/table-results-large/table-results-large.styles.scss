@@ -1,111 +1,110 @@
 @use '../../styles/abstracts' as *;
-@use '../../styles/base/typography' as *;
 
-.table-results {
-  &-large {
-    width: 76rem;
-    height: 59.2rem;
-    overflow: hidden; // TODO: change dependency of the table
-    border-radius: 0 0 0.5rem 0.5rem;
+// .table-results {
+//   &-large {
+//     width: 76rem;
+//     height: 59.2rem;
+//     overflow: hidden; // TODO: change dependency of the table
+//     border-radius: 0 0 0.5rem 0.5rem;
 
-    @extend .elevation-00;
-  }
+//     @extend .elevation-00;
+//   }
 
-  &__header {
-    background-color: $color-primary-900;
-    display: flex;
-    align-items: center;
-    height: 6.4rem;
-    justify-content: space-between;
-    padding: 0.8rem 2.4rem;
-    border-radius: 0.5rem 0.5rem 0 0;
+//   &__header {
+//     background-color: $color-primary-900;
+//     display: flex;
+//     align-items: center;
+//     height: 6.4rem;
+//     justify-content: space-between;
+//     padding: 0.8rem 2.4rem;
+//     border-radius: 0.5rem 0.5rem 0 0;
 
-    .divider {
-      width: 0.2rem;
-      background-color: $color-neutral-100;
-      display: inline-block;
-    }
+//     .divider {
+//       width: 0.2rem;
+//       background-color: $color-neutral-100;
+//       display: inline-block;
+//     }
 
-    &__buttons {
-      display: flex;
-      gap: 0.8rem;
+//     &__buttons {
+//       display: flex;
+//       gap: 0.8rem;
 
-      & > .btn.btn--header:hover {
-        border: none;
-      }
-    }
-  }
+//       & > .btn.btn--header:hover {
+//         border: none;
+//       }
+//     }
+//   }
 
-  &-item {
-    background-color: $background-color-primary;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8.8rem;
-    &:nth-child(even) {
-      background-color: $background-color-secondary;
-    }
-  }
+//   &-item {
+//     background-color: $background-color-primary;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     height: 8.8rem;
+//     &:nth-child(even) {
+//       background-color: $background-color-secondary;
+//     }
+//   }
 
-  &__event {
-    display: flex;
-    flex-direction: column;
-    width: 17.2rem;
-    padding: 0 0.4rem 0 1.6rem;
-  }
-  &__date {
-    @extend .caption--large--bold;
-  }
+//   &__event {
+//     display: flex;
+//     flex-direction: column;
+//     width: 17.2rem;
+//     padding: 0 0.4rem 0 1.6rem;
+//   }
+//   &__date {
+//     @extend .caption--large--bold;
+//   }
 
-  &__venue {
-    @extend .caption--medium;
-    color: $color-primary-600;
-  }
+//   &__venue {
+//     @extend .caption--medium;
+//     color: $color-primary-600;
+//   }
 
-  &__teams {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    padding: 1.2rem;
-    width: 49.6rem;
-  }
-  &__team {
-    width: 12rem;
-    @extend .paragraph--small--bold;
+//   &__teams {
+//     display: flex;
+//     align-items: center;
+//     gap: 1.6rem;
+//     padding: 1.2rem;
+//     width: 49.6rem;
+//   }
+//   &__team {
+//     width: 12rem;
+//     @extend .paragraph--small--bold;
 
-    &.home {
-      text-align: right;
-    }
-  }
+//     &.home {
+//       text-align: right;
+//     }
+//   }
 
-  &__score-group {
-    display: flex;
-    justify-content: center;
-  }
-  &__score {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 6.4rem;
-    overflow: auto;
-  }
-  &__logo {
-    height: 4.6rem;
-    width: auto;
-  }
+//   &__score-group {
+//     display: flex;
+//     justify-content: center;
+//   }
+//   &__score {
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+//     width: 6.4rem;
+//     overflow: auto;
+//   }
+//   &__logo {
+//     height: 4.6rem;
+//     width: auto;
+//   }
 
-  &__cta {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 9.2rem;
-    padding: 0 1.6rem;
-    gap: 0.4rem;
-    @extend .caption--large--bold;
+//   &__cta {
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+//     width: 9.2rem;
+//     padding: 0 1.6rem;
+//     gap: 0.4rem;
+//     @extend .caption--large--bold;
 
-    hr {
-      border: 0;
-      border-top: 2px solid $color-neutral-200;
-    }
-  }
-}
+//     hr {
+//       border: 0;
+//       border-top: 2px solid $color-neutral-200;
+//     }
+//   }
+// }

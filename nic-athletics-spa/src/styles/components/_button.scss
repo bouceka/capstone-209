@@ -1,5 +1,5 @@
-@use '../../styles/abstracts' as *;
-@use '../../styles/base/typography' as *;
+@use '../abstracts' as *;
+@use '../base' as *;
 
 .btn {
   &,

@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { ReactComponent as ChevronLeft } from '../../../assets/icons/chevron-left.svg';
 import { ReactComponent as ChevronRight } from '../../../assets/icons/chevron-right.svg';
-import './carousel-buttons.styles.scss';
+// import './carousel-buttons.styles.scss';
 
 interface Props {
   nextItem: () => void;

@@ -1,0 +1,58 @@
+@use '../../abstracts' as *;
+@use '../../base' as *;
+
+.calendar {
+  &-event {
+    height: 7.2rem;
+    width: 14.4rem;
+    padding: 0.8rem;
+    border: 1px solid $color-neutral-200;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    display: flex;
+    gap: 1.6rem;
+    background-color: $background-color-primary;
+
+    &:hover {
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+      transition: all 0.3s;
+    }
+    &:active {
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+      transform: translateY(0.2rem);
+      transition: all 0.3s;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__team {
+      @extend .caption--large--bold;
+    }
+
+    &__divider {
+      margin: -0.2rem 0;
+    }
+
+    &__location {
+      margin-top: 0.4rem;
+    }
+
+    &__location,
+    &__divider {
+      @extend.caption--small;
+      color: $text-black-secondary;
+    }
+
+    &__icon {
+      display: flex;
+      & > svg {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+}

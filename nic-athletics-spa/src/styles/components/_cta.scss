@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+.cta {
+  background-color: $color-primary-900;
+  color: $text-white-primary;
+  padding: 6.4rem 0;
+
+  &__content {
+    display: flex;
+    gap: 12.4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}

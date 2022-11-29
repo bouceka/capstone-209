@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import './button.styles.scss';
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }

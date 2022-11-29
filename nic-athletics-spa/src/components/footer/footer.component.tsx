@@ -2,7 +2,6 @@ import React from 'react';
 import Logo from '../../assets/nic-athletics-logo-64x.png';
 import NICLogo from '../../assets/nic-logo.png';
 import { LinkButton } from '../link-button/link-button.component';
-import './footer.styles.scss';
 import { ReactComponent as FacebookIcon } from '../../assets/icons/social-media/facebook.svg';
 import { ReactComponent as YouTubeIcon } from '../../assets/icons/social-media/youtube.svg';
 import { ReactComponent as InstagramIcon } from '../../assets/icons/social-media/instagram.svg';
