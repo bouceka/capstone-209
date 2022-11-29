@@ -2,6 +2,7 @@
 import * as React from 'react';
 import './header.styles.scss';
 import Logo from '../../assets/nic-athletics-logo-64x.png';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
@@ -15,34 +16,34 @@ export const Header = () => {
         <div className='main-nav row'>
           <ul className='main-nav-list'>
             <li>
-              <a className='btn btn--header' href=''>
+              <Link className='btn btn--header' to={'/teams'}>
                 Teams
-              </a>
+              </Link>
             </li>
             <li>
-              <a className='btn btn--header' href=''>
+              <Link className='btn btn--header' to={'/calendar'}>
                 Calendar
-              </a>
+              </Link>
             </li>
             <li>
-              <a className='btn btn--header' href=''>
+              <Link className='btn btn--header' to={'/fan-zone'}>
                 Fan Zone
-              </a>
+              </Link>
             </li>
             <li>
-              <a href=''>
+              <Link to={'/'}>
                 <img className='header__image' src={Logo} alt='NIC Athletics logo' />
-              </a>
+              </Link>
             </li>
             <li>
-              <a className='btn btn--header' href=''>
+              <Link className='btn btn--header' to={'/inside-athletics'}>
                 Inside Athletics
-              </a>
+              </Link>
             </li>
             <li>
-              <a className='btn btn--header' href=''>
+              <Link className='btn btn--header' to={'/support'}>
                 Support
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
