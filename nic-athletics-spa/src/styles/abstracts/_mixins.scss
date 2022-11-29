@@ -1,0 +1,103 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin body-text($fontWeight, $fontSize, $lineHeight) {
+	font-weight: $fontWeight;
+	font-size:$fontSize;
+	line-height: $lineHeight ;
+}
+
+@mixin background-opacity($color, $opacity) {
+    background-color: rgba($color, $opacity);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 22.5em) {
+      @content;
+    } //360px
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 96em) {
+      @content;
+    } //1536
+  }
+}
+
+/**************************/
+/* TYPOGRAPHY */
+/**************************/
+
+@mixin heading($selector, $fontSize, $lineHeight) {
+  #{$selector}.heading {
+    @include body-text(600, $fontSize, $lineHeight);
+
+    &--bold {
+      @include body-text(700, $fontSize, $lineHeight);
+    }
+
+    &--medium {
+      @include body-text(400, $fontSize, $lineHeight);
+    }
+  }
+}
+
+@mixin display($type, $fontSize, $lineHeight) {
+  .display--#{$type} {
+    @include body-text(600, $fontSize, $lineHeight);
+
+    &--bold {
+      @include body-text(700, $fontSize, $lineHeight);
+    }
+
+    &--medium {
+      @include body-text(400, $fontSize, $lineHeight);
+    }
+  }
+}
+
+@mixin paragraph($type, $fontSize, $lineHeight) {
+  .paragraph--#{$type} {
+    @include body-text(400, $fontSize, $lineHeight);
+
+    &--bold {
+      @include body-text(600, $fontSize, $lineHeight);
+    }
+  }
+}
+@mixin caption($type, $fontSize, $lineHeight) {
+  .caption--#{$type} {
+    @include body-text(400, $fontSize, $lineHeight);
+
+    &--bold {
+      @include body-text(600, $fontSize, $lineHeight);
+    }
+  }
+}
