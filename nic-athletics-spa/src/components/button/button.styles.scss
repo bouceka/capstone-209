@@ -1,0 +1,124 @@
+@use '../../styles/abstracts' as *;
+@use '../../styles/base' as *;
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+    display: inline-block;
+    padding: 1rem 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+  }
+
+  &--primary {
+    color: $text-white-primary;
+    background-color: $color-primary-700;
+    @include body-text(600, 1.6rem, 2.4rem);
+    border-radius: 0.2rem;
+
+    &:hover {
+      background-color: $color-primary-800;
+    }
+    &:active {
+      background-color: $color-primary-900;
+    }
+  }
+
+  &--secondary {
+    color: $color-primary-900;
+    background-color: $color-secondary-400;
+    border: 1px solid $color-secondary-500;
+
+    @include body-text(600, 1.6rem, 2.4rem);
+    border-radius: 0.2rem;
+
+    &:hover {
+      background-color: $color-secondary-500;
+    }
+    &:active {
+      background-color: $color-secondary-600;
+    }
+
+    &--small {
+      @extend .caption--large--bold;
+      padding: 0.8rem 1.6rem !important;
+
+      color: $color-primary-900;
+      background-color: $color-secondary-400;
+      border: 1px solid $color-secondary-500;
+
+      &:hover {
+        background-color: $color-secondary-500;
+      }
+      &:active {
+        background-color: $color-secondary-600;
+      }
+    }
+  }
+  &--outline {
+    color: $color-primary-700;
+    background-color: transparent;
+    border: 1px solid $color-primary-700;
+    @include body-text(600, 1.6rem, 2.4rem);
+    border-radius: 0.2rem;
+
+    &:hover {
+      color: $color-primary-800;
+      @include background-opacity($color-primary-800, 0.1);
+    }
+    &:active {
+      color: $color-primary-900;
+      @include background-opacity($color-primary-800, 0.15);
+    }
+  }
+  &--link {
+    color: $color-primary-600;
+    background-color: transparent;
+    text-transform: uppercase;
+    @include body-text(600, 1.6rem, 2.4rem);
+    border-radius: 0.2rem;
+
+    &:hover {
+      color: $color-primary-800;
+    }
+    &:active {
+      color: $color-primary-900;
+    }
+  }
+  &#{&}--header {
+    @include body-text(600, 2rem, 2.8rem);
+    padding: 1rem 1.2rem;
+    border-radius: 0;
+
+    color: $text-white-primary;
+    background-color: transparent;
+    padding-top: 1rem;
+    display: inline;
+    &:hover {
+      color: $color-secondary-600;
+      border-bottom: 2px solid $color-secondary-600;
+    }
+    &:active {
+      color: $color-secondary-800;
+      border-bottom: 2px solid $color-secondary-800;
+    }
+
+    &.disabled {
+      opacity: 38%;
+      pointer-events: none;
+    }
+
+    &.active{
+      color: $color-secondary-600;
+    }
+  }
+}
