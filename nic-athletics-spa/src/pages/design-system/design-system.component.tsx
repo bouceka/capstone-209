@@ -9,6 +9,7 @@ import Footer from '../../components/footer/footer.component';
 import { Header } from '../../components/header/header.component';
 import { LinkButton } from '../../components/link-button/link-button.component';
 import { SportCards } from '../../components/sport-cards/sport-cards.component';
+import { EventResultsAside } from '../../components/table-results-aside/event-results-aside.component';
 import TableResultsLarge from '../../components/table-results-large/table-results-large.component';
 import { TrustedCompanies } from '../../components/trusted-companies/trusted-companies.component';
 import { VideoCarousel } from '../../components/video-carousel/video-carousel.component';
@@ -128,8 +129,9 @@ export const DesignSystem = () => {
         <TableResultsLarge />
         <BlogPostsAside />
       </div>
-      <div style={{ margin: '10px' }}>
+      <div className='row' style={{ display: 'flex', gap: '2.4rem' }}>
         <SportCards />
+        <EventResultsAside />
       </div>
     </>
   );

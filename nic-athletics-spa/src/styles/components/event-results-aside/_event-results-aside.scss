@@ -1,0 +1,89 @@
+@use '../../abstracts' as *;
+@use '../../base' as *;
+
+.event-results-aside {
+  width: 36.8rem;
+  height: 68.8rem;
+  @extend .elevation-00;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__item {
+    width: 36.8rem;
+    height: 6.8rem;
+    display: flex;
+    background-color: $background-color-primary;
+
+    &:nth-child(even) {
+      background-color: $background-color-secondary;
+    }
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__teams {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 0.4rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  &__cta {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 7.8rem;
+    background-color: $background-color-primary;
+    border-top: 2px solid $color-neutral-200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__team {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    & img {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &__date {
+    width: 13.2rem;
+    @extend .caption--large;
+  }
+  &__group {
+    overflow: scroll;
+  }
+
+  &__header {
+    padding: 2.4rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $text-white-primary;
+    background-color: $color-primary-900;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  &__buttons > .btn.btn--header--small:hover {
+    border: none;
+  }
+
+  &__buttons{
+    display: flex;
+  }
+
+  &__divider {
+    width: 0.1rem;
+    background-color: $color-neutral-100;
+  }
+}
