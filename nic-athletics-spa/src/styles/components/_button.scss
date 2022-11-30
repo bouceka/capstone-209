@@ -101,7 +101,6 @@
 
     color: $text-white-primary;
     background-color: transparent;
-    padding-top: 1rem;
     display: inline;
     &:hover {
       color: $color-secondary-600;
@@ -112,13 +111,32 @@
       border-bottom: 2px solid $color-secondary-800;
     }
 
-    &.disabled {
-      opacity: 38%;
-      pointer-events: none;
-    }
-
     &.active {
       color: $color-secondary-600;
     }
+
+    &--small {
+      @extend .caption--large--bold;
+      padding: 0.8rem 1.6rem !important;
+      border-radius: 0;
+      color: $text-white-primary;
+      background-color: transparent;
+      display: inline;
+
+      &:hover {
+        color: $color-secondary-600;
+        border-bottom: 2px solid $color-secondary-600;
+      }
+      &:active {
+        color: $color-secondary-800;
+        border-bottom: 2px solid $color-secondary-800;
+      }
+    }
+
+  }
+
+  &.disabled {
+    opacity: 38%;
+    pointer-events: none;
   }
 }
