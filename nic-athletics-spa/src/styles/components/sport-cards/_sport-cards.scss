@@ -6,7 +6,7 @@
      // PARENT //
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 75.2rem;
+    width: 76rem;
     gap: 2.4rem;
     padding: 2.4rem;
     background-color: $background-color-primary;
@@ -21,16 +21,17 @@
     text-transform: uppercase;
     transition: color 0.3s ease;
     z-index: 2;
+    padding: .6rem 0;
   }
   &__item {
-    width: 34rem;
+    width: 34.4rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
 
     & img {
-      width: 34rem;
+      width: auto;
       height: 26rem;
       object-fit: cover;
       transition: transform 0.3s ease;
