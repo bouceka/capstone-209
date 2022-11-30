@@ -1,0 +1,57 @@
+@use '../../abstracts/' as *;
+
+.sport-cards {
+
+
+     // PARENT //
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75.2rem;
+    gap: 2.4rem;
+    padding: 2.4rem;
+    background-color: $background-color-primary;
+    border-radius: .5rem;
+    @extend .elevation-00;
+
+    // ITEM //
+  &__title {
+    background-color: $color-primary-900;
+    color: $text-white-primary;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    z-index: 2;
+  }
+  &__item {
+    width: 34rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    & img {
+      width: 34rem;
+      height: 26rem;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+
+    
+    }
+    &:hover > * {
+      color: $color-secondary-600;
+    }
+
+    &:hover > img {
+      transform: scale(1.1);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.2);
+      }
+  }
+}

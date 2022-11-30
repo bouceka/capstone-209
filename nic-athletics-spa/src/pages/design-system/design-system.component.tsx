@@ -8,6 +8,7 @@ import { CTA } from '../../components/CTA/cta.component';
 import Footer from '../../components/footer/footer.component';
 import { Header } from '../../components/header/header.component';
 import { LinkButton } from '../../components/link-button/link-button.component';
+import { SportCards } from '../../components/sport-cards/sport-cards.component';
 import TableResultsLarge from '../../components/table-results-large/table-results-large.component';
 import { TrustedCompanies } from '../../components/trusted-companies/trusted-companies.component';
 import { VideoCarousel } from '../../components/video-carousel/video-carousel.component';
@@ -123,9 +124,12 @@ export const DesignSystem = () => {
       <div style={{ margin: '10px' }}>
         <TrustedCompanies />
       </div>
-      <div className='row' style={{ display: 'flex', gap: '1.6rem' }}>
+      <div className='row' style={{ display: 'flex', gap: '2.4rem' }}>
         <TableResultsLarge />
         <BlogPostsAside />
+      </div>
+      <div style={{ margin: '10px' }}>
+        <SportCards />
       </div>
     </>
   );
