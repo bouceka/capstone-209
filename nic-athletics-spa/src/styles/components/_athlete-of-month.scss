@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.athlete-of-month{
+    background-color: $color-primary-900 ;
+    color:$text-white-primary;
+    
+    &__group{
+        display: flex;
+        align-items: center;
+        padding: 4.8rem 0;
+        gap: 8.8rem;
+        text-align: center;
+    }
+}

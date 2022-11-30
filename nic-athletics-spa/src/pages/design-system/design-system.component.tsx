@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { AthleteOfMonth } from '../../components/athlete-of-month/athlete-of-month.component';
 import { BlogPostsAside } from '../../components/blog-posts-aside/blog-posts-aside.component';
 import { Button } from '../../components/button/button.component';
 import { Calendar } from '../../components/calendar/calendar.component';
@@ -132,6 +133,9 @@ export const DesignSystem = () => {
       <div className='row' style={{ display: 'flex', gap: '2.4rem' }}>
         <SportCards />
         <EventResultsAside />
+      </div>
+      <div style={{ margin: '10px' }}>
+        <AthleteOfMonth />
       </div>
     </>
   );
