@@ -9,11 +9,6 @@ export const BlogContainer = (props: Props) => {
   return (
     <div className='row'>
       <section className='blog-container'>
-        {/* {CAROUSEL_DATA.map((post, index) => (
-          <BlogCardLarge key={index} blogPost={post} />
-          ))}
-          <BlogCardHorizontalComponent /> */}
-
           <BlogMediumGroup blogPosts={CAROUSEL_DATA}/>
       </section>
     </div>

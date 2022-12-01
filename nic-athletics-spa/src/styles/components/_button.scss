@@ -88,10 +88,30 @@
     border-radius: 0.2rem;
 
     &:hover {
-      color: $color-primary-800;
+      color: $color-primary-700;
+      @include background-opacity($color-primary-800, 0.1);
     }
     &:active {
       color: $color-primary-900;
+      @include background-opacity($color-primary-800, 0.15);
+    }
+
+    &--small {
+      @extend .caption--large--bold;
+      padding: 0.8rem 1.6rem !important;
+      color: $color-primary-600;
+      background-color: transparent;
+      text-transform: uppercase;
+      border-radius: 0.2rem;
+
+      &:hover {
+        color: $color-primary-700;
+      @include background-opacity($color-primary-800, 0.1);
+      }
+      &:active {
+        color: $color-primary-900;
+      @include background-opacity($color-primary-800, 0.15);
+      }
     }
   }
   &#{&}--header {
@@ -132,7 +152,6 @@
         border-bottom: 2px solid $color-secondary-800;
       }
     }
-
   }
 
   &.disabled {

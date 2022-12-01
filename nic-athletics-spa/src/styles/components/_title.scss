@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.title{
+    color: $color-primary-600;
+    border-bottom: 4px solid $color-primary-600;
+    padding-bottom: 0.8rem;
+}

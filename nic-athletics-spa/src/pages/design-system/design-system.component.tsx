@@ -13,6 +13,7 @@ import { LinkButton } from '../../components/link-button/link-button.component';
 import { SportCards } from '../../components/sport-cards/sport-cards.component';
 import { EventResultsAside } from '../../components/table-results-aside/event-results-aside.component';
 import TableResultsLarge from '../../components/table-results-large/table-results-large.component';
+import { Title } from '../../components/title/title.component';
 import { TrustedCompanies } from '../../components/trusted-companies/trusted-companies.component';
 import { VideoCarousel } from '../../components/video-carousel/video-carousel.component';
 
@@ -140,6 +141,9 @@ export const DesignSystem = () => {
       </div>
       <div style={{ margin: '10px' }}>
         <BlogContainer />
+      </div>
+      <div style={{ margin: '10px' }}>
+        <Title >Calendar</Title>
       </div>
     </div>
   );
