@@ -1,0 +1,13 @@
+@use '../../abstracts' as *;
+@use '../../base' as *;
+
+.blog-medium-group{
+    display: flex;
+    gap: 3.2rem;
+
+    &__aside{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+}

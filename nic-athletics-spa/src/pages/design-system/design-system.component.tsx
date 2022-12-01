@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 import { AthleteOfMonth } from '../../components/athlete-of-month/athlete-of-month.component';
+import { BlogContainer } from '../../components/blog-container/blog-container.component';
 import { BlogPostsAside } from '../../components/blog-posts-aside/blog-posts-aside.component';
 import { Button } from '../../components/button/button.component';
 import { Calendar } from '../../components/calendar/calendar.component';
@@ -17,7 +18,7 @@ import { VideoCarousel } from '../../components/video-carousel/video-carousel.co
 
 export const DesignSystem = () => {
   return (
-    <>
+    <div style={{ marginTop: '10px',marginBottom: '20px' }}>
       <div className='row' style={{ marginTop: '10px' }}>
         <div className='card'>
           <div className='display--large--bold'>Display Text Large Bold</div>
@@ -137,6 +138,9 @@ export const DesignSystem = () => {
       <div style={{ margin: '10px' }}>
         <AthleteOfMonth />
       </div>
-    </>
+      <div style={{ margin: '10px' }}>
+        <BlogContainer />
+      </div>
+    </div>
   );
 };

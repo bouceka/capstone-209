@@ -9,7 +9,7 @@ export function BlogPostsAside(props: Props) {
     <aside className='blog-posts-aside'>
       {CAROUSEL_DATA.map(
         (post, index) =>
-          index > 0 && (
+          index > 2 && (
             <div key={index} className='blog-posts-aside__item'>
               <img src={post.featuredImage} alt='' />
               <div className='blog-posts-aside__text'>

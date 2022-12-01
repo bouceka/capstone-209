@@ -1,0 +1,10 @@
+@use '../../abstracts' as *;
+@use '../../base' as *;
+
+
+.blog-container{
+    background-color: $background-color-primary;
+    padding: 2.4rem;
+    border-radius: .5rem;
+    @extend .elevation-00;
+}
