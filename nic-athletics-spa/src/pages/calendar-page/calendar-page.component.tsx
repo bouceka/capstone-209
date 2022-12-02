@@ -10,13 +10,11 @@ type Props = {};
 
 export const CalendarPage = (props: Props) => {
   return (
-    <>
-      <Header />
+    <div className='page'>
       <Title>Calendar</Title>
       <div style={{ marginTop: '2.4rem', marginBottom: '2.4rem' }}>
         <Calendar />
       </div>
-      <Footer />
-    </>
+    </div>
   );
 };

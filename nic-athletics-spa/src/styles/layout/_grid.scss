@@ -4,3 +4,11 @@
   max-width: $grid-width;
   margin: 0 auto;
 }
+
+
+.page{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 4rem 0;
+}

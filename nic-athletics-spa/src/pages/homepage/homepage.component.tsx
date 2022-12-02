@@ -14,7 +14,6 @@ interface IHomepageProps {}
 const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
   return (
     <div className='page'>
-      <Header />
       <div className='row'>
         <Carousel />
         <div style={{ display: 'flex', marginTop: '24px', gap: '2.4rem' }}>
@@ -25,7 +24,6 @@ const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
       <CTA />
       <VideoCarousel />
       <TrustedCompanies />
-      <Footer />
     </div>
   );
 };
