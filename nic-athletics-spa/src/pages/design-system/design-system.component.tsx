@@ -10,12 +10,13 @@ import { CTA } from '../../components/CTA/cta.component';
 import Footer from '../../components/footer/footer.component';
 import { Header } from '../../components/header/header.component';
 import { LinkButton } from '../../components/link-button/link-button.component';
-import { SportCards } from '../../components/sport-cards/sport-cards.component';
+import { Cards } from '../../components/cards/cards.component';
 import { EventResultsAside } from '../../components/table-results-aside/event-results-aside.component';
 import TableResultsLarge from '../../components/table-results-large/table-results-large.component';
 import { Title } from '../../components/title/title.component';
 import { TrustedCompanies } from '../../components/trusted-companies/trusted-companies.component';
 import { VideoCarousel } from '../../components/video-carousel/video-carousel.component';
+import { INSIDE_ATHLETICS_DATA, SPORT_DATA } from '../../components/cards/card-data';
 
 export const DesignSystem = () => {
   return (
@@ -133,7 +134,7 @@ export const DesignSystem = () => {
         <BlogPostsAside />
       </div>
       <div className='row' style={{ display: 'flex', gap: '2.4rem' }}>
-        <SportCards />
+        <Cards cardData={SPORT_DATA} />
         <EventResultsAside />
       </div>
       <div style={{ margin: '10px' }}>
@@ -144,6 +145,9 @@ export const DesignSystem = () => {
       </div>
       <div style={{ margin: '10px' }}>
         <Title >Calendar</Title>
+      </div>
+      <div style={{ margin: '10px' }}>
+        <Cards cardData={INSIDE_ATHLETICS_DATA}/>
       </div>
     </div>
   );

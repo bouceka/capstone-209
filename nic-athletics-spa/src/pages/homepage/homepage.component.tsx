@@ -13,24 +13,20 @@ interface IHomepageProps {}
 
 const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
   return (
-    <>
+    <div className='page'>
       <Header />
       <div className='row'>
-        <div className='page-grid'>
-          <Carousel />
-
-          <div style={{ display: 'flex', marginTop: '24px', gap: '2.4rem' }}>
-            <TableResultsLarge />
-            <BlogPostsAside />
-          </div>
+        <Carousel />
+        <div style={{ display: 'flex', marginTop: '24px', gap: '2.4rem' }}>
+          <TableResultsLarge />
+          <BlogPostsAside />
         </div>
       </div>
       <CTA />
-      <div style={{ display: 'flex', marginTop: '24px', gap: '2.4rem' }}></div>
       <VideoCarousel />
       <TrustedCompanies />
       <Footer />
-    </>
+    </div>
   );
 };
 
