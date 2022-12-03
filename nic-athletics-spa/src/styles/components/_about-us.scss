@@ -1,0 +1,14 @@
+.about-page{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 60rem;
+    align-items: flex-start;
+
+    &__about{
+      @extend.about-page;
+    }
+    &__vision{
+      @extend.about-page;
+    }
+}
