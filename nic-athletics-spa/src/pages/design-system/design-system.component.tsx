@@ -17,6 +17,7 @@ import { Title } from '../../components/title/title.component';
 import { TrustedCompanies } from '../../components/trusted-companies/trusted-companies.component';
 import { VideoCarousel } from '../../components/video-carousel/video-carousel.component';
 import { INSIDE_ATHLETICS_DATA, SPORT_DATA } from '../../components/cards/card-data';
+import { TestimonyImage } from '../../components/testimony-image/testimony-image.component';
 
 export const DesignSystem = () => {
   return (
@@ -148,6 +149,9 @@ export const DesignSystem = () => {
       </div>
       <div style={{ margin: '10px' }}>
         <Cards cardData={INSIDE_ATHLETICS_DATA}/>
+      </div>
+      <div style={{ margin: '10px' }}>
+       <TestimonyImage/>
       </div>
     </div>
   );
