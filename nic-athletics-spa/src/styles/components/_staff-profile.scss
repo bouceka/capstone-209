@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.staff-profile {
+  display: flex;
+  gap: 1.6rem;
+  padding: 1.6rem;
+
+  img {
+    height: 32rem;
+    width: 32rem;
+    object-fit: cover;
+    border-radius: 0.7rem;
+    border: 1px solid $color-neutral-200;
+  }
+
+  &__title{
+    display: flex;
+    gap: 4rem;
+
+    & > :nth-child(2) {
+        display: list-item;
+        color: $text-black-secondary;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}
