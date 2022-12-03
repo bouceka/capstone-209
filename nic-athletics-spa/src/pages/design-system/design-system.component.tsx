@@ -18,6 +18,7 @@ import { TrustedCompanies } from '../../components/trusted-companies/trusted-com
 import { VideoCarousel } from '../../components/video-carousel/video-carousel.component';
 import { INSIDE_ATHLETICS_DATA, SPORT_DATA } from '../../components/cards/card-data';
 import { TestimonyImage } from '../../components/testimony-image/testimony-image.component';
+import { Input } from '../../components/input/input.component';
 
 export const DesignSystem = () => {
   return (
@@ -152,6 +153,9 @@ export const DesignSystem = () => {
       </div>
       <div style={{ margin: '10px' }}>
        <TestimonyImage/>
+      </div>
+      <div style={{ margin: '10px' }}>
+       <Input label='Input label' placeholder='Placeholder'/>
       </div>
     </div>
   );
