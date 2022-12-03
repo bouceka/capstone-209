@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.contact-page {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: $background-color-primary;
+  border-radius: 0.5rem;
+  width: 115.2rem;
+  padding: 2.4rem;
+
+  form {
+    display: inherit;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .form-group {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}
