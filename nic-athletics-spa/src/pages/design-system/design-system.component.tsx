@@ -19,6 +19,7 @@ import { VideoCarousel } from '../../components/video-carousel/video-carousel.co
 import { INSIDE_ATHLETICS_DATA, SPORT_DATA } from '../../components/cards/card-data';
 import { TestimonyImage } from '../../components/testimony-image/testimony-image.component';
 import { Input } from '../../components/input/input.component';
+import { StaffDirectors } from '../inside-athletics/staff-directors/staff-directors.component';
 
 export const DesignSystem = () => {
   return (
@@ -156,6 +157,9 @@ export const DesignSystem = () => {
       </div>
       <div style={{ margin: '10px' }}>
        <Input label='Input label' placeholder='Placeholder'/>
+      </div>
+      <div style={{ margin: '10px' }}>
+       <StaffDirectors />
       </div>
     </div>
   );

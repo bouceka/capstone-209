@@ -5,6 +5,7 @@ import { LinkButton } from '../link-button/link-button.component';
 import { ReactComponent as FacebookIcon } from '../../assets/icons/social-media/facebook.svg';
 import { ReactComponent as YouTubeIcon } from '../../assets/icons/social-media/youtube.svg';
 import { ReactComponent as InstagramIcon } from '../../assets/icons/social-media/instagram.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -16,24 +17,24 @@ const Footer = () => {
               <img className='content__image' src={NICLogo} alt='North Island College logo' />
               <ul className='link-group'>
                 <li>
-                  <a className='footer-link' href='#!'>
+                  <Link className='footer-link' to={'/teams'}>
                     Teams
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className='footer-link' href='#!'>
+                  <Link className='footer-link' to={'/inside-athletics'}>
                     Inside Athletics
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className='footer-link' href='#!'>
+                  <Link className='footer-link' to={'/calendar'}>
                     Calendar
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className='footer-link' href='#!'>
+                  <Link className='footer-link' to={'/inside-athletics/contact-us'}>
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
