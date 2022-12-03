@@ -38,6 +38,7 @@ const router = createBrowserRouter([
         path: '/inside-athletics',
         element: <InsideAthletics />,
       },
+      { path: '/inside-athletics/contact-us', element: <ContactUs /> },
     ],
   },
 ]);
