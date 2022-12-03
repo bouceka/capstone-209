@@ -45,6 +45,11 @@ export const Header = () => {
                 Support
               </Link>
             </li>
+            <li>
+              <Link className='btn btn--secondary' to={'/sign-up'}>
+                Sign Up
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

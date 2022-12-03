@@ -14,7 +14,14 @@
     border: .16rem solid $color-neutral-200;
     padding: 0.8rem;
     @extend .paragraph--small;
+    font-family: inherit;
     border-radius: 0.2rem;
+
+    &:focus-visible{
+      outline: .1rem solid $color-primary-400;
+      border-color: $color-primary-400;
+      
+    }
   }
 
   .help-text {
