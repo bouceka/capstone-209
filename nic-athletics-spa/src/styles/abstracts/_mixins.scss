@@ -35,9 +35,9 @@
     } //600px
   }
   @if $breakpoint == tab-port {
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 60em) {
       @content;
-    } //900px
+    } //960px
   }
   @if $breakpoint == tab-land {
     @media only screen and (max-width: 75em) {
