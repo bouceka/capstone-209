@@ -17,7 +17,7 @@
     cursor: pointer;
     border: none;
     white-space: nowrap;
-    align-self: flex-start;
+    // align-self: flex-start; //TODO: Find a better way to align the button
   }
 
   &--primary {
