@@ -1,6 +1,18 @@
 @use '../abstracts' as *;
 
-footer {
+.footer {
+  &__image {
+    height: 9.6rem;
+    width: fit-content;
+  }
+
+  &__bear {
+    @extend .footer__image;
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
   & .content {
     background-color: $color-primary-900;
     padding: 4rem;
@@ -9,11 +21,11 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      justify-content: space-between;
-    }
-    &__image {
-      height: 9.6rem;
-      width: fit-content;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+        gap: 1.6rem;
+      }
     }
 
     & .link-group {
@@ -33,6 +45,13 @@ footer {
       align-items: center;
       gap: 1.2rem;
       flex: 1;
+
+      @include respond(tab-port) {
+        width: 70%;
+      }
+      @include respond(small-phone) {
+        width: 90%;
+      }
     }
   }
 
@@ -40,9 +59,18 @@ footer {
     padding: 3.2rem 0;
     background-color: $background-color-secondary;
 
+    @include respond(tab-port) {
+      padding: 3.2rem 5%;
+    }
+
     & .row {
       display: flex;
       justify-content: space-between;
+      @include respond(small-phone) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+      }
     }
     &__media {
       display: flex;
@@ -54,19 +82,20 @@ footer {
     }
   }
 
-  .#{&}-link:visited,
-  .#{&}-link:link {
+  #{&}-link:visited,
+  #{&}-link:link {
     color: $text-white-primary;
     text-decoration: none;
     @include body-text(600, 1.6rem, 2.4rem);
     transition: all 0.2s;
   }
 
-  .#{&}-link:hover,
-  .#{&}-link:active {
+  #{&}-link:hover,
+  #{&}-link:active {
     color: $color-secondary-600;
   }
-  .#{&}-link:active {
+
+  #{&}-link:active {
     color: $color-secondary-800;
   }
 }

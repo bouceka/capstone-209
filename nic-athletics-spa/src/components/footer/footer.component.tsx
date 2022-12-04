@@ -10,11 +10,11 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className='footer'>
         <div className='content'>
           <div className='row'>
             <div className='column'>
-              <img className='content__image' src={NICLogo} alt='North Island College logo' />
+              <img className='footer__image' src={NICLogo} alt='North Island College logo' />
               <ul className='link-group'>
                 <li>
                   <Link className='footer-link' to={'/teams'}>
@@ -39,7 +39,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='column'>
-              <img className='content__image' src={Logo} alt='NIC Athletics logo' />
+              <img className='footer__bear' src={Logo} alt='NIC Athletics logo' />
             </div>
             <div className='column'>
               <p className='paragraph-medium'>
