@@ -21,7 +21,7 @@ export const Header = () => {
           </div>
         </div>
         <div className='main-nav row'>
-          {width <= 960 ? (
+          {width <= 959 ? (
             <div className='collapsed-nav'>
               <Link to={'/'}>
                 <img className='header__image' src={Logo} alt='NIC Athletics logo' />
