@@ -4,7 +4,7 @@
 .calendar {
   &-event {
     height: 7.2rem;
-    width: 14.4rem;
+    max-width: 14.4rem;
     padding: 0.8rem;
     border: 1px solid $color-neutral-200;
     transition: all 0.3s;
@@ -13,10 +13,27 @@
     display: flex;
     gap: 1.6rem;
     background-color: $background-color-primary;
+    @include respond(tab-land) {
+      height: auto;
+      padding: 1.6rem 0.8rem ;
+    }
 
     &:hover {
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
       transition: all 0.3s;
+    }
+
+    @include respond(tab-land) {
+      &:hover { // TODO: Find a better way how to display events when user hover
+        position: absolute;
+        z-index: 2;
+        left: -50%;
+        width: 14.4rem;
+      }
+
+      &:hover > &__text {
+        display: flex;
+      }
     }
     &:active {
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
@@ -27,6 +44,9 @@
     &__text {
       display: flex;
       flex-direction: column;
+      @include respond(tab-land) {
+        display: none;
+      }
     }
 
     &__team {

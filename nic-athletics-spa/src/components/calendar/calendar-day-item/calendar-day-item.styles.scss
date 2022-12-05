@@ -2,7 +2,7 @@
 
 .calendar {
   &-day-item {
-    width: 16rem;
+    // width: 16rem;
     height: 21.6rem;
     background-color: $background-color-primary;
     padding: 0.8rem;
@@ -18,6 +18,13 @@
 
     &.today {
       background-color: $color-secondary-100;
+    }
+
+    @include respond(tab-land) {
+      position: relative;
+    }
+    @include respond(phone) {
+      height: 18rem;
     }
   }
 }

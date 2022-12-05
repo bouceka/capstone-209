@@ -20,15 +20,20 @@ import {
   startOfWeek,
 } from 'date-fns';
 import { useState } from 'react';
+import { useWindowDimensions } from '../../hooks/window-dimensions';
 
-const th = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const daysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const daysFull = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 type Props = {};
 export const Calendar = (props: Props) => {
   const today = startOfToday();
   const [selectedDay, setSelectedDay] = useState(today);
   const [currentMonth, setCurrentMonth] = useState(format(today, 'MMMM yyyy'));
+  const { windowWidth } = useWindowDimensions();
+
   const firstDayCurrentMonth = parse(currentMonth, 'MMMM yyyy', new Date());
+  const header = windowWidth < 1024 ? daysShort : daysFull;
 
   const days = eachDayOfInterval({
     start: startOfWeek(firstDayCurrentMonth),
@@ -69,7 +74,7 @@ export const Calendar = (props: Props) => {
           </div>
         </div>
         <div className='calendar-th-group'>
-          {th.map((th, index) => (
+          {header.map((th, index) => (
             <CalendarThItem key={index} day={th} />
           ))}
         </div>

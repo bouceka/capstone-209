@@ -2,7 +2,6 @@
 import * as React from 'react';
 import { IconSport } from '../../../helper/sport-icons.util';
 import { Event } from '../calendar-mock.data';
-import './calendar-event.styles.scss';
 
 type Props = {
   event: Event;

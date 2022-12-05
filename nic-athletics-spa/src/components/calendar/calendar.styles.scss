@@ -28,6 +28,12 @@
       display: flex;
       gap: 1.6rem;
     }
+
+    @include respond(phone) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.6rem;
+    }
   }
 
   &-head {

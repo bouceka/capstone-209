@@ -6,7 +6,7 @@ import { ReactComponent as IconFootball } from '../assets/icons/football.svg';
 import { ReactComponent as IconBaseball } from '../assets/icons/baseball.svg';
 
 interface Props {
-  sportType: 'Soccer' | 'Volleyball';
+  sportType: 'Soccer' | 'Volleyball' | 'IceHockey' | 'Basketball'| 'Football' | 'Baseball';
 }
 
 const SportSVG = {
