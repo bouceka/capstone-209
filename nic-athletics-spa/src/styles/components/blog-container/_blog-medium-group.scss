@@ -1,13 +1,17 @@
 @use '../../abstracts' as *;
 @use '../../base' as *;
 
-.blog-medium-group{
-    display: flex;
-    gap: 3.2rem;
+.blog-medium-group {
+  display: flex;
+  gap: 3.2rem;
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__aside{
-        display: flex;
-        flex-direction: column;
-        gap: 3.2rem;
-    }
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
 }

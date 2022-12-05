@@ -12,6 +12,13 @@
     & h5 {
       height: 6.4rem;
     }
+
+    @include respond(phone) {
+      width: auto;
+      height: auto;
+      border-bottom: 1.5px solid $color-neutral-200;
+      padding-bottom: 1.6rem;
+    }
   }
 
   &__text {
@@ -47,7 +54,7 @@
       display: flex;
       gap: 0.8rem;
     }
-    
+
     & > button > svg > path {
       stroke: $color-primary-700;
     }
@@ -75,11 +82,13 @@
       width: 18.4rem;
       border-radius: 0.2rem;
       object-fit: cover;
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     &__category {
       @extend .caption--large--bold;
-
       color: $color-primary-600;
     }
 
@@ -90,6 +99,12 @@
       gap: 1.6rem;
       align-items: flex-start;
 
+      @include respond(phone) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+      }
+
       & > button > svg > path {
         stroke: $color-primary-700;
       }
@@ -98,6 +113,10 @@
     &__text {
       & > h6 {
         height: 5.6rem;
+
+        @include respond(phone) {
+          height: auto;
+        }
       }
     }
   }
