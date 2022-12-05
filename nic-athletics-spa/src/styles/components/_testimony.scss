@@ -12,6 +12,11 @@
     align-items: center;
     gap: 4rem;
 
+    @include respond(tab-land) {
+      flex-direction: column-reverse;
+      padding: 0 5%;
+    }
+
     & img {
       height: 26rem;
     }
