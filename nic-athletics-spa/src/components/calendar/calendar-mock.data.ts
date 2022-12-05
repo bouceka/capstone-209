@@ -13,7 +13,7 @@ export interface Event {
 
 export type SportType = 'Soccer' | 'Volleyball' | 'IceHockey' | 'Football' | 'Baseball' | 'Basketball';
 
-export const MOC_EVENTS: Event[] = [
+export const MOCK_EVENTS: Event[] = [
   {
     id: 1,
     date: '2022-11-01T13:00',

@@ -6,7 +6,7 @@ import { ReactComponent as ChevronRight } from '../../assets/icons/chevron-right
 import { ReactComponent as PlayArrow } from '../../assets/icons/play-arrow.svg';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
 import { Button } from '../button/button.component';
-import { CAROUSEL_DATA } from '../carousel/mock-carousel.data';
+import { POSTS_DATA } from '../carousel/mock-carousel.data';
 import './video-carousel.styles.scss';
 
 type Props = {};
@@ -16,9 +16,8 @@ export const VideoCarousel = (props: Props) => {
   const slideInterval = React.useRef(0);
 
   const displayedCards = width > 1023 ? 2 : 1
-  console.log(width > 1023 ? 2 : 1)
 
-  const size = (CAROUSEL_DATA.length - 1) / displayedCards - 1; // minus one we have to get even number // TODO: Make it functional even for odd number
+  const size = (POSTS_DATA.length - 1) / displayedCards - 1; // minus one we have to get even number // TODO: Make it functional even for odd number
   const prevItem = () => {
     const index = currentItem > 0 ? currentItem - 1 : size;
     setCurrentItem(index);
@@ -52,7 +51,7 @@ export const VideoCarousel = (props: Props) => {
         </div>
         <div className='video-carousel__content'>
           <div className='video-carousel__wrapper' style={{ transform: `translateX(${-currentItem * 100}%)` }}>
-            {CAROUSEL_DATA.map((item, index) =>
+            {POSTS_DATA.map((item, index) =>
               index < 4 ? (
                 <div key={index} className='video-thumbnail'>
                   <img src={item.featuredImage} alt={item.title} />

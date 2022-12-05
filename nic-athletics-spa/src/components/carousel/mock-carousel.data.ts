@@ -1,6 +1,15 @@
-import { BlogPost } from '../../models/blog-post';
 
-export const CAROUSEL_DATA: BlogPost[] = [
+export interface BlogPost {
+  id: string;
+  title: string;
+  category: string;
+  featuredImage: string;
+  url: string;
+  content: string; // TODO: Add date
+}
+
+
+export const POSTS_DATA: BlogPost[] = [
   {
     id: '1',
     title: 'Soccer kicks off spring at HIGHLAND Field tonight',

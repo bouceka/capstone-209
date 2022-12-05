@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { Button } from '../button/button.component';
-import { MOC_EVENTS } from '../calendar/calendar-mock.data';
+import { MOCK_EVENTS } from '../calendar/calendar-mock.data';
 import { EventResultsAsideItem } from './event-results-aside-item.component';
 type Props = {};
 export const EventResultsAside = (props: Props) => {
@@ -16,7 +16,7 @@ export const EventResultsAside = (props: Props) => {
         </div>
       </div>
       <div className='event-results-aside__group'>
-        {MOC_EVENTS.map((event, index) => (
+        {MOCK_EVENTS.map((event, index) => (
           <EventResultsAsideItem key={index} />
         ))}
       </div>

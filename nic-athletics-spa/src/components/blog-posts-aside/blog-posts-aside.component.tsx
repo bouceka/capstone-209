@@ -1,13 +1,13 @@
 import { format } from 'date-fns';
 import * as React from 'react';
-import { CAROUSEL_DATA } from '../carousel/mock-carousel.data';
+import { POSTS_DATA } from '../carousel/mock-carousel.data';
 import './blog-post-aside.styles.scss';
 export interface Props {}
 
 export function BlogPostsAside(props: Props) {
   return (
     <aside className='blog-posts-aside'>
-      {CAROUSEL_DATA.map(
+      {POSTS_DATA.map(
         (post, index) =>
           index > 2 && (
             <div key={index} className='blog-posts-aside__item'>
