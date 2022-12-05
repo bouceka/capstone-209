@@ -1,14 +1,22 @@
 import { format } from 'date-fns';
 import * as React from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from '../button/button.component';
-import { MOC_EVENTS } from '../calendar/calendar-mock.data';
+import { Event, MOCK_EVENTS } from '../calendar/calendar-mock.data';
 import './table-results-large.styles.scss';
-
-const TABLE_MOCk_DATA = {};
 
 interface Props {}
 
 export const TableResultsLarge: React.FunctionComponent<Props> = (props) => {
+  const [events, setEvents] = useState<Event[]>([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/events')
+      .then((response) => response.json())
+      .then((events: Event[]) => setEvents(events))
+      .catch(() => setEvents(MOCK_EVENTS));
+  }, []);
+
   return (
     <section className='table-results-large'>
       <div className='table-results__header'>
@@ -20,7 +28,7 @@ export const TableResultsLarge: React.FunctionComponent<Props> = (props) => {
         <Button className='secondary--small'>Full Schedule</Button>
       </div>
       <div className='table-results__group'>
-        {MOC_EVENTS.map((event, index) =>
+        {events.map((event, index) =>
           index < 6 ? (
             <div className='table-results-item' key={index}>
               <div className='table-results__event'>

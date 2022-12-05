@@ -4,23 +4,30 @@ import { useEffect, useRef, useState } from 'react';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
 import { Button } from '../button/button.component';
 import { CarouselButtons } from './carousel-buttons/carousel-buttons.component';
-import { CarouselItem } from './carousel-item/carousel-item.component';
 import { CarouselProgressBar } from './carousel-progress-bar/carousel-progress-bar.component';
 import './carousel.styles.scss';
-import { CAROUSEL_DATA } from './mock-carousel.data';
+import { BlogPost, POSTS_DATA } from './mock-carousel.data';
 
 type Props = {};
 export const Carousel = (props: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
   const { width } = useWindowDimensions();
   const slideInterval = useRef(0);
 
-  const size = CAROUSEL_DATA.length - 1;
+  useEffect(() => {
+    fetch('http://localhost:3000/posts')
+      .then((response) => response.json())
+      .then((posts) => setPosts(posts))
+      .catch(() => setPosts(POSTS_DATA));
+  }, []);
+
+  const size = posts.length - 1;
   const prevItem = () => {
     const index = currentItem > 0 ? currentItem - 1 : size;
     setCurrentItem(index);
   };
-  
+
   const nextItem = () => {
     const index = currentItem >= size ? 0 : currentItem + 1;
     setCurrentItem(index);
@@ -28,7 +35,7 @@ export const Carousel = (props: Props) => {
 
   const startCarousel = () => {
     slideInterval.current = setInterval(() => {
-      setCurrentItem((currSlide) => (currSlide < CAROUSEL_DATA.length - 1 ? currSlide + 1 : 0));
+      setCurrentItem((currSlide) => (currSlide < posts.length - 1 ? currSlide + 1 : 0));
     }, 5000);
   };
 
@@ -44,7 +51,7 @@ export const Carousel = (props: Props) => {
   return (
     <div className='carousel-wrapper '>
       <section className='carousel' style={{ width: width < 1024 ? width : '115.2rem' }}>
-        {CAROUSEL_DATA.map((slide, index) => {
+        {POSTS_DATA.map((slide, index) => {
           return (
             <div className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`} key={index}>
               <div className='carousel-item'>
