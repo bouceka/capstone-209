@@ -6,16 +6,19 @@ import { Cards } from '../../components/cards/cards.component';
 import Footer from '../../components/footer/footer.component';
 import { Header } from '../../components/header/header.component';
 import { EventResultsAside } from '../../components/table-results-aside/event-results-aside.component';
+import TableResultsLarge from '../../components/table-results-large/table-results-large.component';
 import { TestimonyImage } from '../../components/testimony-image/testimony-image.component';
 import { Title } from '../../components/title/title.component';
+import { useWindowDimensions } from '../../hooks/window-dimensions';
 type Props = {};
 export const InsideAthletics = (props: Props) => {
+  const { windowWidth } = useWindowDimensions();
   return (
     <div className='page'>
       <Title>Inside Athletics</Title>
-      <div className='row' style={{ display: 'flex', gap: '2.4rem' }}>
+      <div className='row col-2x1'>
         <Cards cardData={INSIDE_ATHLETICS_DATA} />
-        <EventResultsAside />
+        {windowWidth <= 1024 ? <TableResultsLarge /> : <EventResultsAside />}
       </div>
       <TestimonyImage />
       <BlogContainer />
