@@ -67,7 +67,7 @@
       gap: 4.8rem;
       height: 100%;
 
-      @include respond(tab-land) {
+      @include respond(desktop) {
         gap: 3.2rem;
       }
       @include respond(tab-port) {
