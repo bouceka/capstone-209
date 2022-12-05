@@ -8,6 +8,9 @@ export const TrustedCompanies = (props: Props) => {
       <div className='row'>
         <div className='trusted-companies__group'>
           <div className='trusted-companies__item'>
+            <img src='/src/assets/nic-logo.png' alt='NIC logo' />
+          </div>
+          <div className='trusted-companies__item'>
             <img src='/src/assets/logos/Name=Delta.png' alt='Delta airlines logo' />
           </div>
           <div className='trusted-companies__item'>
@@ -18,9 +21,6 @@ export const TrustedCompanies = (props: Props) => {
           </div>
           <div className='trusted-companies__item'>
             <img src='/src/assets/logos/Name=Crown Isle.png' alt='Crown Isle logo' />
-          </div>
-          <div className='trusted-companies__item'>
-            <img src='/src/assets/nic-logo.png' alt='NIC logo' />
           </div>
         </div>
       </div>
