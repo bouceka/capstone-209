@@ -7,16 +7,21 @@
   padding: 2.4rem;
   background-color: $background-color-primary;
   color: $text-black-primary;
-  width: 31.2rem;
   height: 40.6rem;
   text-align: center;
   gap: .8rem;
   border-radius: .5rem;
   @extend .elevation-00;
 
+  @include respond(phone) {
+    height: auto;
+  }
+
   & img {
-    width: 26.4rem;
     height: 27rem;
+    @include respond(phone) {
+      height: 16rem;
+    }
   }
   & p {
     color: $color-primary-600;
