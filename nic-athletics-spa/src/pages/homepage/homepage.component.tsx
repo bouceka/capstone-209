@@ -14,9 +14,9 @@ interface IHomepageProps {}
 const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
   return (
     <div className='page'>
-      <div className='row'>
+      <div className='row tiles'>
         <Carousel />
-        <div style={{ display: 'flex', marginTop: '24px', gap: '2.4rem' }}>
+        <div className='col-2x1'>
           <TableResultsLarge />
           <BlogPostsAside />
         </div>

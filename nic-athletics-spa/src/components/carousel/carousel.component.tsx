@@ -20,6 +20,7 @@ export const Carousel = (props: Props) => {
     const index = currentItem > 0 ? currentItem - 1 : size;
     setCurrentItem(index);
   };
+  
   const nextItem = () => {
     const index = currentItem >= size ? 0 : currentItem + 1;
     setCurrentItem(index);

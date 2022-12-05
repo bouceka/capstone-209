@@ -1,6 +1,10 @@
 @use '../../styles/abstracts' as *;
 
 .video-carousel {
+  @include respond(tab-land) {
+    padding: 0 5%;
+  }
+
   &__buttons {
     display: flex;
     justify-content: center;
@@ -32,15 +36,95 @@
   }
 
   &__content {
-    display: flex;
-    gap: 1.6rem;
     margin-bottom: 1.6rem;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    white-space: nowrap;
+    height: 100%;
+    transition: ease-in 0.5s;
+    display: flex;
   }
 
   .video-thumbnail {
     height: 40rem;
     width: 56.8rem;
+    display: inline-block;
     background-color: $color-neutral-900;
+    flex-grow: 0;
+
+    flex-shrink: 0;
+    position: relative;
+
+    @include respond(tab-land) {
+      flex-basis: 100%;
+      height: 56.8rem;
+    }
+    @include respond(phone) {
+      height: 40rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($text-black-primary, 0.6);
+    }
+
+    &:nth-child(odd) {
+      margin-right: 1.6rem;
+    }
+
+    @include respond(tab-land) {
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+    }
+
+    & > img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    position: absolute;
+    z-index: 25;
+    bottom: 3.2rem;
+    left: 0;
+    padding: 0 3.2rem;
+    color: $text-white-primary;
+    white-space: pre-wrap;
+  }
+
+  &__play {
+    position: absolute;
+    z-index: 25;
+    top: 50%;
+    left: 50%;
+    color: $text-white-primary;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: rgba($text-black-primary, 0.6);
+    padding: 1.6rem;
+    border-radius: 50%;
+  }
+  &__bear {
+    position: absolute;
+    z-index: 25;
+    height: 6.4rem;
+    top: 0;
+    right: 0;
+
+    & > img {
+      height: 6.4rem;
+      padding: 0.8rem;
+      width: auto;
+    }
   }
 
   &__header {
