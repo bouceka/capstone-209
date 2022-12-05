@@ -1,19 +1,23 @@
 @use '../../abstracts/' as *;
 
 .cards {
+  // PARENT //
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 76rem;
+  gap: 2.4rem;
+  padding: 2.4rem;
+  background-color: $background-color-primary;
+  border-radius: 0.5rem;
+  @extend .elevation-00;
 
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    padding: 2.4rem 0;
+    justify-items: center;
+  }
 
-     // PARENT //
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 76rem;
-    gap: 2.4rem;
-    padding: 2.4rem;
-    background-color: $background-color-primary;
-    border-radius: .5rem;
-    @extend .elevation-00;
-
-    // ITEM //
+  // ITEM //
   &__title {
     background-color: $color-primary-900;
     color: $text-white-primary;
@@ -21,11 +25,12 @@
     text-transform: uppercase;
     transition: color 0.3s ease;
     z-index: 2;
-    padding: .6rem 0;
+    padding: 0.6rem 0;
     text-decoration: none;
   }
+
   &__item {
-    width: 34.4rem;
+    max-width: 34.4rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -37,8 +42,6 @@
       height: 26rem;
       object-fit: cover;
       transition: transform 0.3s ease;
-
-    
     }
     &:hover > * {
       color: $color-secondary-600;
@@ -48,13 +51,13 @@
       transform: scale(1.1);
     }
     &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.2);
-      }
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
   }
 }
