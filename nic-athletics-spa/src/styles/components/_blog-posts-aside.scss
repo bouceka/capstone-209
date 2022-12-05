@@ -5,12 +5,14 @@
   border-radius: 0.5rem;
   padding: 2.4rem;
   background-color: $background-color-primary;
-  width: 36.8rem;
+  // width: 36.8rem;
   display: flex;
   gap: 0.8rem;
   flex-direction: column;
   overflow: hidden; // TODO: Replace overflow
   @extend .elevation-00;
+
+
 
   &__item {
     display: flex;
@@ -18,9 +20,16 @@
   }
 
   & img {
-    width: 32rem;
+    // width: 32rem;
     height: 16rem;
     object-fit: cover;
+    @include respond(tab-land) {
+      height: 32rem;
+    }
+    @include respond(tab-land) {
+      height: 24rem;
+    }
+
   }
 
   &__text {
