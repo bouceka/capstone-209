@@ -28,8 +28,13 @@
     @include body-text(600, 1.6rem, 2.4rem);
     letter-spacing: 0.9rem;
     padding: 0.8rem 0;
+
     @include respond(tab-port) {
       letter-spacing: 0.4rem;
+    }
+    
+    @include respond(phone) {
+      letter-spacing: normal;
     }
   }
 
