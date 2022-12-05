@@ -1,8 +1,12 @@
 @use '../abstracts' as *;
 
-.title{
-    color: $color-primary-600;
-    border-bottom: 4px solid $color-primary-600;
-    padding-bottom: 0.8rem;
-    width: 100%;
+.title {
+  color: $color-primary-600;
+  border-bottom: 4px solid $color-primary-600;
+  padding-bottom: 0.8rem;
+  width: 100%;
+  
+  @include respond(tab-land) {
+    padding: 0 2%;
+  }
 }
