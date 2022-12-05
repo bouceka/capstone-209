@@ -11,7 +11,7 @@
   border-radius: 0.5rem;
   @extend .elevation-00;
 
-  @include respond(tab-land) {
+  @include respond(phone) {
     grid-template-columns: 1fr;
     padding: 2.4rem 0;
     justify-items: center;
