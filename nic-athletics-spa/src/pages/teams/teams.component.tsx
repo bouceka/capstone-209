@@ -8,14 +8,18 @@ import { Cards } from '../../components/cards/cards.component';
 import { EventResultsAside } from '../../components/table-results-aside/event-results-aside.component';
 import { Title } from '../../components/title/title.component';
 import { SPORT_DATA } from '../../components/cards/card-data';
+import { useWindowDimensions } from '../../hooks/window-dimensions';
+import TableResultsLarge from '../../components/table-results-large/table-results-large.component';
 type Props = {};
-export const Teams = (props: Props) => { // TODO rename to TeamsPage
+export const Teams = (props: Props) => {
+  // TODO rename to TeamsPage
+  const { windowWidth } = useWindowDimensions();
   return (
     <div className='page'>
       <Title>Teams</Title>
-      <div className='row' style={{ display: 'flex', gap: '2.4rem' }}>
+      <div className='row col-2x1'>
         <Cards cardData={SPORT_DATA} />
-        <EventResultsAside />
+        {windowWidth <= 1024 ? <TableResultsLarge /> : <EventResultsAside />}
       </div>
       <AthleteOfMonth />
       <BlogContainer />
