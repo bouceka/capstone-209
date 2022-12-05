@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import './carousel-progress-bar.styles.scss';
 
 interface Props {
   size: number;
