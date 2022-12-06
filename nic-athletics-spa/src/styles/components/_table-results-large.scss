@@ -4,7 +4,7 @@
 .table-results {
     &-large {
       height: 59.2rem;
-      overflow: hidden; // TODO: change dependency of the table
+      overflow: hidden;
       border-radius: 0 0 0.5rem 0.5rem;
       flex: 2;
       @extend .elevation-00;
