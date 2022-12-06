@@ -55,7 +55,7 @@ export const Carousel = (props: Props) => {
           return (
             <div className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`} key={index}>
               <div className='carousel-item'>
-                <img src={slide.url} alt='travel image' className='image' />
+                <img src={slide.featuredImage} alt='travel image' className='image' />
                 <div className='carousel__content'>
                   <div className='carousel__text'>
                     <p className='carousel__category paragraph--large--bold '>{slide.category}</p>

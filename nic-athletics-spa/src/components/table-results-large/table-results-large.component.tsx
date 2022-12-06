@@ -38,7 +38,7 @@ export const TableResultsLarge: React.FunctionComponent<Props> = (props) => {
               <div className='table-results__teams'>
                 <div className='table-results__team home'>{event.homeTeam}</div>
                 <div className='table-results__score-group'>
-                  <img src={event.guestTeamImg} className='table-results__logo' alt='' />
+                  <img src={event.homeTeamImg} className='table-results__logo' alt='' />
                   <div className='table-results__score'>
                     <span className='paragraph--large--bold'>{event.result}</span>
                     <span className='caption--medium'>VS</span>
