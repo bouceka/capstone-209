@@ -1,6 +1,6 @@
 import { format } from 'date-fns';
 import * as React from 'react';
-import { POSTS_DATA } from '../carousel/mock-carousel.data';
+import { POSTS_DATA } from '../../mock/posts-mock';
 import './blog-post-aside.styles.scss';
 export interface Props {}
 

@@ -5,8 +5,8 @@ import { ReactComponent as ChevronLeft } from '../../assets/icons/chevron-left.s
 import { ReactComponent as ChevronRight } from '../../assets/icons/chevron-right.svg';
 import { ReactComponent as PlayArrow } from '../../assets/icons/play-arrow.svg';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
+import { POSTS_DATA } from '../../mock/posts-mock';
 import { Button } from '../button/button.component';
-import { POSTS_DATA } from '../carousel/mock-carousel.data';
 import './video-carousel.styles.scss';
 
 type Props = {};

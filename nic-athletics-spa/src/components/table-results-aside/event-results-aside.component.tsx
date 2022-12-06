@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
+import { MOCK_EVENTS } from '../../mock/events-mock';
 import { Button } from '../button/button.component';
-import { MOCK_EVENTS } from '../calendar/calendar-mock.data';
 import { EventResultsAsideItem } from './event-results-aside-item.component';
 type Props = {};
 export const EventResultsAside = (props: Props) => {

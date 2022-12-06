@@ -10,7 +10,6 @@ interface Props {
   className?: string;
 }
 export const CarouselItem = ({ carousel, className }: Props) => {
-  console.log('asdasd');
   return (
     <div className={`carousel-item slide`}>
       <img src={carousel.url} alt='' />

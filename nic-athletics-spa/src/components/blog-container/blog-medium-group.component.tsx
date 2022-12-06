@@ -2,7 +2,6 @@
 import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { BlogPost } from '../../models/blog-post';
-import { POSTS_DATA } from '../carousel/mock-carousel.data';
 import { BlogCardHorizontalComponent } from './blog-card-horizontal.component';
 import { BlogCardLarge } from './blog-card-large.component';
 type Props = {
@@ -30,7 +29,6 @@ export const BlogMediumGroup = ({ blogPosts }: Props) => {
   }, []);
 
   const restPosts = blogPosts.filter((_, index) => index !== currentItem);
-  console.log(restPosts);
 
   return (
     <div className='blog-medium-group'>

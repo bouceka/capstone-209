@@ -2,11 +2,11 @@
 import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
+import { BlogPost, POSTS_DATA } from '../../mock/posts-mock';
 import { Button } from '../button/button.component';
 import { CarouselButtons } from './carousel-buttons/carousel-buttons.component';
 import { CarouselProgressBar } from './carousel-progress-bar/carousel-progress-bar.component';
 import './carousel.styles.scss';
-import { BlogPost, POSTS_DATA } from './mock-carousel.data';
 
 type Props = {};
 export const Carousel = (props: Props) => {

@@ -49,7 +49,6 @@ export const Calendar = (props: Props) => {
     const firstDayNextMonth = add(firstDayCurrentMonth, { months: 1 });
     setCurrentMonth(format(firstDayNextMonth, 'MMMM yyyy'));
   };
-  //console.log(days);
 
   return (
     <div className='row calendar'>

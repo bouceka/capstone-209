@@ -1,8 +1,8 @@
 import { format } from 'date-fns';
 import * as React from 'react';
 import { useEffect, useState } from 'react';
+import { MOCK_EVENTS, Event } from '../../mock/events-mock';
 import { Button } from '../button/button.component';
-import { Event, MOCK_EVENTS } from '../calendar/calendar-mock.data';
 import './table-results-large.styles.scss';
 
 interface Props {}

@@ -1,9 +1,9 @@
 // @flow
 import { format, isSameDay, isSameMonth, isToday, parseISO } from 'date-fns';
 import * as React from 'react';
+import { MOCK_EVENTS } from '../../../mock/events-mock';
 import { LinkButton } from '../../link-button/link-button.component';
 import { CalendarEvent } from '../calendar-event/calendar-event.component';
-import { MOCK_EVENTS } from '../calendar-mock.data';
 import './calendar-day-item.styles.scss';
 
 type Props = {
