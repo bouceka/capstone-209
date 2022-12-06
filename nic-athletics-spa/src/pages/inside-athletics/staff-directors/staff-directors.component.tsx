@@ -10,7 +10,7 @@ export const StaffDirectors = (props: Props) => {
       <Title>Staff Directors</Title>
       <section className='staff-directors row'>
         {STAFF_DATA.map((profile, index) => (
-          <StaffProfile staffProfile={profile} />
+          <StaffProfile key={index} staffProfile={profile} />
         ))}
       </section>
     </div>
