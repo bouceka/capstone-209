@@ -1,0 +1,76 @@
+INSTRUCTIONS: Fill out the following form and upload the form to your GITHub repository. 
+Choose only one of the corresponding numbers in your answer for sections A-F.  
+Answer the questions in section G in sentence form.
+Please total your self-evaluation score at the bottom of the rubric.
+
+A. Code Quality 
+0 - Nothing - No submission
+1 - Below Expectations - Code renders but the code is unreadable 
+2 - Meets Expectations - Good formatting and uses naming conventions but can be improved
+3 - Exceeds Expectations - Code is exceptionally clean and best practices are used
+Your Answer: 3
+
+
+B. Content 
+0 - Nothing - No submission
+1 - Below Expectations - Content not related to assignment or project
+2 - Meets Expectations - Content is related to assignment or project and gets the point across
+3 - Exceeds Expectations - Content is exceptionally detailed and well put together
+Your Answer: 2
+
+
+C. Layout / Organization 
+0 - Nothing - No Submission
+1 - Below Expectations - Long codes with no divisions or random code layout
+2 - Meets Expectations - Code that is modular and divided into section declarations; subprograms
+3 - Exceeds Expectations - Code is exceptionally well organized. 
+Your Answer: 2
+
+
+D. Comments/Commits 
+0 - Nothing - No Submission
+1 - Below Expectations - Excessive, unnecessary, and irrelevant remarks
+2 - Meets Expectations - Comments identify authorship and code's intention
+3 - Exceeds Expectations - Comments and documentation are clear succinct; wizardry points are explained
+Your Answer: 2
+
+
+E. Rendering 
+0 - Nothing - Page does not load or render
+1 - Below Expectations - Page renders, but has errors and/or has apparent design issues
+2 - Meets Expectations - Page renders and produces no errors
+3 - Exceeds Expectations - Page renders and displays properly for multiple screen sizes and browsers 
+Your Answer: 3
+
+F. Process
+0 - Nothing - Project not attempted
+1 - Below Expectations - code and documents not added to repository at correct times
+2 - Meets Expectations - code published as website, milestones met
+3 - Exceeds Expectations - all milestones accomplished, submissions organized, instructions carefully followed, steps thoroughly documented
+Your Answer: 3
+
+
+G. Self Evaluation Questions (half point each):
+
+1. How much time did you spend on this assignment/project? ~64 hours
+
+2. How difficult did you feel this project was? Easy, moderate, difficult? Difficult
+
+3. What challenges did you come across while working on this project? 
+
+The app is larger than I expected. It took me the most time from all the projects I have done this semester. The most difficult was to break the code into smaller units.  
+
+4. What things would you like to learn more about after having worked on this assignment? How to handle responsive breakpoints with complicated components.
+
+Total Score: 16
+
+
+
+Summary: I have done as much as I can. I only developed pages I designed beforehand. I would do more pages, but I didn't have enough time. On the other hand, I have written a decent amount of code. I tried to implement the new recommended practice by 'forward' and 'use' and split most of the work into partials. I intend to use this project as my capstone. The whole project is preparation. 
+
+I hadn't created any issues and closed it after the last milestone because I hadn't had much. So now, after this milestone, I have added issues I find the most significant to fix to GitHub Issues https://github.com/bouceka/nic-athletics-milestone/issues. Also, I know there are missing pages. I plan to design them over Christmas and finish them. I didn't want to make some pages to have them complete, but I would end up redoing them. I know there are many features missing, and I know about them. However, I hope the scope is sufficient for this project. 
+
+Once you pull the repository, in nic-athletics-spa/backend, run command -> npm install -> npm run start. 
+and in  nic-athletics-spa npm install -> npm run dev
+
+If you forget to run the backend, it still should work. I implemented an exception that fetches backup mock data in case the connection fails. It is only for this assignment's purpose!
