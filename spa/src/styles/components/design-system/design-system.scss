@@ -2,14 +2,20 @@
 @use '../../base' as *;
 
 .container-ds {
-  display: flex;
+  margin: 1.6rem;
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "aside main main main";
 }
 
 .sidebarDS {
-  flex: 1 0 30%;
   width: 100%;
   list-style: none;
   padding: 1.6rem;
+  grid-area: aside;
 
   & > * {
     list-style: none;
@@ -26,5 +32,7 @@
 }
 
 .main-ds {
-    overflow-y: scroll;
+  grid-area: main;
+    // overflow-y: scroll;
+    
 }

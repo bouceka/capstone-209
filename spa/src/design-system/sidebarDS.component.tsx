@@ -5,7 +5,7 @@ import { LinkButton } from '../components/link-button/link-button.component';
 type Props = {};
 export const SidebarDS = (props: Props) => {
   return (
-    <aside className='sidebarDS'>
+    <aside className='sidebarDS card'>
       <ul className='sidebarDS__title'>
         <li>Getting started</li>
         <li>Atoms</li>
