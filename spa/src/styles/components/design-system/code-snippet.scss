@@ -1,3 +1,21 @@
-.code-snippet{
-    display: flex;
+@use '../../abstracts' as *;
+@use '../../base' as *;
+
+.code-snippet {
+  margin: 1.6rem 0;
+  & > * {
+    margin-bottom: 1.6rem;
+  }
+  &__label {
+    background: linear-gradient(#6a5d93 90%, #2a2734);
+    color: #fefefe;
+    padding: 0.8rem;
+    display: inline-block;
+    border-radius: 2px 2px 0 0;
+  }
+
+  &__content {
+    max-height: 32rem;
+    overflow-y: scroll;
+  }
 }
