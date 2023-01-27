@@ -46,18 +46,6 @@ export const ButtonsDS = (props: Props) => {
           <Button className='link'>Button Link</Button>
           <Button className='link disabled'>Link Disabled</Button>
         </div>
-        <div style={{ display: 'grid', gap: '10px' }}>
-          <LinkButton size='medium'>Button Link</LinkButton>
-          <LinkButton size='medium' className='disabled'>
-            Link Disabled
-          </LinkButton>
-        </div>
-        <div style={{ display: 'grid', gap: '10px' }}>
-          <LinkButton size='small'>Button Link</LinkButton>
-          <LinkButton size='small' className='disabled'>
-            Link Disabled
-          </LinkButton>
-        </div>
       </div>
 
       <CodeSnippet TSXCode={ButtonTSXSample} exampleCode={ButtonExampleSample} CSSCode={ButtonCSSSample} />
