@@ -11,16 +11,16 @@ import './carousel.styles.scss';
 type Props = {};
 export const Carousel = (props: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
-  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [posts, setPosts] = useState<BlogPost[]>(POSTS_DATA);
   const { width } = useWindowDimensions();
   const slideInterval = useRef(0);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/posts')
-      .then((response) => response.json())
-      .then((posts) => setPosts(posts))
-      .catch(() => setPosts(POSTS_DATA));
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/posts')
+  //     .then((response) => response.json())
+  //     .then((posts) => setPosts(posts))
+  //     .catch(() => setPosts(POSTS_DATA));
+  // }, []);
 
   const size = posts.length - 1;
   const prevItem = () => {

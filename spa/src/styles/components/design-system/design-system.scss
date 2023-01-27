@@ -1,0 +1,30 @@
+@use '../../abstracts' as *;
+@use '../../base' as *;
+
+.container-ds {
+  display: flex;
+}
+
+.sidebarDS {
+  flex: 1 0 30%;
+  width: 100%;
+  list-style: none;
+  padding: 1.6rem;
+
+  & > * {
+    list-style: none;
+  }
+
+  &__title {
+    @extend .paragraph--large--bold;
+  }
+
+  &__items {
+    display: block;
+    margin-left: 1.6rem;
+  }
+}
+
+.main-ds {
+    overflow-y: scroll;
+}

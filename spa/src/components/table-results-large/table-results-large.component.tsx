@@ -8,14 +8,14 @@ import './table-results-large.styles.scss';
 interface Props {}
 
 export const TableResultsLarge: React.FunctionComponent<Props> = (props) => {
-  const [events, setEvents] = useState<Event[]>([]);
+  const [events, setEvents] = useState<Event[]>(MOCK_EVENTS);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/events')
-      .then((response) => response.json())
-      .then((events: Event[]) => setEvents(events))
-      .catch(() => setEvents(MOCK_EVENTS));
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/events')
+  //     .then((response) => response.json())
+  //     .then((events: Event[]) => setEvents(events))
+  //     .catch(() => setEvents(MOCK_EVENTS));
+  // }, []);
 
   return (
     <section className='table-results-large'>
