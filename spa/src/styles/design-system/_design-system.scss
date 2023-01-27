@@ -2,7 +2,7 @@
 @use '../base' as *;
 
 .container-ds {
-  margin: 1.6rem;
+  margin: 9.6rem 1.6rem 1.6rem 1.6rem;
   display: grid;
   gap: 1.6rem;
   grid-template-columns: repeat(4, 1fr);
@@ -17,8 +17,10 @@
   padding: 1.6rem;
   grid-area: aside;
 
-  & > * {
+  & > ul {
     list-style: none;
+    position: sticky;
+    top: 9.6rem;
   }
 
   &__title {

@@ -5,6 +5,11 @@
   background-color: $color-primary-50;
   @extend.elevation-01;
   height: 8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 
   & > .row {
     height: 100%;

@@ -47,7 +47,7 @@ export const SidebarDS = (props: Props) => {
         <li>
           <ul>
           <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#button-ds'}>
                 Buttons
               </LinkButton>
             </li>
