@@ -5,10 +5,11 @@ import './link-button.styles.scss';
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   size: 'small' | 'medium';
+  to?: string;
 }
-export const LinkButton = ({ children, size, ...props }: Props) => {
+export const LinkButton = ({ children, size, to='#!', ...props }: Props) => {
   return (
-    <a href='#!' {...props} className={`link paragraph--${size} ${props.className}`}>
+    <a href={to} {...props} className={`link paragraph--${size} ${props.className}`}>
       {children}
     </a>
   );

@@ -7,7 +7,7 @@ type Props = {};
 export const Layout = (props: Props) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Outlet />
       <Footer />
     </>

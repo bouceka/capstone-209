@@ -1,0 +1,30 @@
+@use '../../abstracts' as *;
+@use '../../base' as *;
+
+.headerDS {
+    background-color: $color-primary-25;
+
+    nav{
+        // display: flex;
+        // flex-direction: row;
+
+        & > ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.6rem;
+        }
+    }
+
+
+}

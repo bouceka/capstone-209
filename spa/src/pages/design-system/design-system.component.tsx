@@ -20,10 +20,12 @@ import { INSIDE_ATHLETICS_DATA, SPORT_DATA } from '../../components/cards/card-d
 import { TestimonyImage } from '../../components/testimony-image/testimony-image.component';
 import { Input } from '../../components/input/input.component';
 import { StaffDirectors } from '../inside-athletics/staff-directors/staff-directors.component';
+import { HeaderDS } from '../../design-system/headerDS.component';
 
 export const DesignSystem = () => {
   return (
-    <div style={{ marginTop: '10px',marginBottom: '20px' }}>
+    <div style={{ marginTop: '10px', marginBottom: '20px' }}>
+      <HeaderDS />
       <div className='row' style={{ marginTop: '10px' }}>
         <div className='card'>
           <div className='display--large--bold'>Display Text Large Bold</div>
@@ -114,9 +116,9 @@ export const DesignSystem = () => {
       <div style={{ marginTop: '10px' }}>
         <Footer />
       </div>
-      <div style={{ marginTop: '10px' }}>
+      {/* <div style={{ marginTop: '10px' }}>
         <Header />
-      </div>
+      </div> */}
       <div style={{ margin: '10px' }}>
         <Carousel />
       </div>
@@ -147,19 +149,19 @@ export const DesignSystem = () => {
         <BlogContainer />
       </div>
       <div style={{ margin: '10px' }}>
-        <Title >Calendar</Title>
+        <Title>Calendar</Title>
       </div>
       <div style={{ margin: '10px' }}>
-        <Cards cardData={INSIDE_ATHLETICS_DATA}/>
+        <Cards cardData={INSIDE_ATHLETICS_DATA} />
       </div>
       <div style={{ margin: '10px' }}>
-       <TestimonyImage/>
+        <TestimonyImage />
       </div>
       <div style={{ margin: '10px' }}>
-       <Input label='Input label' placeholder='Placeholder'/>
+        <Input label='Input label' placeholder='Placeholder' />
       </div>
       <div style={{ margin: '10px' }}>
-       <StaffDirectors />
+        <StaffDirectors />
       </div>
     </div>
   );
