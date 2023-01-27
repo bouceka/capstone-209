@@ -18,7 +18,7 @@ return () => <App />;
 type Props = {};
 export const ButtonsDS = (props: Props) => {
   return (
-    <section>
+    <section className='button-ds'>
       <h2 className='heading'>Buttons</h2>
 
       <div
