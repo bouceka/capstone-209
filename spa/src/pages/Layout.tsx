@@ -9,7 +9,7 @@ export const Layout = (props: Props) => {
     <>
       {/* <Header /> */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
