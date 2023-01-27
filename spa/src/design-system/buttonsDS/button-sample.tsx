@@ -1,7 +1,5 @@
-export const ButtonExampleSample = `<div style={{ display: 'grid', gap: '10px' }}>
-    <Button className='primary'>Button Primary</Button>
-    <Button className='primary disabled'>Primary Disabled</Button>
-</div>`;
+export const ButtonExampleSample = `<Button className='primary'>Button Primary</Button>
+<Button className='primary disabled'>Primary Disabled</Button>`;
 
 export const ButtonCSSSample = `.btn {
     &,
@@ -31,5 +29,4 @@ export const Button = ({ children, ...props }: Props) => {
       {children}
     </button>
   );
-};
-`;
+};`;
