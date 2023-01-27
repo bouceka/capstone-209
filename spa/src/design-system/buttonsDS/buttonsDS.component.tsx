@@ -4,7 +4,7 @@ import { Button } from '../../components/button/button.component';
 import { LinkButton } from '../../components/link-button/link-button.component';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import { CodeSnippet } from '../code-snippet/code-snippet.component';
-import { ButtonCSSSample, ButtonTSXSample } from './button-sample';
+import { ButtonCSSSample, ButtonExampleSample, ButtonTSXSample } from './button-sample';
 
 const exampleCode = `
 (function someDemo() {
@@ -60,7 +60,7 @@ export const ButtonsDS = (props: Props) => {
         </div>
       </div>
 
-      <CodeSnippet TSXCode={ButtonTSXSample} CSSCode={ButtonCSSSample} />
+      <CodeSnippet TSXCode={ButtonTSXSample} exampleCode={ButtonExampleSample} CSSCode={ButtonCSSSample} />
     </section>
   );
 };

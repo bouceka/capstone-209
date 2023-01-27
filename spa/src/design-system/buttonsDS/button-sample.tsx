@@ -1,4 +1,4 @@
-export const ButtonTSXSample = `<div style={{ display: 'grid', gap: '10px' }}>
+export const ButtonExampleSample = `<div style={{ display: 'grid', gap: '10px' }}>
     <Button className='primary'>Button Primary</Button>
     <Button className='primary disabled'>Primary Disabled</Button>
 </div>`;
@@ -19,6 +19,17 @@ export const ButtonCSSSample = `.btn {
       cursor: pointer;
       border: none;
       white-space: nowrap;
-      // align-self: flex-start; //TODO: Find a better way to align the button
     }
 }`;
+export const ButtonTSXSample = `import * as React from 'react';
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
+}
+export const Button = ({ children, ...props }: Props) => {
+  return (
+    <button {...props} className={\`btn btn--\${props.className}\`}>
+      {children}
+    </button>
+  );
+};
+`;
