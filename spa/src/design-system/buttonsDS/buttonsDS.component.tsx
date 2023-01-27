@@ -18,18 +18,20 @@ return () => <App />;
 type Props = {};
 export const ButtonsDS = (props: Props) => {
   return (
-    <section className='button-ds'>
+    <section id='button-ds' className='button-ds'>
       <h2 className='heading'>Buttons</h2>
-
-      <div className='button-ds__examples'  >
-          <Button className='primary'>Button Primary</Button>
-          <Button className='primary disabled'>Primary Disabled</Button>
-          <Button className='secondary'>Button Secondary</Button>
-          <Button className='secondary disabled'>Secondary Disabled</Button>
-          <Button className='outline'>Button Outline</Button>
-          <Button className='outline disabled'>Outline Disabled</Button>
-          <Button className='link'>Button Link</Button>
-          <Button className='link disabled'>Link Disabled</Button>
+      <p className='paragraph--large'>
+        Use NIC Athletics’s custom buttons styles for any typo of component such as forms, cards, CTA and more.{' '}
+      </p>
+      <div className='button-ds__examples'>
+        <Button className='primary'>Button Primary</Button>
+        <Button className='primary disabled'>Primary Disabled</Button>
+        <Button className='secondary'>Button Secondary</Button>
+        <Button className='secondary disabled'>Secondary Disabled</Button>
+        <Button className='outline'>Button Outline</Button>
+        <Button className='outline disabled'>Outline Disabled</Button>
+        <Button className='link'>Button Link</Button>
+        <Button className='link disabled'>Link Disabled</Button>
       </div>
       <CodeSnippet TSXCode={ButtonTSXSample} exampleCode={ButtonExampleSample} CSSCode={ButtonCSSSample} />
     </section>
