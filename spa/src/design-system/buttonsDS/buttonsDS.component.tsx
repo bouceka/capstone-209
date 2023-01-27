@@ -21,33 +21,16 @@ export const ButtonsDS = (props: Props) => {
     <section className='button-ds'>
       <h2 className='heading'>Buttons</h2>
 
-      <div
-        style={{
-          marginTop: '10px',
-          display: 'grid',
-          gap: '10px',
-          justifyContent: 'flex-start',
-          gridTemplateColumns: '1fr 1fr 1fr 1fr',
-        }}
-      >
-        <div style={{ display: 'grid', gap: '10px' }}>
+      <div className='button-ds__examples'  >
           <Button className='primary'>Button Primary</Button>
           <Button className='primary disabled'>Primary Disabled</Button>
-        </div>
-        <div style={{ display: 'grid', gap: '10px' }}>
           <Button className='secondary'>Button Secondary</Button>
           <Button className='secondary disabled'>Secondary Disabled</Button>
-        </div>
-        <div style={{ display: 'grid', gap: '10px' }}>
           <Button className='outline'>Button Outline</Button>
           <Button className='outline disabled'>Outline Disabled</Button>
-        </div>
-        <div style={{ display: 'grid', gap: '10px' }}>
           <Button className='link'>Button Link</Button>
           <Button className='link disabled'>Link Disabled</Button>
-        </div>
       </div>
-
       <CodeSnippet TSXCode={ButtonTSXSample} exampleCode={ButtonExampleSample} CSSCode={ButtonCSSSample} />
     </section>
   );
