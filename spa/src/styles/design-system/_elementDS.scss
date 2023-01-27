@@ -1,0 +1,12 @@
+.element-ds {
+  &__examples {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    justify-content: flex-start;
+    &.buttons {
+      grid-template-rows: 1fr 1fr;
+      grid-auto-flow: column;
+    }
+  }
+}

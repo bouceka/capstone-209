@@ -5,7 +5,7 @@
   background-color: $color-primary-50;
   @extend.elevation-01;
   height: 8rem;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 10;
