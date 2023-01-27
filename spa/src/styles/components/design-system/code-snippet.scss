@@ -7,7 +7,7 @@
     margin-bottom: 1.6rem;
   }
   &__label {
-    background: linear-gradient(#6a5d93 90%, #2a2734);
+    background: #2c7ad6;
     color: #fefefe;
     padding: 0.8rem;
     display: inline-block;
@@ -16,6 +16,9 @@
 
   &__content {
     max-height: 32rem;
-    overflow-y: scroll;
+    overflow-y: auto;
+    & > pre {
+      padding: 0.8rem;
+    }
   }
 }
