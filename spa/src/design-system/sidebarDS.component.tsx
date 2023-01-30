@@ -12,32 +12,32 @@ export const SidebarDS = (props: Props) => {
         <li>
           <ul>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#colors-section'}>
                 Colors
               </LinkButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#icons-section'}>
                 Icons
               </LinkButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#spacing-section'}>
                 Spacing
               </LinkButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#grids-section'}>
                 Grids
               </LinkButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#drop-shadows-section'}>
                 Drop Shadows
               </LinkButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#typography-section'}>
                 Typography
               </LinkButton>
             </li>
@@ -48,7 +48,12 @@ export const SidebarDS = (props: Props) => {
           <ul>
           <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#button-ds'}>
-                Buttons
+                Button
+              </LinkButton>
+            </li>
+          <li className='sidebarDS__items'>
+              <LinkButton size='medium' to={'#input-ds'}>
+                Input
               </LinkButton>
             </li>
           </ul>
