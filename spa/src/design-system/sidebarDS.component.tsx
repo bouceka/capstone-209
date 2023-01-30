@@ -12,30 +12,25 @@ export const SidebarDS = (props: Props) => {
         <li>
           <ul>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#colors-section'}>
+              <LinkButton size='medium' to={'#colors-ds'}>
                 Colors
               </LinkButton>
             </li>
-            <li className='sidebarDS__items'>
+            {/* <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#icons-section'}>
                 Icons
               </LinkButton>
-            </li>
+            </li> */}
             <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#spacing-section'}>
                 Spacing
               </LinkButton>
             </li>
-            <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#grids-section'}>
-                Grids
-              </LinkButton>
-            </li>
-            <li className='sidebarDS__items'>
+            {/* <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#drop-shadows-section'}>
                 Drop Shadows
               </LinkButton>
-            </li>
+            </li> */}
             <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#typography-ds'}>
                 Typography
