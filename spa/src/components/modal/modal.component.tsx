@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 import { Button } from '../button/button.component';
+
 type Props = {
   open: boolean;
   onClose: () => void;
@@ -11,6 +12,7 @@ type Props = {
   primaryBtnContent: string;
   secondaryBtnContent?: string;
 };
+
 export const Modal = ({
   open,
   onClose,
@@ -35,7 +37,7 @@ export const Modal = ({
           </button>
           <div className='modal__content'>
             <h2 className='heading'>{title}</h2>
-            <p>{desc}</p>
+            <p className='paragraph--medium'>{desc}</p>
           </div>
           <div className='modal__btn-container'>
             <Button className='primary' onClick={primaryAction}>
