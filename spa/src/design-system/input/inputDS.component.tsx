@@ -7,7 +7,7 @@ type Props = {};
 export const InputDS = (props: Props) => {
   return (
     <section id='input-ds' className='element-ds'>
-      <h3 className='heading'>Inputs</h3>
+      <h4 className='heading'>Inputs</h4>
       <p className='paragraph--large'>
         Use NIC Athletics’s custom buttons styles for any typo of component such as forms, cards, CTA and more.{' '}
       </p>

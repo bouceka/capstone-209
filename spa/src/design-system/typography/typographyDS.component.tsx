@@ -7,7 +7,7 @@ type Props = {};
 export const TypographyDS = (props: Props) => {
   return (
     <section id='typography-ds' className='typography-ds'>
-      <h3 className='heading'>Typography</h3>
+      <h4 className='heading'>Typography</h4>
       <p className='paragraph--large'>
         A set of harmonious typography scale with font weight variations. These text style perfectly fit for 4px grid
         and go well with each other.
