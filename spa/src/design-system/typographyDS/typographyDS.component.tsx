@@ -14,7 +14,6 @@ export const TypographyDS = (props: Props) => {
       </p>
 
       <TypographyTable typographyList={TypoTableData}/>
-
       <CodeSnippet CSSCode={TypoCSSSample} exampleCode={TypoExampleSample} />
 
     </section>

@@ -39,15 +39,15 @@ export const TypoExampleSample = `// Display Large
 <h6 className='heading--medium'>Heading 6 Medium</h6>
 <h6 className='heading'>Heading 6</h6>
 <h6 className='heading--bold'>Heading 6 Bold</h6>
-// Body Large
-<p className='paragraph--large'>Body Text Large</p>
-<p className='paragraph--large--bold'>Body Text Large Bold</p>
-// Body Medium
-<p className='paragraph--medium'>Body Text Medium</p>
-<p className='paragraph--medium--bold'>Body Text Medium Bold</p>
-// Body Small
-<p className='paragraph--small'>Body Text Small</p>
-<p className='paragraph--small--bold'>Body Text Small Bold</p>
+// Paragraph Large
+<p className='paragraph--large'>Paragraph Text Large</p>
+<p className='paragraph--large--bold'>Paragraph Text Large Bold</p>
+// Paragraph Medium
+<p className='paragraph--medium'>Paragraph Text Medium</p>
+<p className='paragraph--medium--bold'>Paragraph Text Medium Bold</p>
+// Paragraph Small
+<p className='paragraph--small'>Paragraph Text Small</p>
+<p className='paragraph--small--bold'>Paragraph Text Small Bold</p>
 // Caption Large
 <p className='caption--large'>Caption Text Large</p>
 <p className='caption--large--bold'>Caption Text Large Bold</p>
@@ -445,7 +445,7 @@ export const TypoTableData: TypographySampleProps[] = [
       className: 'paragraph--large',
       weight: '400',
       typeface: 'Switzer',
-      content: `<p class='paragraph--large'>Body 1</p>`,
+      content: `<p class='paragraph--large'>Paragraph 1</p>`,
     },
     {
       height: '28',
@@ -453,7 +453,7 @@ export const TypoTableData: TypographySampleProps[] = [
       className: 'paragraph--large--bold',
       weight: '600',
       typeface: 'Switzer',
-      content: `<p class='paragraph--large--bold'>Body 1</p>`,
+      content: `<p class='paragraph--large--bold'>Paragraph 1</p>`,
     },
 
   {
@@ -462,7 +462,7 @@ export const TypoTableData: TypographySampleProps[] = [
     className: 'paragraph--medium',
     weight: '400',
     typeface: 'Switzer',
-    content: `<p class='paragraph--medium'>Body 2</p>`,
+    content: `<p class='paragraph--medium'>Paragraph 2</p>`,
   },
   {
     height: '24',
@@ -470,7 +470,7 @@ export const TypoTableData: TypographySampleProps[] = [
     className: 'paragraph--medium--bold',
     weight: '600',
     typeface: 'Switzer',
-    content: `<p class='paragraph--medium--bold'>Body 2</p>`,
+    content: `<p class='paragraph--medium--bold'>Paragraph 2</p>`,
   },
 
   {
@@ -479,7 +479,7 @@ export const TypoTableData: TypographySampleProps[] = [
     className: 'paragraph--small',
     weight: '400',
     typeface: 'Switzer',
-    content: `<p class='paragraph--small'>Body 3</p>`,
+    content: `<p class='paragraph--small'>Paragraph 3</p>`,
   },
   {
     height: '20',
@@ -487,7 +487,7 @@ export const TypoTableData: TypographySampleProps[] = [
     className: 'paragraph--small--bold',
     weight: '600',
     typeface: 'Switzer',
-    content: `<p class='paragraph--small--bold'>Body 3</p>`,
+    content: `<p class='paragraph--small--bold'>Paragraph 3</p>`,
   },
 
   {
