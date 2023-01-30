@@ -35,6 +35,9 @@
 
 .main-ds {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
     // overflow-y: scroll;
     
 }
