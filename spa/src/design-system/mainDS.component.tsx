@@ -3,8 +3,8 @@ import * as React from 'react';
 import { Button } from '../components/button/button.component';
 import { LinkButton } from '../components/link-button/link-button.component';
 import { ButtonsDS } from './buttonsDS/buttonsDS.component';
-import { InputDS } from './input/inputDS.component';
-import { TypographyDS } from './typography/typographyDS.component';
+import { InputDS } from './inputDS/inputDS.component';
+import { TypographyDS } from './typographyDS/typographyDS.component';
 type Props = {};
 export const MainDS = (props: Props) => {
   return (

@@ -440,21 +440,21 @@ export const TypoTableData: TypographySampleProps[] = [
   },
 
   {
-    height: '28',
-    size: '18',
-    className: 'paragraph--large--bold',
-    weight: '400',
-    typeface: 'Switzer',
-    content: `<p class='paragraph--large--bold'>Body 1</p>`,
-  },
-  {
-    height: '28',
-    size: '18',
-    className: 'paragraph--large',
-    weight: '600',
-    typeface: 'Switzer',
-    content: `<p class='paragraph--large'>Body 1</p>`,
-  },
+      height: '28',
+      size: '18',
+      className: 'paragraph--large',
+      weight: '400',
+      typeface: 'Switzer',
+      content: `<p class='paragraph--large'>Body 1</p>`,
+    },
+    {
+      height: '28',
+      size: '18',
+      className: 'paragraph--large--bold',
+      weight: '600',
+      typeface: 'Switzer',
+      content: `<p class='paragraph--large--bold'>Body 1</p>`,
+    },
 
   {
     height: '24',
