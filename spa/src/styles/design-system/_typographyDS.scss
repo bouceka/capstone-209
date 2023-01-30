@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.typography-ds {
+  &__box {
+  }
+  &__table {
+    white-space: normal;
+    min-width: 100%;
+    border-collapse: collapse;
+    margin: 1.6rem 0;
+    & td,
+    th {
+      border: 2px solid $color-neutral-200;
+      text-align: center;
+      padding: .8rem;
+    }
+
+    & th {
+      background-color: $color-primary-50;
+    }
+  }
+}
