@@ -37,7 +37,7 @@ export const SidebarDS = (props: Props) => {
               </LinkButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#typography-section'}>
+              <LinkButton size='medium' to={'#typography-ds'}>
                 Typography
               </LinkButton>
             </li>
