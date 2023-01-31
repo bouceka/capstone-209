@@ -8,6 +8,7 @@ import { TypographyDS } from './typographyDS/typographyDS.component';
 import { ColorsDS } from './colorsDS/colorsDS.component';
 import { ModalDS } from './modalDS/modalDS.component';
 import { NavbarDS } from './navbarDS/navbarDS.component';
+import { BreadcrumbsDS } from './breadcrumbsDS/breadcrumbsDS.component';
 type Props = {};
 export const MainDS = (props: Props) => {
   return (
@@ -16,6 +17,7 @@ export const MainDS = (props: Props) => {
       <TypographyDS />
       <ColorsDS />
       <h2 className='heading'>Molecules</h2>
+      <BreadcrumbsDS />
       <ButtonsDS />
       <InputDS/>
       <ModalDS/>
