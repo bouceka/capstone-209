@@ -41,12 +41,12 @@ export const SidebarDS = (props: Props) => {
         <li>Molecules</li>
         <li>
           <ul>
-          <li className='sidebarDS__items'>
+            <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#button-ds'}>
                 Button
               </LinkButton>
             </li>
-          <li className='sidebarDS__items'>
+            <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#input-ds'}>
                 Input
               </LinkButton>
@@ -56,9 +56,24 @@ export const SidebarDS = (props: Props) => {
         <li>Components</li>
         <li>
           <ul>
-          <li className='sidebarDS__items'>
+            <li className='sidebarDS__items'>
+              <LinkButton size='medium' to={'#breadcrumbs-ds'}>
+                Breadcrumbs
+              </LinkButton>
+            </li>
+            <li className='sidebarDS__items'>
               <LinkButton size='medium' to={'#button-section'}>
                 Carousel
+              </LinkButton>
+            </li>
+            <li className='sidebarDS__items'>
+              <LinkButton size='medium' to={'#modal-ds'}>
+                Modal
+              </LinkButton>
+            </li>
+            <li className='sidebarDS__items'>
+              <LinkButton size='medium' to={'#navbar-ds'}>
+                Navbar
               </LinkButton>
             </li>
           </ul>
