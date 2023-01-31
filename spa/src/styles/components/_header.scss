@@ -9,14 +9,6 @@
   z-index: 10;
   width: 100%;
 
-  &__top{
-
-  }
-
-  // height: calc(3rem + 40px);
-  //   & .main-nav {
-  //   }
-
   &__image {
     display: flex;
     height: 7.2rem;
@@ -61,10 +53,6 @@
 
     }
 
-    // @include respond(tab-port) {
-    //     justify-content: space-between;
-    // }
-
     &-list {
       list-style: none;
       display: flex;
@@ -93,7 +81,6 @@
           display: flex;
           align-items: center;
           height: 8rem;
-          // border-bottom: 1.5px solid $color-primary-100;
 
           &:last-child {
             background-color: $color-primary-400;
@@ -105,13 +92,12 @@
       }
       &.is-active {
         top: 0;
-        // z-index: 12;
       }
     }
   }
 }
 
-/* Icon 1 */
+
 
 #nav-icon3 {
   width: 6rem;
@@ -140,7 +126,6 @@
   }
 }
 
-/* Icon 3 */
 
 #nav-icon3 span:nth-child(1) {
   top: 0px;
