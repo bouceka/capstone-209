@@ -5,6 +5,9 @@
 
     &__example{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 6.4rem;
         & > header {
             position: relative;
         }

@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.main-nav__submenu {
+  list-style: none;
+  background-color: $color-primary-700;
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 2.4rem 3.6rem;
+}
+
+.main-nav__teams:hover .main-nav__submenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+.main-nav__inside-athletics:hover .main-nav__submenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}

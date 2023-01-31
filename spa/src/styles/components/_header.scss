@@ -13,7 +13,7 @@
     display: flex;
     height: 7.2rem;
   }
-  
+
   &__top {
     background-color: $background-color-secondary;
     text-align: center;
@@ -24,7 +24,7 @@
     @include respond(tab-port) {
       letter-spacing: 0.4rem;
     }
-    
+
     @include respond(phone) {
       letter-spacing: normal;
     }
@@ -50,7 +50,6 @@
       & > a {
         flex: 1 1;
       }
-
     }
 
     &-list {
@@ -59,6 +58,12 @@
       align-items: center;
       gap: 4.8rem;
       height: 100%;
+
+      & > li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
 
       @include respond(desktop) {
         gap: 3.2rem;
@@ -71,7 +76,6 @@
         width: 100%;
         z-index: -1;
         display: block;
-
 
         & > li {
           background-color: $color-primary-800;
@@ -96,8 +100,6 @@
     }
   }
 }
-
-
 
 #nav-icon3 {
   width: 6rem;
@@ -125,7 +127,6 @@
     display: block;
   }
 }
-
 
 #nav-icon3 span:nth-child(1) {
   top: 0px;

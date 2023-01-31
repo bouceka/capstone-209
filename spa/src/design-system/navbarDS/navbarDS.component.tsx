@@ -15,8 +15,8 @@ export const NavbarDS = (props: Props) => {
         architecto dicta voluptate repellat suscipit rem illo inventore autem totam, alias similique ut, nemo vero!
       </p>
       <div className='navbar-ds__example'>
-        <NavbarDSExample />
         <NavbarDSMobileExample />
+        <NavbarDSExample />
       </div>
        <CodeSnippet CSSCode={NavbarCSSSample} TSXCode={NavbarTSXSample} /> 
     </section>
