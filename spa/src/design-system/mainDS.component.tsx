@@ -7,6 +7,7 @@ import { InputDS } from './inputDS/inputDS.component';
 import { TypographyDS } from './typographyDS/typographyDS.component';
 import { ColorsDS } from './colorsDS/colorsDS.component';
 import { ModalDS } from './modalDS/modalDS.component';
+import { NavbarDS } from './navbarDS/navbarDS.component';
 type Props = {};
 export const MainDS = (props: Props) => {
   return (
@@ -18,6 +19,7 @@ export const MainDS = (props: Props) => {
       <ButtonsDS />
       <InputDS/>
       <ModalDS/>
+      <NavbarDS/>
     </main>
   );
 };
