@@ -62,7 +62,7 @@ export const SidebarDS = (props: Props) => {
               </LinkButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-section'}>
+              <LinkButton size='medium' to={'#carousel-ds'}>
                 Carousel
               </LinkButton>
             </li>
