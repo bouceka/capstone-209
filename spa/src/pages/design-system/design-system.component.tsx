@@ -28,9 +28,11 @@ export const DesignSystem = () => {
   return (
     <>
       <HeaderDS />
-      <div className='container-ds'>
-        <SidebarDS />
-        <MainDS />
+      <div className='row'>
+        <div className='container-ds'>
+          <SidebarDS />
+          <MainDS />
+        </div>
       </div>
     </>
   );
