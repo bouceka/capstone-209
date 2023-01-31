@@ -4,10 +4,14 @@ import { Button } from '../../../components/button/button.component';
 import { Input } from '../../../components/input/input.component';
 import { Textarea } from '../../../components/textarea/textarea.component';
 import { Title } from '../../../components/title/title.component';
+import { Header } from '../../../components/header/header.component';
+import { Breadcrumbs } from '../../../components/breadcrumbs/breadcrumbs.component';
 type Props = {};
 export const ContactUs = (props: Props) => {
   return (
     <div className='page'>
+      <Header />
+      <Breadcrumbs />
       <Title>Contact Us</Title>
       <div className='row'>
         <section className='contact-page'>
