@@ -8,12 +8,23 @@ import { CarouselButtons } from './carousel-buttons/carousel-buttons.component';
 import { CarouselProgressBar } from './carousel-progress-bar/carousel-progress-bar.component';
 import './carousel.styles.scss';
 
-type Props = {};
-export const Carousel = (props: Props) => {
+type Props = {
+  autoplay?: boolean;
+  width?: string;
+};
+export const Carousel = ({ autoplay = true, ...props }: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
   const [posts, setPosts] = useState<BlogPost[]>(POSTS_DATA);
-  const { width } = useWindowDimensions();
   const slideInterval = useRef(0);
+
+  let carouselWidth;
+
+  if (!!props.width) {
+    carouselWidth = props.width;
+  } else {
+    const { width } = useWindowDimensions();
+    carouselWidth = width < 1024 ? width.toString() : '115.2rem';
+  }
 
   // useEffect(() => {
   //   fetch('http://localhost:3000/posts')
@@ -44,13 +55,13 @@ export const Carousel = (props: Props) => {
   };
 
   useEffect(() => {
-    startCarousel();
+    if (autoplay) startCarousel();
     return () => stopCarousel();
   }, []);
 
   return (
     <div className='carousel-wrapper '>
-      <section className='carousel' style={{ width: width < 1024 ? width : '115.2rem' }}>
+      <section className='carousel' style={{ width: carouselWidth }}>
         {POSTS_DATA.map((slide, index) => {
           return (
             <div className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`} key={index}>
