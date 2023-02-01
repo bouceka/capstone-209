@@ -23,7 +23,7 @@ export const HeaderDS = (props: Props) => {
               </Link>
             </li>
             <li>
-              1.0 <LinkButton size='medium' to={'https://github.com/bouceka/capstone-209'}>GitHub Repo</LinkButton> <img className='' src={GitHub} />
+              1.0 <LinkButton size='medium' to={'https://github.com/bouceka/capstone-209'}>GitHub Repo <img className='' src={GitHub} /></LinkButton>
             </li>
           </ul>
         </nav>
