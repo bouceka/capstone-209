@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.highlight-code {
+  font-family: monospace;
+  background-color: #eee;
+  font-size: 87.5%;
+  color: $color-primary-400;
+  padding: 0.2em 0.4em;
+  white-space: break-spaces;
+  border-radius: 0.2rem;
+}
