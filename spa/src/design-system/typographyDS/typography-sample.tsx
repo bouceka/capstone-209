@@ -216,7 +216,7 @@ h6.heading--bold {
     font-size: 1.4rem;
     line-height: 2rem;
 }
-// Cation 1
+// Caption 1
 .caption--large {
     font-weight: 400;
     font-size: 1.2rem;
@@ -227,7 +227,7 @@ h6.heading--bold {
     font-size: 1.2rem;
     line-height: 1.6rem;
 }
-// Cation 2
+// Caption 2
 .caption--medium{
     font-weight: 400;
     font-size: 1rem;
