@@ -32,7 +32,7 @@ body {
   line-height: 1.7;
   color: $text-black-primary;
   background-color: $background-color-secondary;
-  word-spacing: 0.1rem;
+  word-spacing: 0.12rem;
   //https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html#:~:text=Line%20height%20(line%20spacing)%20to,0.16%20times%20the%20font%20size.
 
   @include respond(tab-port) {
