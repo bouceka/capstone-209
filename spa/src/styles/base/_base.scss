@@ -12,11 +12,11 @@ html {
   font-size: 62.5%;
 
   @include respond(desktop) {
-      font-size: 56.25%;  //1 rem = 9px, 9/16 = 50%
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
   }
 
   @include respond(tab-port) {
-      font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
 
   // @include respond(big-desktop) {
@@ -32,7 +32,8 @@ body {
   line-height: 1.7;
   color: $text-black-primary;
   background-color: $background-color-secondary;
-  word-spacing: .1rem;
+  word-spacing: 0.1rem;
+  //https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html#:~:text=Line%20height%20(line%20spacing)%20to,0.16%20times%20the%20font%20size.
 
   @include respond(tab-port) {
     padding: 0;
