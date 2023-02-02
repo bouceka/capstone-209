@@ -47,6 +47,10 @@ export const MainDS = (props: Props) => {
       <TypographyDS />
       <ColorsDS />
       <h2 className='heading'>Molecules</h2>
+      <p className='paragraph--medium'>
+        Molecules are the more complex blocks are shaped by simple atoms such as font, color, and spacing. Those
+        elements are, for example, buttons and field inputs.
+      </p>
       <ButtonsDS />
       <InputDS />
       <h2 className='heading'>Components</h2>

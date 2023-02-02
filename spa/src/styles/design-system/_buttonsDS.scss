@@ -1,11 +1,15 @@
-.element-ds {
+.buttons-ds {
+  img {
+    width: 64%;
+    margin: 1.6rem 0 ;
+  }
   &__examples {
     margin-top: 10px;
     display: grid;
     gap: 10px;
     justify-content: flex-start;
     &.buttons {
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 4.4rem 4.4rem;
       grid-auto-flow: column;
     }
   }

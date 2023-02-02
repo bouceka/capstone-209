@@ -47,22 +47,6 @@ export const ButtonCSSSample = `.btn {
     &:active {
       background-color: $color-secondary-600;
     }
-
-    &--small {
-      @extend .caption--large--bold;
-      padding: 0.8rem 1.6rem !important;
-
-      color: $color-primary-900;
-      background-color: $color-secondary-400;
-      border: 1px solid $color-secondary-500;
-
-      &:hover {
-        background-color: $color-secondary-500;
-      }
-      &:active {
-        background-color: $color-secondary-600;
-      }
-    }
   }
   &--outline {
     @extend .btn;
