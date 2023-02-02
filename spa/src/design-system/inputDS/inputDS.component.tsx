@@ -3,17 +3,34 @@ import * as React from 'react';
 import { Input } from '../../components/input/input.component';
 import { CodeSnippet } from '../code-snippet/code-snippet.component';
 import { InputCSSSample, InputExampleSample, InputTSXSample } from './input-sample';
+import { Highlight } from '../highlight/highlight.component';
+import inputGrid from '../../assets/illustrative-img/input-grid.png';
+import { LinkButton } from '../../components/link-button/link-button.component';
 type Props = {};
 export const InputDS = (props: Props) => {
   return (
-    <section id='input-ds' className='element-ds'>
+    <section id='input-ds' className='input-ds'>
       <h4 className='heading'>Inputs</h4>
-      <p className='paragraph--large'>
-        Use NIC Athletics’s custom buttons styles for any typo of component such as forms, cards, CTA and more.{' '}
+      <p className='paragraph--medium'>
+        Inputs can be used for any types of form. Every input has label, help text, and the field. If the field type is
+        not specified, it default sets type <Highlight>text</Highlight>. Inserting help text and label text is optional,
+        however, it is highly recommended to use <Highlight>label</Highlight>. The input field is high{' '}
+        <Highlight>40rem</Highlight>{', '}
+        <LinkButton to='https://uxplanet.org/designing-perfect-text-field-clarity-accessibility-and-user-effort-d03c1e26004b'>
+          based on recommended height between 32px and 40px.
+        </LinkButton>
       </p>
-      <div className='element-ds__examples'>
+      <div className='input-ds__examples'>
+        <img src={inputGrid} alt='input grid' />
         <Input label='Input label' helpText='Add help text' placeholder='Placeholder' />
       </div>
+
+      <h6 className='heading'>Usage</h6>
+      <p className='paragraph--medium'>
+        A developer can use an input as <span className='paragraph--medium--bold'>JSX tag</span> in syntax:{' '}
+        <Highlight>{`<Input label='Input label' type='text' placeholder='Placeholder' />`}</Highlight>. You can treat the input tag as
+        a regular button when you can pass any attributes that belong to HTML input.
+      </p>
       <CodeSnippet TSXCode={InputTSXSample} exampleCode={InputExampleSample} CSSCode={InputCSSSample} />
     </section>
   );

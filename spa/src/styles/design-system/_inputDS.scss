@@ -1,0 +1,17 @@
+.input-ds {
+  img {
+    width: 100%;
+    margin: 1.6rem 0;
+  }
+  &__examples {
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    justify-items: start;
+
+    &.buttons {
+      grid-template-rows: 4.4rem 4.4rem;
+      grid-auto-flow: column;
+    }
+  }
+}
