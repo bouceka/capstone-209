@@ -10,6 +10,7 @@ import { ModalDS } from './modalDS/modalDS.component';
 import { NavbarDS } from './navbarDS/navbarDS.component';
 import { BreadcrumbsDS } from './breadcrumbsDS/breadcrumbsDS.component';
 import { CarouselDS } from './carouselDS/carouselDS.component';
+import { SpacingDS } from './sapcingDS/spacingDS.component';
 type Props = {};
 export const MainDS = (props: Props) => {
   return (
@@ -22,8 +23,8 @@ export const MainDS = (props: Props) => {
       </h5>
       <h2 className='heading'>Introduction</h2>
       <p className='paragraph--medium'>
-        This design system is divided into
-        <LinkButton to='https://atomicdesign.bradfrost.com/chapter-2/'> Atomic Design.</LinkButton> This methodology
+        This design system is divided into{' '}
+        <LinkButton to='https://atomicdesign.bradfrost.com/chapter-2/'>Atomic Design</LinkButton>. This methodology
         helps designers to look at the web app elements from bigger picture. There are three main blocks
         <span className='paragraph--medium--bold'> Atoms</span>,
         <span className='paragraph--medium--bold'> Molecules</span>, and
@@ -38,6 +39,11 @@ export const MainDS = (props: Props) => {
         within the project app.
       </p>
       <h2 className='heading'>Atoms</h2>
+      <p className='paragraph--medium'>
+        Atoms are the basic building blocks that help build our user interface from the simplest elements. In this
+        design guide is descried spacing, typography, color rules.
+      </p>
+      <SpacingDS />
       <TypographyDS />
       <ColorsDS />
       <h2 className='heading'>Molecules</h2>
