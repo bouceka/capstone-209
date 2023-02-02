@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { LinkButton } from '../../components/link-button/link-button.component';
 import SpacingImg from '../../assets/illustrative-img/8px-rule.png';
+import { Highlight } from '../highlight/highlight.component';
 
 type Props = {};
 export const SpacingDS = (props: Props) => {
@@ -9,10 +10,10 @@ export const SpacingDS = (props: Props) => {
     <section id='spacing-ds' className='spacing-ds'>
       <h4 className='heading'>Spacing</h4>
       <p className='paragraph--medium'>
-        Before diving into other components I have clarify the base unit for spacing. The base unit is important to
-        know what every measurement will be a multiple of. This easies work between developers and designers. The
-        recommended unit for this project will be <span className='paragraph--medium--bold'>8px</span>. The reason is
-        that because the most screen resolutions are dividable by 8 and itself it is dividable by 2 and 4.{' '}
+        Before diving into other components I have clarify the base unit for spacing. The base unit is important to know
+        what every measurement will be a multiple of. This easies work between developers and designers. The recommended
+        unit for this project will be <span className='paragraph--medium--bold'>8px</span>. The reason is that because
+        the most screen resolutions are dividable by 8 and itself it is dividable by 2 and 4.{' '}
         <LinkButton to='https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179'>
           More you can read here.
         </LinkButton>
@@ -28,14 +29,15 @@ export const SpacingDS = (props: Props) => {
         <LinkButton to='https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/'>
           "The 100% correct way to do CSS breakpoints"
         </LinkButton>
-        . The break points are:
+        . In the this project I use the relative unit <Highlight>font-size: 62.5%</Highlight> that is <Highlight>1rem = 16px</Highlight>{' '}
+        with various ration in each breakpoint. The break points are:
       </p>
       <ul>
         <li>Phone (0px - 599px)</li>
-        <li>Tablet Portrait (600px - 899px)</li>
-        <li>Tablet Landscape (900px - 1199px)</li>
-        <li>Desktop (1200px - 1799px)</li>
-        <li>Large Desktop (1800px and up)</li>
+        <li>Tablet Portrait (600px - 899px) <Highlight>font-size: 50%; 1rem = 8px</Highlight></li>
+        <li>Tablet Landscape (900px - 1199px) <Highlight>font-size: 56.25%; 1rem = 9px</Highlight></li>
+        <li>Desktop (1200px - 1799px) <Highlight>font-size: 62.5%; 1rem = 16px</Highlight></li>
+        <li>Large Desktop (1800px and up) <Highlight>font-size: 75%; 1rem = 12px</Highlight></li>
       </ul>
     </section>
   );
