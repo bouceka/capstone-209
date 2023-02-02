@@ -9,8 +9,9 @@ export const BreadcrumbsDS = (props: Props) => {
     <section className='breadcrumbs-ds' id='breadcrumbs-ds'>
       <h4 className='heading'>Breadcrumbs</h4>
       <p className='paragraph--large'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis optio sint accusamus assumenda dolor id
-        iusto eveniet fugit, ipsa vitae cum debitis, sed molestiae blanditiis harum distinctio quibusdam, aut obcaecati.
+        Breadcrumbs is a very simple component what is created from links. It can be used anywhere on the page and on
+        any page. It doesn't need any property because it gets all the information from the current URL. It always
+        displays home and then the address.
       </p>
 
       <Breadcrumbs />
