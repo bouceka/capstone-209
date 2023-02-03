@@ -184,7 +184,7 @@ export const Header = () => {
           </div>
         </div>
         <div className='main-nav row'>
-          {width <= 959 ? (
+          {width <= 899 ? (
             <div className='collapsed-nav'>
               <Link to={'/'}>
                 <img className='header__image' src={Logo} alt='NIC Athletics logo' />
@@ -214,7 +214,7 @@ export const Header = () => {
                 Fan Zone
               </Link>
             </li>
-            {width >= 960 ? (
+            {width >= 900 ? (
               <li>
                 <Link to={'/'}>
                   <img className='header__image' src={Logo} alt='NIC Athletics logo' />
