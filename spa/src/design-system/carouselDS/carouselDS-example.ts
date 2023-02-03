@@ -97,15 +97,15 @@ import { useWindowDimensions } from '../../hooks/window-dimensions';
 import { BlogPost, POSTS_DATA } from '../../mock/posts-mock';
 import { Button } from '../button/button.component';
 import { CarouselButtons } from './carousel-buttons/carousel-buttons.component';
-import { CarouselProgressBar } from './carousel-progress-bar/carousel-progress-bar.component';
+import { CarouselProgressBar } from './carousel-progress-bar.component';
 import './carousel.styles.scss';
 
 type Props = {
   autoplay?: boolean;
-  width?: string;
+  posts: BlogPost[]
 };
 
-export const Carousel = ({ autoplay = true, ...props }: Props) => {
+export const Carousel = ({ autoplay = true,posts, ...props }: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
   const [posts, setPosts] = useState<BlogPost[]>(POSTS_DATA);
   const slideInterval = useRef(0);
@@ -132,7 +132,8 @@ export const Carousel = ({ autoplay = true, ...props }: Props) => {
 
   const startCarousel = () => {
     slideInterval.current = setInterval(() => {
-      setCurrentItem((currSlide) => (currSlide < posts.length - 1 ? currSlide + 1 : 0));
+      setCurrentItem((currSlide) => 
+      (currSlide < posts.length - 1 ? currSlide + 1 : 0));
     }, 5000);
   };
 

@@ -11,10 +11,10 @@ import './carousel.styles.scss';
 type Props = {
   autoplay?: boolean;
   width?: string;
+  posts: BlogPost[]
 };
-export const Carousel = ({ autoplay = true, ...props }: Props) => {
+export const Carousel = ({ autoplay = true,posts, ...props }: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
-  const [posts, setPosts] = useState<BlogPost[]>(POSTS_DATA);
   const slideInterval = useRef(0);
 
   let carouselWidth;
