@@ -31,11 +31,11 @@ const Footer = () => {
                     Calendar
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link className='footer-link' to={'/inside-athletics/contact-us'}>
                     Contact
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className='column'>

@@ -17,7 +17,7 @@ const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
     <div className='page'>
       <Header/>
       <div className='row tiles'>
-        <Carousel posts={POSTS_DATA} />
+        <Carousel posts={POSTS_DATA} autoplay={false} />
         <div className='col-2x1'>
           <TableResultsLarge />
           <BlogPostsAside />
