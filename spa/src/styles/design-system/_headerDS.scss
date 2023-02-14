@@ -42,7 +42,9 @@
   }
 }
 
-.header-example {
+// Header mobile example in DS
+
+.header-example-mobile {
   background-color: $color-primary-900;
   position: fixed;
   top: 0;
@@ -185,4 +187,77 @@
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+// Header example in DS
+
+.header-example {
+  background-color: $color-primary-900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+
+  &__image {
+    display: flex;
+    height: 7.2rem;
+  }
+
+  &__top {
+    background-color: $background-color-secondary;
+    text-align: center;
+    @include body-text(600, 1.6rem, 2.4rem);
+    letter-spacing: 0.9rem;
+    padding: 0.8rem 0;
+
+    @include respond(tab-port) {
+      letter-spacing: 0.4rem;
+    }
+
+    @include respond(phone) {
+      letter-spacing: normal;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9.6rem;
+    padding: 0 5%;
+
+    @include respond(tab-port) {
+      background-color: $color-primary-900;
+    }
+
+    .collapsed-nav {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex: 1;
+
+      & > a {
+        flex: 1 1;
+      }
+    }
+
+    &-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 4.8rem;
+      height: 100%;
+
+      & > li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      @include respond(desktop) {
+        gap: 3.2rem;
+      }
+    }
+  }
 }

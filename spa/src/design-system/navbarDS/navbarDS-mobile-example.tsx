@@ -1,10 +1,10 @@
-// @flow 
+// @flow
 import * as React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/nic-athletics-logo-64x.png';
 type Props = {
-    
+
 };
 export const NavbarDSMobileExample = (props: Props) => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -12,7 +12,7 @@ export const NavbarDSMobileExample = (props: Props) => {
         setOpenMenu(!openMenu);
       };
     return (
-        <header className='header-example'>
+        <header className='header-example-mobile'>
       <nav>
         <div className='header__top'>
           <div className='row'>
@@ -20,7 +20,7 @@ export const NavbarDSMobileExample = (props: Props) => {
           </div>
         </div>
         <div className='main-nav row'>
-        
+
             <div className='collapsed-nav'>
               <Link to={'/'}>
                 <img className='header__image' src={Logo} alt='NIC Athletics logo' />
@@ -32,7 +32,7 @@ export const NavbarDSMobileExample = (props: Props) => {
                 <span></span>
               </div>
             </div>
-  
+
 
           <ul className={`main-nav-list ${openMenu ? 'is-active' : ''}`}>
             <li>

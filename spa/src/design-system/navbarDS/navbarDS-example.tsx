@@ -8,7 +8,7 @@ import { InsideAthleticsSubmenu } from '../../components/header/inside-athletics
 type Props = {};
 export const NavbarDSExample = (props: Props) => {
   return (
-    <header className='header' style={{ zIndex: 11 }}>
+    <header className='header-example' style={{ zIndex: 11 }}>
       <nav>
         <div className='header__top'>
           <div className='row'>
