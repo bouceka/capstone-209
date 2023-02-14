@@ -1,1 +1,1 @@
-web: vite preview
+web: vite preview --port $PORT
