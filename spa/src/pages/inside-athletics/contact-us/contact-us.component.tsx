@@ -6,6 +6,7 @@ import { Textarea } from '../../../components/textarea/textarea.component';
 import { Title } from '../../../components/title/title.component';
 import { Header } from '../../../components/header/header.component';
 import { Breadcrumbs } from '../../../components/breadcrumbs/breadcrumbs.component';
+import Footer from '../../../components/footer/footer.component';
 type Props = {};
 export const ContactUs = (props: Props) => {
   return (
@@ -53,6 +54,7 @@ export const ContactUs = (props: Props) => {
           </div>
         </section>
       </div>
+			<Footer/>
     </div>
   );
 };

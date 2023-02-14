@@ -1,10 +1,15 @@
 // @flow
 import * as React from 'react';
 import { Title } from '../../../components/title/title.component';
+import { Header } from '../../../components/header/header.component';
+import { Breadcrumbs } from '../../../components/breadcrumbs/breadcrumbs.component';
+import Footer from '../../../components/footer/footer.component';
 type Props = {};
 export const AboutUs = (props: Props) => {
   return (
     <div className='page'>
+      <Header />
+      <Breadcrumbs />
       <Title>About Us</Title>
       <div className='row'>
         <section className='about-page'>
@@ -39,6 +44,7 @@ export const AboutUs = (props: Props) => {
           </div>
         </section>
       </div>
+			<Footer/>
     </div>
   );
 };

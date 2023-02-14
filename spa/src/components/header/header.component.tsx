@@ -46,11 +46,11 @@ export const Header = () => {
                 Calendar
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className='btn btn--header' to={'/fan-zone'}>
                 Fan Zone
               </Link>
-            </li>
+            </li> */}
             {width >= 960 ? (
               <li>
                 <Link to={'/'}>
@@ -63,11 +63,11 @@ export const Header = () => {
                 Inside Athletics
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className='btn btn--header' to={'/support'}>
                 Support
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link className='btn btn--secondary' to={'/sign-up'}>
                 Sign Up

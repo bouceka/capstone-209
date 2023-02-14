@@ -11,20 +11,22 @@ import './carousel.styles.scss';
 type Props = {
   autoplay?: boolean;
   width?: string;
-  posts: BlogPost[]
+  posts: BlogPost[];
 };
-export const Carousel = ({ autoplay = true,posts, ...props }: Props) => {
+export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
   const slideInterval = useRef(0);
+  const { width } = useWindowDimensions();
 
   let carouselWidth;
 
-  if (!!props.width) {
-    carouselWidth = props.width;
-  } else {
-    const { width } = useWindowDimensions();
-    carouselWidth = width < 1024 ? width.toString() : '115.2rem';
-  }
+  useEffect(() => {
+    if (!!props.width) {
+      carouselWidth = props.width;
+    } else {
+			carouselWidth = width < 1024 ? `${width}px` : '115.2rem';
+    }
+  }, [width]);
 
   // useEffect(() => {
   //   fetch('http://localhost:3000/posts')

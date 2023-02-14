@@ -8,6 +8,7 @@ import TableResultsLarge from '../../components/table-results-large/table-result
 import { TrustedCompanies } from '../../components/trusted-companies/trusted-companies.component';
 import { VideoCarousel } from '../../components/video-carousel/video-carousel.component';
 import './homepage.styles.scss';
+import { POSTS_DATA } from '../../mock/posts-mock';
 
 interface IHomepageProps {}
 
@@ -16,7 +17,7 @@ const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
     <div className='page'>
       <Header/>
       <div className='row tiles'>
-        <Carousel posts={POST_DATA} />
+        <Carousel posts={POSTS_DATA} />
         <div className='col-2x1'>
           <TableResultsLarge />
           <BlogPostsAside />
@@ -25,6 +26,7 @@ const Homepage: React.FunctionComponent<IHomepageProps> = (props) => {
       <CTA />
       <VideoCarousel />
       <TrustedCompanies />
+			<Footer/>
     </div>
   );
 };

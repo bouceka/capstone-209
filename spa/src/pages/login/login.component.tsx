@@ -3,12 +3,17 @@ import * as React from 'react';
 import { Button } from '../../components/button/button.component';
 import { Input } from '../../components/input/input.component';
 import { Title } from '../../components/title/title.component';
+import { Header } from '../../components/header/header.component';
+import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.component';
+import Footer from '../../components/footer/footer.component';
 
 0;
 interface Props {}
 export const Login = (props: Props) => {
   return (
     <div className='page'>
+      <Header />
+      <Breadcrumbs />
       <Title>Sign Up</Title>
       <div className='row'>
         <section className='contact-page'>
@@ -41,6 +46,7 @@ export const Login = (props: Props) => {
           </div>
         </section>
       </div>
+			<Footer/>
     </div>
   );
 };

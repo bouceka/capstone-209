@@ -10,11 +10,14 @@ import TableResultsLarge from '../../components/table-results-large/table-result
 import { TestimonyImage } from '../../components/testimony-image/testimony-image.component';
 import { Title } from '../../components/title/title.component';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
+import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.component';
 type Props = {};
 export const InsideAthletics = (props: Props) => {
   const { windowWidth } = useWindowDimensions();
   return (
     <div className='page'>
+      <Header />
+      <Breadcrumbs />
       <Title>Inside Athletics</Title>
       <div className='row col-2x1'>
         <Cards cardData={INSIDE_ATHLETICS_DATA} />
@@ -22,6 +25,7 @@ export const InsideAthletics = (props: Props) => {
       </div>
       <TestimonyImage />
       <BlogContainer />
+			<Footer/>
     </div>
   );
 };

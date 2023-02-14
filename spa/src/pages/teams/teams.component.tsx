@@ -10,12 +10,15 @@ import { Title } from '../../components/title/title.component';
 import { SPORT_DATA } from '../../components/cards/card-data';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
 import TableResultsLarge from '../../components/table-results-large/table-results-large.component';
+import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.component';
 type Props = {};
 export const Teams = (props: Props) => {
   // TODO rename to TeamsPage
   const { windowWidth } = useWindowDimensions();
   return (
     <div className='page'>
+      <Header />
+      <Breadcrumbs />
       <Title>Teams</Title>
       <div className='row col-2x1'>
         <Cards cardData={SPORT_DATA} />
@@ -23,6 +26,7 @@ export const Teams = (props: Props) => {
       </div>
       <AthleteOfMonth />
       <BlogContainer />
+			<Footer/>
     </div>
   );
 };
