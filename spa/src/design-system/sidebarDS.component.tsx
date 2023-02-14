@@ -7,8 +7,12 @@ export const SidebarDS = (props: Props) => {
   return (
     <aside className='sidebarDS card'>
       <ul className='sidebarDS__title'>
-        <li>Getting started</li>
-        <li>Atoms</li>
+        <LinkButton size='large' to={'#start-ds'}>
+          <li>Getting started</li>
+        </LinkButton>
+        <LinkButton size='large' to={'#atoms-ds'}>
+          <li>Atoms</li>
+        </LinkButton>
         <li>
           <ul>
             <li className='sidebarDS__items'>
@@ -28,7 +32,9 @@ export const SidebarDS = (props: Props) => {
             </li>
           </ul>
         </li>
-        <li>Molecules</li>
+        <LinkButton size='large' to={'#molecules-ds'}>
+          <li>Molecules</li>
+        </LinkButton>
         <li>
           <ul>
             <li className='sidebarDS__items'>
@@ -43,7 +49,9 @@ export const SidebarDS = (props: Props) => {
             </li>
           </ul>
         </li>
-        <li>Components</li>
+        <LinkButton size='large' to={'#components-ds'}>
+          <li>Components</li>
+        </LinkButton>
         <li>
           <ul>
             <li className='sidebarDS__items'>

@@ -16,7 +16,9 @@ export const MainDS = (props: Props) => {
   return (
     <main className='main-ds card'>
       <h1 className='heading'>NIC Athletics Design System</h1>
-      <h2 className='heading'>Get started</h2>
+      <h2 className='heading' id='start-ds'>
+        Get started
+      </h2>
       <h5 className='heading--medium'>
         NIC Athletics design system is here for any developer that needs to find a way how to build anything from
         contact form to the entire page by using this guideline.
@@ -38,7 +40,9 @@ export const MainDS = (props: Props) => {
         description, external links that supports designer's decisions and includes code snippets for immediate usage
         within the project app.
       </p>
-      <h2 className='heading'>Atoms</h2>
+      <h2 className='heading' id='atoms-ds'>
+        Atoms
+      </h2>
       <p className='paragraph--medium'>
         Atoms are the basic building blocks that help build our user interface from the simplest elements. In this
         design guide is descried spacing, typography, color rules.
@@ -46,14 +50,18 @@ export const MainDS = (props: Props) => {
       <SpacingDS />
       <TypographyDS />
       <ColorsDS />
-      <h2 className='heading'>Molecules</h2>
+      <h2 className='heading' id='molecules-ds'>
+        Molecules
+      </h2>
       <p className='paragraph--medium'>
         Molecules are the more complex blocks are shaped by simple atoms such as font, color, and spacing. Those
         elements are, for example, buttons and field inputs.
       </p>
       <ButtonsDS />
       <InputDS />
-      <h2 className='heading'>Components</h2>
+      <h2 className='heading' id='components-ds'>
+        Components
+      </h2>
       <BreadcrumbsDS />
       <CarouselDS />
       <ModalDS />
