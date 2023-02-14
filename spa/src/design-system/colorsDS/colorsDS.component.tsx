@@ -69,7 +69,7 @@ export const ColorsDS = (props: Props) => {
         <Highlight>{`$color-{color-type}-{lightness-level}`}</Highlight>, for example, for primary color with its
         default value 600 you use <Highlight>{`$color-primary-600`}</Highlight>.
       </p>
-      <CodeSnippet CSSCode={ColorsCSSeColors} />
+      <CodeSnippet SCSSCode={ColorsCSSeColors} />
     </section>
   );
 };

@@ -34,7 +34,7 @@ export const ModalDS = (props: Props) => {
         desc='Description text'
       />
 
-      <CodeSnippet CSSCode={ModalCSSSample} exampleCode={ModalExampleSample} TSXCode={ModalTSXSample} />
+      <CodeSnippet SCSSCode={ModalCSSSample} exampleCode={ModalExampleSample} TSXCode={ModalTSXSample} />
     </section>
   );
 };

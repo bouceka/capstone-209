@@ -4,10 +4,10 @@ import * as React from 'react';
 import { HighlightedCode } from './highlighted-code.component';
 type Props = {
   TSXCode?: string;
-  CSSCode?: string;
+  SCSSCode?: string;
   exampleCode?: string;
 };
-export const CodeSnippet = ({ TSXCode = '', CSSCode = '', exampleCode = '' }: Props) => {
+export const CodeSnippet = ({ TSXCode = '', SCSSCode = '', exampleCode = '' }: Props) => {
   return (
     <div className='code-snippet'>
       {TSXCode ? (
@@ -18,11 +18,11 @@ export const CodeSnippet = ({ TSXCode = '', CSSCode = '', exampleCode = '' }: Pr
           </div>
         </div>
       ) : null}
-      {CSSCode ? (
+      {SCSSCode ? (
         <div className='code-snippet__CSS'>
           <div className='code-snippet__label'>SCSS Code</div>
           <div className='code-snippet__content'>
-            <HighlightedCode lang='scss' code={CSSCode} />
+            <HighlightedCode lang='scss' code={SCSSCode} />
           </div>
         </div>
       ) : null}

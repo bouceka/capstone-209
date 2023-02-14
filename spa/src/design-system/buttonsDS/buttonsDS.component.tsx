@@ -40,7 +40,7 @@ export const ButtonsDS = (props: Props) => {
         a regular button when you can pass any attributes that belong to HTML button and use class name to get desired
         button style.
       </p>
-      <CodeSnippet TSXCode={ButtonTSXSample} exampleCode={ButtonExampleSample} CSSCode={ButtonCSSSample} />
+      <CodeSnippet TSXCode={ButtonTSXSample} exampleCode={ButtonExampleSample} SCSSCode={ButtonCSSSample} />
     </section>
   );
 };

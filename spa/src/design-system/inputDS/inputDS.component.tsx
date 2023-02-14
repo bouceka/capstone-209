@@ -31,7 +31,7 @@ export const InputDS = (props: Props) => {
         <Highlight>{`<Input label='Input label' type='text' placeholder='Placeholder' />`}</Highlight>. You can treat the input tag as
         a regular button when you can pass any attributes that belong to HTML input.
       </p>
-      <CodeSnippet TSXCode={InputTSXSample} exampleCode={InputExampleSample} CSSCode={InputCSSSample} />
+      <CodeSnippet TSXCode={InputTSXSample} exampleCode={InputExampleSample} SCSSCode={InputCSSSample} />
     </section>
   );
 };

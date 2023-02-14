@@ -17,7 +17,7 @@ export const BreadcrumbsDS = (props: Props) => {
       <Breadcrumbs />
       <CodeSnippet
         exampleCode={BreadcrumbsExampleSample}
-        CSSCode={BreadcrumbsCSSSample}
+        SCSSCode={BreadcrumbsCSSSample}
         TSXCode={BreadcrumbsTSXSample}
       />
     </section>

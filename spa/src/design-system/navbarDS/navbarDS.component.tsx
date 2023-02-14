@@ -20,7 +20,7 @@ export const NavbarDS = (props: Props) => {
         <NavbarDSExample />
         <NavbarDSMobileExample />
       </div>
-      <CodeSnippet CSSCode={NavbarCSSSample} TSXCode={NavbarTSXSample} />
+      <CodeSnippet SCSSCode={NavbarCSSSample} TSXCode={NavbarTSXSample} />
     </section>
   );
 };

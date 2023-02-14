@@ -20,7 +20,7 @@ export const CarouselDS = (props: Props) => {
         carousel as needed.
       </p>
       <Carousel posts={POSTS_DATA} width='100%' autoplay={false} />
-      <CodeSnippet TSXCode={CarouselTSXSample} CSSCode={CarouselCSSSample} exampleCode={CarouselExampleSample} />
+      <CodeSnippet TSXCode={CarouselTSXSample} SCSSCode={CarouselCSSSample} exampleCode={CarouselExampleSample} />
     </section>
   );
 };

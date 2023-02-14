@@ -28,7 +28,7 @@ export const TypographyDS = (props: Props) => {
         You can use typography classes in this syntax <Highlight>{`.{type-name}--{size}--{weight}`}</Highlight>, for
         example for Paragraph 1 Bold <Highlight>{`.paragraph--large--bold`}</Highlight>.
       </p>
-      <CodeSnippet CSSCode={TypoCSSSample} exampleCode={TypoExampleSample} />
+      <CodeSnippet SCSSCode={TypoCSSSample} exampleCode={TypoExampleSample} />
     </section>
   );
 };
