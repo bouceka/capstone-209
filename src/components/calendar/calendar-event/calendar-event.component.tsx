@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { IconSport } from '../../../helper/sport-icons.util';
-import { Event } from '../calendar-mock.data';
+import { Event } from '../../../mock/events-mock';
 
 type Props = {
   event: Event;
