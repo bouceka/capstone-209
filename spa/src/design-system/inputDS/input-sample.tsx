@@ -1,7 +1,6 @@
 export const InputExampleSample = `<Input label='Input label' placeholder='Placeholder' />`;
 
-export const InputCSSSample = `
-.form-item {
+export const InputCSSSample = `.form-item {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -40,7 +39,9 @@ interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   helpText?: string;
   type?: string;
 }
-export const Input = ({ label, type = 'text', helpText, ...otherProps }: Props) => {
+export const Input = (
+{ label, type = 'text', helpText, ...otherProps }: Props
+) => {
   return (
     <div className='form-item'>
       {label ? <label htmlFor={otherProps.name}>{label}</label> : null}
