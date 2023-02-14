@@ -4,25 +4,25 @@ export const CarouselCSSSample = `.carousel {
     height: 56rem;
     position: relative;
     filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.12));
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     background-color: $background-color-primary;
     overflow: hidden;
-  
+
     &-item {
       height: 56rem;
       position: relative;
       display: inline-block;
       width: 100%;
-  
+
       & > img {
         position: absolute;
-        border-radius: 0.5rem;
+        border-radius: 0.4rem;
         object-fit: cover;
         height: 100%;
         width: 100%;
       }
     }
-  
+
     &__content {
       position: absolute;
       z-index: 25;
@@ -32,24 +32,24 @@ export const CarouselCSSSample = `.carousel {
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
-  
+
       &__cta {
         width: fit-content;
       }
     }
-  
+
     &__text {
       display: flex;
       flex-direction: column;
       gap: 1.2rem;
     }
-  
+
     &__category {
       width: fit-content;
       border-bottom: 2px solid $color-primary-600;
     }
   }
-  
+
   .slide {
     position: absolute;
     height: 100%;
@@ -58,7 +58,7 @@ export const CarouselCSSSample = `.carousel {
     opacity: 0;
     transition-duration: 0.5s ease;
   }
-  
+
   @keyframes fadeEffect {
     from {
       opacity: 0.7;
@@ -73,7 +73,7 @@ export const CarouselCSSSample = `.carousel {
     animation: fadeEffect 0.5s ease;
     transition-duration: 0.5s;
   }
-  
+
   .wrapper::after {
     content: '';
     position: absolute;
@@ -81,7 +81,7 @@ export const CarouselCSSSample = `.carousel {
     bottom: 0;
     height: 100%;
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     background-image: linear-gradient(
         6deg,
         rgba(255, 255, 255, 0.75) 22.46%,
@@ -132,7 +132,7 @@ export const Carousel = ({ autoplay = true,posts, ...props }: Props) => {
 
   const startCarousel = () => {
     slideInterval.current = setInterval(() => {
-      setCurrentItem((currSlide) => 
+      setCurrentItem((currSlide) =>
       (currSlide < posts.length - 1 ? currSlide + 1 : 0));
     }, 5000);
   };

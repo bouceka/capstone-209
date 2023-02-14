@@ -12,7 +12,7 @@ export const NavbarCSSSample = `.header {
     display: flex;
     height: 7.2rem;
   }
-  
+
   &__top {
     background-color: $background-color-secondary;
     text-align: center;
@@ -23,7 +23,7 @@ export const NavbarCSSSample = `.header {
     @include respond(tab-port) {
       letter-spacing: 0.4rem;
     }
-    
+
     @include respond(phone) {
       letter-spacing: normal;
     }
@@ -115,7 +115,7 @@ export const NavbarCSSSample = `.header {
   height: 0.4rem;
   width: 100%;
   background: $background-color-primary;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);

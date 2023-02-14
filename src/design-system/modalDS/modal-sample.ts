@@ -11,7 +11,7 @@ desc='Description text'
 
 export const ModalCSSSample = `.modal {
     width: 100%;
-  
+
     &__overlay {
       background-color: $text-black-secondary;
       position: fixed;
@@ -33,12 +33,12 @@ export const ModalCSSSample = `.modal {
       border-radius: 0.5rem;
       padding: 1.6rem;
     }
-  
+
     &__close-btn {
       position: fixed;
       top: 0px;
       right: 0px;
-      border-radius: 0 0.5rem 0 0.2rem;
+      border-radius: 0 0.4rem 0 0.2rem;
       text-decoration: none;
       transition: all 0.2s;
       padding: 1rem 2.4rem;
@@ -46,7 +46,7 @@ export const ModalCSSSample = `.modal {
       border: none;
       white-space: nowrap;
     }
-  
+
     &__content {
       display: flex;
       flex-direction: column;
@@ -56,11 +56,11 @@ export const ModalCSSSample = `.modal {
       margin: 3.6rem 0;
       padding: 1rem 2rem;
     }
-  
+
     &__btn-container {
       display: flex;
       gap: 1.6rem;
-  
+
       & > * {
         width: 100%;
       }

@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   background-color: $background-color-primary;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   @extend .elevation-00;
 
   &-body {
