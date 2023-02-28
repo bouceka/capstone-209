@@ -16,7 +16,7 @@ export const SpacingDS = (props: Props) => {
         unit for this project will be <span className='paragraph--medium--bold'>8px</span>. The reason is that because
         the most screen resolutions are dividable by 8 and itself it is dividable by 2 and 4.{' '}
         <LinkButton to='https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179'>
-          More you can read here.
+          Read more
         </LinkButton>
       </p>
       <p className='paragraph--medium'>
