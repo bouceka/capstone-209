@@ -19,6 +19,11 @@ export const NavbarDSExample = (props: Props) => {
         </div>
         <div className='main-nav row'>
           <ul className='main-nav-list'>
+            <li>
+              <Link to={'#!'}>
+                <img className='header__image' src={Logo} alt='NIC Athletics logo' />
+              </Link>
+            </li>
             <li className='main-nav__teams'>
               <Link className='btn btn--header' to={'#!'}>
                 Teams
@@ -30,11 +35,7 @@ export const NavbarDSExample = (props: Props) => {
                 Calendar
               </Link>
             </li>
-            <li>
-              <Link to={'#!'}>
-                <img className='header__image' src={Logo} alt='NIC Athletics logo' />
-              </Link>
-            </li>
+
             <li className='main-nav__inside-athletics'>
               <Link className='btn btn--header' to={'#!'}>
                 Inside Athletics

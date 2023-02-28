@@ -38,6 +38,13 @@ export const Header = () => {
           ) : null}
 
           <ul className={`main-nav-list ${openMenu ? 'is-active' : ''}`}>
+            {width >= 960 ? (
+              <li>
+                <Link to={'/'}>
+                  <img className='header__image' src={Logo} alt='NIC Athletics logo' />
+                </Link>
+              </li>
+            ) : null}
             <li>
               <Link className='btn btn--header' to={'/teams'}>
                 Teams
@@ -53,13 +60,7 @@ export const Header = () => {
                 Fan Zone
               </Link>
             </li> */}
-            {width >= 960 ? (
-              <li>
-                <Link to={'/'}>
-                  <img className='header__image' src={Logo} alt='NIC Athletics logo' />
-                </Link>
-              </li>
-            ) : null}
+
             <li>
               <Link className='btn btn--header' to={'/inside-athletics'}>
                 Inside Athletics
