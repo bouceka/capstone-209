@@ -38,29 +38,44 @@ export const ColorsDS = (props: Props) => {
           </tr>
         </thead>
         <tbody>
-          {PrimaryColors.map((color, index) => (
-            <tr key={index}>
-              <td style={{ backgroundColor: color.hex, color: getContrastYIQ(color.hex) }}>{color.hex}</td>
-              <td
-                style={{
-                  backgroundColor: SecondaryColors[index].hex,
-                  color: getContrastYIQ(SecondaryColors[index].hex),
-                }}
-              >
-                {SecondaryColors[index].hex}
-              </td>
-              <td
-                style={{ backgroundColor: WarningColors[index].hex, color: getContrastYIQ(WarningColors[index].hex) }}
-              >
-                {WarningColors[index].hex}
-              </td>
-              <td
-                style={{ backgroundColor: NeutralColors[index].hex, color: getContrastYIQ(NeutralColors[index].hex) }}
-              >
-                {NeutralColors[index].hex}
-              </td>
-            </tr>
-          ))}
+          {Array(6)
+            .fill(null)
+            .map((_, index) => (
+              <tr key={index}>
+                <td
+                  style={{
+                    backgroundColor: PrimaryColors[index] ? PrimaryColors[index].hex : 'white',
+                    color: PrimaryColors[index] ? getContrastYIQ(PrimaryColors[index].hex) : 'black',
+                  }}
+                >
+                  {PrimaryColors[index] ? PrimaryColors[index].hex : null}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: SecondaryColors[index] ? SecondaryColors[index].hex : 'white',
+                    color: SecondaryColors[index] ? getContrastYIQ(SecondaryColors[index].hex) : 'black',
+                  }}
+                >
+                  {SecondaryColors[index] ? SecondaryColors[index].hex : null}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: WarningColors[index] ? WarningColors[index].hex : 'white',
+                    color: WarningColors[index] ? getContrastYIQ(WarningColors[index].hex) : 'black',
+                  }}
+                >
+                  {WarningColors[index] ? WarningColors[index].hex : null}
+                </td>
+                <td
+                  style={{
+                    backgroundColor: NeutralColors[index] ? NeutralColors[index].hex : 'white',
+                    color: NeutralColors[index] ? getContrastYIQ(NeutralColors[index].hex) : 'black',
+                  }}
+                >
+                  {NeutralColors[index] ? NeutralColors[index].hex : null}
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
       <h6 className='heading'>Usage</h6>

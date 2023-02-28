@@ -4,96 +4,24 @@ export interface ColorsDataDS {
 }
 
 export const WarningColors: ColorsDataDS[] = [
-    {
-        variable: '$color-warning-25',
-        hex: '#fff4f0',
-      },
-      {
-        variable: '$color-warning-50',
-        hex: '#ffe8e0',
-      },
-      {
-        variable: '$color-warning-100',
-        hex: '#ffc6b2',
-      },
-      {
-        variable: '$color-warning-200',
-        hex: '#ff9f80',
-      },
-      {
-        variable: '$color-warning-300',
-        hex: '#ff794d',
-      },
-      {
-        variable: '$color-warning-400',
-        hex: '#ff5b24',
-      },
-      {
-        variable: '$color-warning-500',
-        hex: '#ff4000',
-      },
-      {
-        variable: '$color-warning-600',
-        hex: '#fa3e00',
-      },
-      {
-        variable: '$color-warning-700',
-        hex: '#f53d00',
-      },
-      {
-        variable: '$color-warning-800',
-        hex: '#f03c00',
-      },
-      {
-        variable: '$color-warning-900',
-        hex: '#e53900',
-      },
-]
+  {
+    variable: '$color-warning-400',
+    hex: '#ff5b24',
+  },
+];
 export const NeutralColors: ColorsDataDS[] = [
-    {
-        variable: '$color-neutral-25',
-        hex: '#f6f7f8',
-      },
-      {
-        variable: '$color-neutral-50',
-        hex: '#edeff2',
-      },
-      {
-        variable: '$color-neutral-100',
-        hex: '#d0d3dd',
-      },
-      {
-        variable: '$color-neutral-200',
-        hex: '#b0b5c4',
-      },
-      {
-        variable: '$color-neutral-300',
-        hex: '#8f96ae',
-      },
-      {
-        variable: '$color-neutral-400',
-        hex: '#78819b',
-      },
-      {
-        variable: '$color-neutral-500',
-        hex: '#606b8a',
-      },
-      {
-        variable: '$color-neutral-600',
-        hex: '#545d78',
-      },
-      {
-        variable: '$color-neutral-700',
-        hex: '#454d63',
-      },
-      {
-        variable: '$color-neutral-800',
-        hex: '#363c4e',
-      },
-      {
-        variable: '$color-neutral-900',
-        hex: '#252a37',
-      },
+  {
+    variable: '$color-neutral-100',
+    hex: '#d0d3dd',
+  },
+  {
+    variable: '$color-neutral-200',
+    hex: '#b0b5c4',
+  },
+  {
+    variable: '$color-neutral-900',
+    hex: '#252a37',
+  },
 ];
 export const SecondaryColors: ColorsDataDS[] = [
   {
@@ -101,20 +29,8 @@ export const SecondaryColors: ColorsDataDS[] = [
     hex: '#fffef5',
   },
   {
-    variable: '$color-secondary-50',
-    hex: '#fffccc',
-  },
-  {
     variable: '$color-secondary-100',
     hex: '#fff9a8',
-  },
-  {
-    variable: '$color-secondary-200',
-    hex: '#fff56b',
-  },
-  {
-    variable: '$color-secondary-300',
-    hex: '#fff133',
   },
   {
     variable: '$color-secondary-400',
@@ -129,47 +45,19 @@ export const SecondaryColors: ColorsDataDS[] = [
     hex: '#e5d600',
   },
   {
-    variable: '$color-secondary-700',
-    hex: '#dbcd00',
-  },
-  {
     variable: '$color-secondary-800',
     hex: '#ccbe00',
-  },
-  {
-    variable: '$color-secondary-900',
-    hex: '#c2b500',
   },
 ];
 
 export const PrimaryColors: ColorsDataDS[] = [
   {
-    variable: '$color-primary-25',
-    hex: '#f5f9ff',
-  },
-  {
     variable: '$color-primary-50',
     hex: '#cce3ff',
   },
   {
-    variable: '$color-primary-100',
-    hex: '#99c7ff',
-  },
-  {
-    variable: '$color-primary-200',
-    hex: '#66abff',
-  },
-  {
-    variable: '$color-primary-300',
-    hex: ' #338fff',
-  },
-  {
     variable: '$color-primary-400',
     hex: ' #1a81ff',
-  },
-  {
-    variable: '$color-primary-500',
-    hex: '#0065e0',
   },
   {
     variable: '$color-primary-600',
@@ -190,7 +78,6 @@ export const PrimaryColors: ColorsDataDS[] = [
 ];
 
 export const ColorsCSSeColors = `// Primary Color
-$color-primary-25: #f5f9ff;
 $color-primary-50: #cce3ff;
 $color-primary-100: #99c7ff;
 $color-primary-200: #66abff;
@@ -216,7 +103,6 @@ $color-secondary-800: #ccbe00;
 $color-secondary-900: #c2b500;
 
 // Warning Color
-$color-warning-25: #fff4f0;
 $color-warning-50: #ffe8e0;
 $color-warning-100: #ffc6b2;
 $color-warning-200: #ff9f80;
@@ -239,4 +125,4 @@ $color-neutral-500: #606b8a;
 $color-neutral-600: #545d78;
 $color-neutral-700: #454d63;
 $color-neutral-800: #363c4e;
-$color-neutral-900: #252a37;`
+$color-neutral-900: #252a37;`;
