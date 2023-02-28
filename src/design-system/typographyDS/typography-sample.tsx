@@ -12,9 +12,9 @@ export const TypoExampleSample = `// Display Large
 <h1 className='display--large'>Display Large Semibold</h1>
 <h1 className='display--large--medium'>Display Large Medium</h1>
 // Display Small
-<div className='display--small--medium'>Display Text Medium</div>
-<div className='display--small'>Display Text Small Semibold</div>
-<div className='display--small--bold'>Display Text Bold</div>
+<h1 className='display--small--medium'>Display Text Medium</h1>
+<h1 className='display--small'>Display Text Small Semibold</h1>
+<h1 className='display--small--bold'>Display Text Bold</h1>
 // Heading 1
 <h1 className='heading--medium'>Heading 1 Medium</h1>
 <h1 className='heading'>Heading 1</h1>
