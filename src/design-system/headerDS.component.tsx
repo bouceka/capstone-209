@@ -19,7 +19,7 @@ export const HeaderDS = (props: Props) => {
             </li>
             <li>
               <Link className='btn btn--link' to={'/'}>
-                Example
+                Demo site
               </Link>
             </li>
             <li>
