@@ -17,7 +17,9 @@ export const Header = () => {
       <nav>
         <div className='header__top'>
           <div className='row'>
-            <span className='header__top'> THE OFFICIAL SITE OF NORTH ISLAND COLLEGE BEARS</span>
+            <span className='header__top'>
+              THE OFFICIAL SITE OF <span>NORTH ISLAND COLLEGE BEARS</span>
+            </span>
           </div>
         </div>
         <div className='main-nav row'>

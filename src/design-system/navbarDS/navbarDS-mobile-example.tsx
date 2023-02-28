@@ -3,36 +3,34 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/nic-athletics-logo-64x.png';
-type Props = {
-
-};
+type Props = {};
 export const NavbarDSMobileExample = (props: Props) => {
-    const [openMenu, setOpenMenu] = useState(false);
-    const handleMenuButton = () => {
-        setOpenMenu(!openMenu);
-      };
-    return (
-        <header className='header-example-mobile'>
+  const [openMenu, setOpenMenu] = useState(false);
+  const handleMenuButton = () => {
+    setOpenMenu(!openMenu);
+  };
+  return (
+    <header className='header-example-mobile'>
       <nav>
         <div className='header__top'>
           <div className='row'>
-            <span className='header__top'> THE OFFICIAL SITE OF NORTH ISLAND COLLEGE BEARS</span>
+            <span className='header__top'>
+              THE OFFICIAL SITE OF <span>NORTH ISLAND COLLEGE BEARS</span>
+            </span>
           </div>
         </div>
         <div className='main-nav row'>
-
-            <div className='collapsed-nav'>
-              <Link to={'/'}>
-                <img className='header__image' src={Logo} alt='NIC Athletics logo' />
-              </Link>
-              <div id='nav-icon' onClick={handleMenuButton} className={openMenu ? 'open' : ''}>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+          <div className='collapsed-nav'>
+            <Link to={'/'}>
+              <img className='header__image' src={Logo} alt='NIC Athletics logo' />
+            </Link>
+            <div id='nav-icon' onClick={handleMenuButton} className={openMenu ? 'open' : ''}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-
+          </div>
 
           <ul className={`main-nav-list ${openMenu ? 'is-active' : ''}`}>
             <li>
@@ -59,5 +57,5 @@ export const NavbarDSMobileExample = (props: Props) => {
         </div>
       </nav>
     </header>
-    );
+  );
 };

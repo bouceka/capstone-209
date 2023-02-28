@@ -28,6 +28,10 @@
     @include respond(phone) {
       letter-spacing: normal;
     }
+
+    & > span {
+      white-space: nowrap;
+    }
   }
 
   .main-nav {
