@@ -20,7 +20,7 @@ export const ScrollButton = ({ children, size = 'medium', to = '#!', offset = 0,
     //   offset={offset}
       offset={-80}
       activeClass='active'
-      className={`link paragraph--${size} ${props.className!}`}
+      className={`scroll-link paragraph--${size} ${props.className!}`}
     >
       {children}
     </Link>

@@ -1,12 +1,13 @@
 @use '../../styles/abstracts/variables' as *;
 @use '../../styles/abstracts/mixins' as *;
 
-.link {
+.scroll-link {
   &,
   &:link,
   &:visited {
     text-decoration: none;
     color: $color-primary-600;
+    cursor: pointer;
   }
   &:hover {
     text-decoration: underline;
