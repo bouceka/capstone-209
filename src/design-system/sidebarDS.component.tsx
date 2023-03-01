@@ -2,77 +2,78 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { LinkButton } from '../components/link-button/link-button.component';
+import { ScrollButton } from '../components/scroll-button/scroll-button.component';
 type Props = {};
 export const SidebarDS = (props: Props) => {
   return (
     <aside className='sidebarDS card'>
       <ul className='sidebarDS__title'>
-        <LinkButton size='large' to={'#start-ds'}>
+        <ScrollButton size='large' to={'start-ds'}>
           <li>Getting started</li>
-        </LinkButton>
-        <LinkButton size='large' to={'#atoms-ds'}>
+        </ScrollButton>
+        <ScrollButton size='large' to={'atoms-ds'}>
           <li>Atoms</li>
-        </LinkButton>
+        </ScrollButton>
         <li>
           <ul>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#spacing-ds'}>
+              <ScrollButton size='medium' to={'spacing-ds'}>
                 Spacing
-              </LinkButton>
+              </ScrollButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#typography-ds'}>
+              <ScrollButton size='medium' to={'typography-ds'}>
                 Typography
-              </LinkButton>
+              </ScrollButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#colors-ds'}>
+              <ScrollButton size='medium' to={'colors-ds'}>
                 Colors
-              </LinkButton>
+              </ScrollButton>
             </li>
           </ul>
         </li>
-        <LinkButton size='large' to={'#molecules-ds'}>
+        <ScrollButton size='large' to={'molecules-ds'}>
           <li>Molecules</li>
-        </LinkButton>
+        </ScrollButton>
         <li>
           <ul>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#button-ds'}>
+              <ScrollButton size='medium' to={'button-ds'}>
                 Button
-              </LinkButton>
+              </ScrollButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#input-ds'}>
+              <ScrollButton size='medium' to={'input-ds'}>
                 Input
-              </LinkButton>
+              </ScrollButton>
             </li>
           </ul>
         </li>
-        <LinkButton size='large' to={'#components-ds'}>
+        <ScrollButton size='large' to={'components-ds'}>
           <li>Components</li>
-        </LinkButton>
+        </ScrollButton>
         <li>
           <ul>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#breadcrumbs-ds'}>
+              <ScrollButton size='medium' to={'breadcrumbs-ds'}>
                 Breadcrumbs
-              </LinkButton>
+              </ScrollButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#carousel-ds'}>
+              <ScrollButton size='medium' to={'carousel-ds'}>
                 Carousel
-              </LinkButton>
+              </ScrollButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#modal-ds'}>
+              <ScrollButton size='medium' to={'modal-ds'}>
                 Modal
-              </LinkButton>
+              </ScrollButton>
             </li>
             <li className='sidebarDS__items'>
-              <LinkButton size='medium' to={'#navbar-ds'}>
+              <ScrollButton size='medium' to={'navbar-ds'}>
                 Navbar
-              </LinkButton>
+              </ScrollButton>
             </li>
           </ul>
         </li>

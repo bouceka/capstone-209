@@ -10,7 +10,7 @@ type Props = {};
 export const ModalDS = (props: Props) => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <section id='modal-ds' className='modal-ds'>
+    <section name='modal-ds' id='modal-ds' className='modal-ds'>
       <h4 className='heading'>Modal</h4>
       <p className='paragraph--medium'>
         Modal window is a very simple modal that can display title, description, and two action buttons. There are four
