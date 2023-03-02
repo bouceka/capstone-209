@@ -11,6 +11,7 @@ import { NavbarDS } from './navbarDS/navbarDS.component';
 import { BreadcrumbsDS } from './breadcrumbsDS/breadcrumbsDS.component';
 import { CarouselDS } from './carouselDS/carouselDS.component';
 import { SpacingDS } from './sapcingDS/spacingDS.component';
+import { ListDS } from './listDS/listDS.component';
 type Props = {};
 export const MainDS = (props: Props) => {
   return (
@@ -59,6 +60,7 @@ export const MainDS = (props: Props) => {
       </p>
       <ButtonsDS />
       <InputDS />
+      <ListDS />
       <h2 className='heading' id='components-ds'>
         Components
       </h2>

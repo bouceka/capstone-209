@@ -48,6 +48,11 @@ export const SidebarDS = (props: Props) => {
                 Input
               </ScrollButton>
             </li>
+            <li className='sidebarDS__items'>
+              <ScrollButton size='medium' to={'list-ds'}>
+                List
+              </ScrollButton>
+            </li>
           </ul>
         </li>
         <ScrollButton size='large' to={'components-ds'}>
