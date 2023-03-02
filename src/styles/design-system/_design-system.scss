@@ -2,12 +2,20 @@
 @use '../base' as *;
 
 .container-ds {
-  margin: 1.6rem;
+  margin: 1.6rem 0;
   display: grid;
   gap: 1.6rem;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: 'aside main main main main';
+
+  @include respond(tab-land) {
+    position: relative;
+    display: block;
+    table-layout: fixed;
+    width: 100%;
+    min-height: 100vh;
+  }
 }
 
 .sidebarDS {
@@ -15,6 +23,18 @@
   list-style: none;
   padding: 1.6rem;
   grid-area: aside;
+
+  @include respond(tab-land) {
+    position: fixed;
+    width: 190px;
+    height: 100%;
+    z-index: 1000;
+    transform: translate(0);
+    transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+    &.closed {
+      transform: translate(-110%);
+    }
+  }
 
   & > ul {
     list-style: none;
@@ -45,6 +65,18 @@
     gap: 1.6rem;
     li {
       list-style-position: inside;
+    }
+  }
+  @include respond(tab-land) {
+    &.closed {
+      margin-left: 200px;
+      width: calc(100% - 200px);
+    }
+  }
+  @include respond(tab-port) {
+    &.closed {
+      margin-left: 0;
+      width: 100%;
     }
   }
 }

@@ -17,9 +17,6 @@ export const TypographyTable = ({ typographyList }: Props) => {
               <span className='paragraph--bold'>Sample Text</span>
             </th>
             <th>
-              <span className='paragraph--bold'>Typeface</span>
-            </th>
-            <th>
               <span className='paragraph--bold'>Weight</span>
             </th>
             <th>
@@ -34,9 +31,6 @@ export const TypographyTable = ({ typographyList }: Props) => {
           {typographyList.map(({ typeface, weight, size, height, className,content }, index) => (
             <tr key={index}>
               <td dangerouslySetInnerHTML={{ __html: content }}></td>
-              <td>
-                <p className='paragraph--medium'>{typeface}</p>
-              </td>
               <td>
                 <p className='paragraph--medium'>{weight}</p>
               </td>

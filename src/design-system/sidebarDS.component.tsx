@@ -3,10 +3,13 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { LinkButton } from '../components/link-button/link-button.component';
 import { ScrollButton } from '../components/scroll-button/scroll-button.component';
-type Props = {};
-export const SidebarDS = (props: Props) => {
+import { useState } from 'react';
+type Props = {
+  openMenu: boolean;
+};
+export const SidebarDS = ({ openMenu }: Props) => {
   return (
-    <aside className='sidebarDS card'>
+    <aside className={`sidebarDS card ${openMenu ? '' : 'closed'}`}>
       <ul className='sidebarDS__title'>
         <ScrollButton size='large' to={'start-ds'}>
           <li>Getting started</li>

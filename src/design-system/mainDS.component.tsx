@@ -12,10 +12,12 @@ import { BreadcrumbsDS } from './breadcrumbsDS/breadcrumbsDS.component';
 import { CarouselDS } from './carouselDS/carouselDS.component';
 import { SpacingDS } from './sapcingDS/spacingDS.component';
 import { ListDS } from './listDS/listDS.component';
-type Props = {};
-export const MainDS = (props: Props) => {
+type Props = {
+  openMenu: boolean;
+};
+export const MainDS = ({ openMenu }: Props) => {
   return (
-    <main className='main-ds card'>
+    <main className={`main-ds card ${openMenu ? 'closed' : ''}`}>
       <h1 className='heading'>NIC Athletics Design System</h1>
       <h2 className='heading' id='start-ds'>
         Get started
