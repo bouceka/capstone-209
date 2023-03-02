@@ -25,6 +25,11 @@ export const SidebarDS = ({ openMenu }: Props) => {
               </ScrollButton>
             </li>
             <li className='sidebarDS__items'>
+              <ScrollButton size='medium' to={'images-ds'}>
+                Images
+              </ScrollButton>
+            </li>
+            <li className='sidebarDS__items'>
               <ScrollButton size='medium' to={'typography-ds'}>
                 Typography
               </ScrollButton>

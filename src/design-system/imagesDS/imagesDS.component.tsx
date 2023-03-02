@@ -1,0 +1,34 @@
+// @flow
+import * as React from 'react';
+import { LinkButton } from '../../components/link-button/link-button.component';
+import { Highlight } from '../highlight/highlight.component';
+import PixelatedRuleImg from '../../assets/illustrative-img/pixelated-rule.png';
+import RatioRuleImg from '../../assets/illustrative-img/ratio-rule.png';
+
+type Props = {};
+export const ImagesDS = (props: Props) => {
+  return (
+    <section className='images-ds'>
+      <h4 className='heading'>Images</h4>
+      <p className='paragraph--medium'>
+        Most of components that require images do not need additional styling. A developer or an admin should focus only
+        on aspect ratio and size. The recommended aspect ratio is <Highlight>3:2, 4:3, 5:4, 16:9</Highlight>.
+        Recommended formats are JPG/JPEG and WEBP. Before uploading any image you should aim for file size between{' '}
+        <Highlight>200KB and 2MB</Highlight> anything larger would slow down loading sites and smaller sizes might make
+        the image pixelated.
+      </p>
+      <h6 className='heading'>Do and don't</h6>
+      <p className='paragraph--medium'>
+        <p className='paragraph--large--bold'>Small size</p> might lead to decrease quality and the result will not look
+        professional. Try to aim for the best looking pictures and its size will not go over 2MB.
+      </p>
+      <img src={PixelatedRuleImg} alt='pixel rule' />
+      <p className='paragraph--medium'>
+        <p className='paragraph--large--bold'>Aspect ration</p> should be on of{' '}
+        <Highlight>3:2, 4:3, 5:4, 16:9</Highlight>. The reason is that most components that use images make the image
+        centered. If an image is in portrait mode it might crop the image disproportionally.
+      </p>
+      <img src={RatioRuleImg} alt='ratio rule' />
+    </section>
+  );
+};

@@ -12,6 +12,7 @@ import { BreadcrumbsDS } from './breadcrumbsDS/breadcrumbsDS.component';
 import { CarouselDS } from './carouselDS/carouselDS.component';
 import { SpacingDS } from './sapcingDS/spacingDS.component';
 import { ListDS } from './listDS/listDS.component';
+import { ImagesDS } from './imagesDS/imagesDS.component';
 type Props = {
   openMenu: boolean;
 };
@@ -51,6 +52,7 @@ export const MainDS = ({ openMenu }: Props) => {
         design guide is descried spacing, typography, color rules.
       </p>
       <SpacingDS />
+      <ImagesDS />
       <TypographyDS />
       <ColorsDS />
       <h2 className='heading' id='molecules-ds'>
