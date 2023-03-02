@@ -19,12 +19,12 @@ export const ImagesDS = (props: Props) => {
       </p>
       <h6 className='heading'>Do and don't</h6>
       <p className='paragraph--medium'>
-        <p className='paragraph--large--bold'>Small size</p> might lead to decrease quality and the result will not look
+        <span className='paragraph--large--bold'>Small size</span> might lead to decrease quality and the result will not look
         professional. Try to aim for the best looking pictures and its size will not go over 2MB.
       </p>
       <img src={PixelatedRuleImg} alt='pixel rule' />
       <p className='paragraph--medium'>
-        <p className='paragraph--large--bold'>Aspect ration</p> should be on of{' '}
+        <span className='paragraph--large--bold'>Aspect ration</span> should be on of{' '}
         <Highlight>3:2, 4:3, 5:4, 16:9</Highlight>. The reason is that most components that use images make the image
         centered. If an image is in portrait mode it might crop the image disproportionally.
       </p>
