@@ -10,15 +10,16 @@ type Props = {};
 export const ModalDS = (props: Props) => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <section name='modal-ds' id='modal-ds' className='modal-ds'>
+    <section id='modal-ds' className='modal-ds'>
       <h4 className='heading'>Modal</h4>
       <p className='paragraph--medium'>
         Modal window is a very simple modal that can display title, description, and two action buttons. There are four
         required parameters, open setter <Highlight>open(boolean)</Highlight>, once the window closes{' '}
-        <Highlight>onClose</Highlight>, <Highlight>title</Highlight>, function of the primary button
+        <Highlight>onClose</Highlight>, <Highlight>title</Highlight>, function of the primary button{' '}
         <Highlight>primaryAction</Highlight>, and content of the button <Highlight>primaryBtnContent</Highlight>. we can
         also add description of the modal <Highlight>desc</Highlight> and second outline button{' '}
-        <Highlight>secondaryBtnContent</Highlight>, <Highlight>secondaryAction</Highlight>.
+        <Highlight>secondaryBtnContent</Highlight>, <Highlight>secondaryAction</Highlight>. There are only two buttons
+        to achieve the best contrast.
       </p>
       <Button className='outline' onClick={() => setOpenModal(true)}>
         Open Modal
