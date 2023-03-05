@@ -31,7 +31,7 @@ export const SpacingDS = (props: Props) => {
           "The 100% correct way to do CSS breakpoints"
         </LinkButton>
         . In the this project I use the relative unit <Highlight>font-size: 62.5%</Highlight> that is{' '}
-        <Highlight>1rem = 16px</Highlight> with various ration in each breakpoint. The break points are:
+        <Highlight>1rem = 10px</Highlight> with various ration in each breakpoint. The break points are:
       </p>
       <ul>
         <li>Phone (0px - 599px)</li>
@@ -42,7 +42,7 @@ export const SpacingDS = (props: Props) => {
           Tablet Landscape (900px - 1199px) <Highlight>font-size: 56.25%; 1rem = 9px</Highlight>
         </li>
         <li>
-          Desktop (1200px - 1799px) <Highlight>font-size: 62.5%; 1rem = 16px</Highlight>
+          Desktop (1200px - 1799px) <Highlight>font-size: 62.5%; 1rem = 10px</Highlight>
         </li>
         <li>
           Large Desktop (1800px and up) <Highlight>font-size: 75%; 1rem = 12px</Highlight>
