@@ -12,7 +12,7 @@ export const HighlightedCode = ({ code, lang }: Props) => {
   return (
     <Highlight {...defaultProps} theme={vsDark} code={code} language={lang}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre className={className} style={style}>
+        <pre className={className} style={{whiteSpace:'break-spaces',...style}}>
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })}>
               <span className='line-no'>{i + 1}</span>
