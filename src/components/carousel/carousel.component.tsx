@@ -62,8 +62,8 @@ export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
   }, []);
 
   return (
-    <div className='carousel-wrapper '>
-      <section className='carousel' style={{ width: carouselWidth }}>
+    <div className='carousel-wrapper ' style={{ width: carouselWidth }}>
+      <section className='carousel' >
         {POSTS_DATA.map((slide, index) => {
           return (
             <div className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`} key={index}>
