@@ -37,7 +37,7 @@ export const HeaderDS = ({ setOpenMenu, openMenu }: Props) => {
             <li>
               1.0{' '}
               <LinkButton size='medium' to={'https://github.com/bouceka/capstone-209'}>
-                GitHub Repo <img className='' src={GitHub} />
+               <span className='headerDS__git'>GitHub Repo </span><img className='' src={GitHub} />
               </LinkButton>
             </li>
           </ul>
