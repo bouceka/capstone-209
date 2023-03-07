@@ -18,13 +18,13 @@ export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
   const slideInterval = useRef(0);
   const { width } = useWindowDimensions();
 
-  let carouselWidth;
+  const [carouselWidth, setCarouselWidth] = useState('100%');
 
   useEffect(() => {
     if (!!props.width) {
-      carouselWidth = props.width;
+      setCarouselWidth(props.width);
     } else {
-			carouselWidth = width < 1024 ? `${width}px` : '115.2rem';
+      setCarouselWidth(width < 1024 ? `${width-16}px` : '115.2rem');
     }
   }, [width]);
 
