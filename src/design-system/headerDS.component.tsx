@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import Logo from '../assets/nic-athletics-logo-64x.png';
+import Logo from '/assets/nic-athletics-logo-64x.png';
 import GitHub from '../assets/icons/social-media/github.svg';
 import { Link } from 'react-router-dom';
 import { LinkButton } from '../components/link-button/link-button.component';

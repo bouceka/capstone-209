@@ -60,7 +60,7 @@ export const VideoCarousel = (props: Props) => {
                     <PlayArrow />
                   </span>
                   <div className='video-carousel__bear'>
-                   <img src="/src/assets/nic-athletics-logo-64x.png" alt="NIC Athletics logo" />
+                   <img src="/assets/nic-athletics-logo-64x.png" alt="NIC Athletics logo" />
                   </div>
                 </div>
               ) : null

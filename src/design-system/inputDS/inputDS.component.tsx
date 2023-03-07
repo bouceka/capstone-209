@@ -4,7 +4,7 @@ import { Input } from '../../components/input/input.component';
 import { CodeSnippet } from '../code-snippet/code-snippet.component';
 import { InputCSSSample, InputExampleSample, InputTSXSample } from './input-sample';
 import { Highlight } from '../highlight/highlight.component';
-import inputGrid from '../../assets/illustrative-img/input-grid.png';
+import inputGrid from '/assets/illustrative-img/input-grid.png';
 import { LinkButton } from '../../components/link-button/link-button.component';
 import { Button } from '../../components/button/button.component';
 type Props = {};

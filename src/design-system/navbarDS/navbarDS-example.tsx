@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/nic-athletics-logo-64x.png';
+import Logo from '/assets/nic-athletics-logo-64x.png';
 import { TeamsSubmenu } from '../../components/header/teams-submenu.component';
 import { InsideAthleticsSubmenu } from '../../components/header/inside-athletics-submenu.component';
 

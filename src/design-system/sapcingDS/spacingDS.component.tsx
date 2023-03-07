@@ -1,8 +1,8 @@
 // @flow
 import * as React from 'react';
 import { LinkButton } from '../../components/link-button/link-button.component';
-import SpacingImg from '../../assets/illustrative-img/8px-rule.png';
-import RadiusImg from '../../assets/illustrative-img/border-radius.png';
+import SpacingImg from '/assets/illustrative-img/8px-rule.png';
+import RadiusImg from '/assets/illustrative-img/border-radius.png';
 import { Highlight } from '../highlight/highlight.component';
 
 type Props = {};

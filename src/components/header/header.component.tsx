@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import Logo from '../../assets/nic-athletics-logo-64x.png';
+import Logo from '/assets/nic-athletics-logo-64x.png';
 import { Link } from 'react-router-dom';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
 import { useState } from 'react';

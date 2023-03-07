@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/nic-athletics-logo-64x.png';
+import Logo from '/assets/nic-athletics-logo-64x.png';
 type Props = {};
 export const NavbarDSMobileExample = (props: Props) => {
   const [openMenu, setOpenMenu] = useState(false);

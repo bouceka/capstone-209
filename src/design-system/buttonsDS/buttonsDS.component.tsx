@@ -4,7 +4,7 @@ import { Button } from '../../components/button/button.component';
 import { CodeSnippet } from '../code-snippet/code-snippet.component';
 import { ButtonCSSSample, ButtonExampleSample, ButtonTSXSample } from './button-sample';
 import { Highlight } from '../highlight/highlight.component';
-import ButtonGrid from '../../assets/illustrative-img/button-grid.png';
+import ButtonGrid from '/assets/illustrative-img/button-grid.png';
 import { LinkButton } from '../../components/link-button/link-button.component';
 
 type Props = {};

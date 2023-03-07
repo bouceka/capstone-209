@@ -7,8 +7,8 @@ export interface BlogPost {
     url: string;
     content: string;
   }
-  
-  
+
+
   export const POSTS_DATA: BlogPost[] = [
     {
       id: '1',
@@ -41,7 +41,7 @@ export interface BlogPost {
       id: '4',
       title: 'NIC Dominates The Rivalry; 109-83',
       category: 'Men\'s Basketball',
-      featuredImage: 'src/assets/illustrative-img/markus-spiske-oXS1f0uZYV4-unsplash (1).jpg',
+      featuredImage: '/assets/illustrative-img/markus-spiske-oXS1f0uZYV4-unsplash (1).jpg',
       url: 'https://images.unsplash.com/photo-1518657205760-dafa7ef924de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto dolore delectus aliquam est illo consectetur iste repellendus dolores nemo odit enim nobis distinctio rerum perferendis nihil labore voluptate modi.',
@@ -50,7 +50,7 @@ export interface BlogPost {
       id: '5',
       title: 'NIC Dominates The Rivalry; 1-7',
       category: 'Women\'s Soccer',
-      featuredImage: 'src/assets/illustrative-img/leah-hetteberg-zJZGNkmXf_E-unsplash.jpg',
+      featuredImage: '/assets/illustrative-img/leah-hetteberg-zJZGNkmXf_E-unsplash.jpg',
       url: 'https://images.unsplash.com/photo-1518657205760-dafa7ef924de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto dolore delectus aliquam est illo consectetur iste repellendus dolores nemo odit enim nobis distinctio rerum perferendis nihil labore voluptate modi.',
@@ -64,4 +64,3 @@ export interface BlogPost {
     //       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto dolore delectus aliquam est illo consectetur iste repellendus dolores nemo odit enim nobis distinctio rerum perferendis nihil labore voluptate modi.',
     //   },
   ];
-  

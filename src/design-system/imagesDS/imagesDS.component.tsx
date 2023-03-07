@@ -2,8 +2,8 @@
 import * as React from 'react';
 import { LinkButton } from '../../components/link-button/link-button.component';
 import { Highlight } from '../highlight/highlight.component';
-import PixelatedRuleImg from '../../assets/illustrative-img/pixelated-rule.png';
-import RatioRuleImg from '../../assets/illustrative-img/ratio-rule.png';
+import PixelatedRuleImg from '/assets/illustrative-img/pixelated-rule.png';
+import RatioRuleImg from '/assets/illustrative-img/ratio-rule.png';
 
 type Props = {};
 export const ImagesDS = (props: Props) => {

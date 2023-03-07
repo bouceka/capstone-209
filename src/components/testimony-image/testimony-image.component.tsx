@@ -17,7 +17,7 @@ export const TestimonyImage = (props: Props) => {
           </div>
 
           <img
-            src='/src/assets/staff-directory/foto-sushi-6anudmpILw4-unsplash-removebg-preview 1.png'
+            src='/assets/staff-directory/foto-sushi-6anudmpILw4-unsplash-removebg-preview 1.png'
             alt="John Doe's testimony "
           />
         </div>

@@ -18,7 +18,7 @@ export const BlogCardLarge = ({ blogPost }: Props) => {
       </div>
       <div className='blog-card__author'>
         <div className='blog-card__author__container'>
-          <img className='blog-card__author-image' src='/src/assets/illustrative-img/Avatar.png' />
+          <img className='blog-card__author-image' src='/assets/illustrative-img/Avatar.png' />
           <div className='blog-card__author__text'>
             <p className='paragraph--large--bold'>Marley Dokidis</p>
             <div className='caption--large'>English student</div>

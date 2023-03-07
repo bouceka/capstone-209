@@ -8,7 +8,7 @@ export const CTA = (props: Props) => {
     <section className='cta'>
       <div className='row'>
         <div className='cta__content'>
-          <img src='/src/assets/nic-athletics-logo-64x.png' alt='NIC Athletics logo' />
+          <img src='/assets/nic-athletics-logo-64x.png' alt='NIC Athletics logo' />
           <div className='cta__text'>
             <h4 className='heading--bold'>Do you want to join us?</h4>
             <p className='paragraph--large'>

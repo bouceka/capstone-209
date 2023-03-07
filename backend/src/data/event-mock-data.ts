@@ -10,9 +10,9 @@ export interface Event {
     guestTeamImg: string;
     result: string;
   }
-  
+
   export type SportType = 'Soccer' | 'Volleyball' | 'IceHockey' | 'Football' | 'Baseball' | 'Basketball';
-  
+
   export const MOCK_EVENTS: Event[] = [
     {
       id: 1,
@@ -21,8 +21,8 @@ export interface Event {
       sport: 'IceHockey',
       venue: 'Burnaby, BC',
       homeTeam: 'SFU',
-      homeTeamImg: '/src/assets/school-logos/sfu.png',
-      guestTeamImg: '/src/assets/nic-athletics-logo-64x.png',
+      homeTeamImg: 'assets/school-logos/sfu.png',
+      guestTeamImg: 'assets/nic-athletics-logo-64x.png',
       guestTeam: '(W) Ice Hockey',
       result: '1:2',
     },
@@ -33,8 +33,8 @@ export interface Event {
       sport: 'Soccer',
       venue: 'Comox Valley, BC',
       homeTeam: 'Soccer',
-      homeTeamImg: '/src/assets/nic-athletics-logo-64x.png',
-      guestTeamImg: '/src/assets/school-logos/wsu.png',
+      homeTeamImg: 'assets/nic-athletics-logo-64x.png',
+      guestTeamImg: 'assets/school-logos/wsu.png',
       guestTeam: 'WSU Cougars',
       result: '1:2',
     },
@@ -47,8 +47,8 @@ export interface Event {
       homeTeam: 'Volleyball',
       guestTeam: 'Yotes',
       result: '1:2',
-      homeTeamImg: '/src/assets/nic-athletics-logo-64x.png',
-      guestTeamImg: '/src/assets/school-logos/yotes.png',
+      homeTeamImg: 'assets/nic-athletics-logo-64x.png',
+      guestTeamImg: 'assets/school-logos/yotes.png',
     },
     {
       id: 4,
@@ -59,8 +59,8 @@ export interface Event {
       homeTeam: '(W) Basketball',
       guestTeam: 'UBC',
       result: '1:2',
-      homeTeamImg: '/src/assets/school-logos/ubc.png',
-      guestTeamImg: '/src/assets/nic-athletics-logo-64x.png',
+      homeTeamImg: 'assets/school-logos/ubc.png',
+      guestTeamImg: 'assets/nic-athletics-logo-64x.png',
     },
     {
       id: 5,
@@ -71,8 +71,8 @@ export interface Event {
       homeTeam: 'Ice Hockey',
       guestTeam: 'Golden Bears',
       result: '1:2',
-      homeTeamImg: '/src/assets/school-logos/golden-bear.png',
-      guestTeamImg: '/src/assets/nic-athletics-logo-64x.png',
+      homeTeamImg: 'assets/school-logos/golden-bear.png',
+      guestTeamImg: 'assets/nic-athletics-logo-64x.png',
     },
     {
       id: 11,
@@ -83,8 +83,8 @@ export interface Event {
       homeTeam: 'Ice Hockey',
       guestTeam: 'Golden Bears',
       result: '4:2',
-      homeTeamImg: '/src/assets/school-logos/golden-bear.png',
-      guestTeamImg: '/src/assets/nic-athletics-logo-64x.png',
+      homeTeamImg: 'assets/school-logos/golden-bear.png',
+      guestTeamImg: 'assets/nic-athletics-logo-64x.png',
     },
     {
       id: 6,
@@ -95,8 +95,8 @@ export interface Event {
       homeTeam: 'Football',
       guestTeam: 'SFU',
       result: '1:2',
-      homeTeamImg: '/src/assets/nic-athletics-logo-64x.png',
-      guestTeamImg: '/src/assets/school-logos/sfu.png',
+      homeTeamImg: 'assets/nic-athletics-logo-64x.png',
+      guestTeamImg: 'assets/school-logos/sfu.png',
     },
     {
       id: 7,
@@ -107,8 +107,8 @@ export interface Event {
       homeTeam: 'Volleyball',
       guestTeam: 'Yotes',
       result: '1:2',
-      homeTeamImg: '/src/assets/school-logos/yotes.png',
-      guestTeamImg: '/src/assets/nic-athletics-logo-64x.png',
+      homeTeamImg: 'assets/school-logos/yotes.png',
+      guestTeamImg: 'assets/nic-athletics-logo-64x.png',
     },
     {
       id: 8,
@@ -119,8 +119,8 @@ export interface Event {
       homeTeam: '(W) Baseball',
       guestTeam: 'WSU Cougars',
       result: '1:2',
-      homeTeamImg: '/src/assets/school-logos/wsu.png',
-      guestTeamImg: '/src/assets/nic-athletics-logo-64x.png',
+      homeTeamImg: 'assets/school-logos/wsu.png',
+      guestTeamImg: 'assets/nic-athletics-logo-64x.png',
     },
     {
       id: 9,
@@ -131,8 +131,8 @@ export interface Event {
       homeTeam: '(W) Basketball',
       guestTeam: 'Yotes',
       result: '1:2',
-      homeTeamImg: '/src/assets/nic-athletics-logo-64x.png',
-      guestTeamImg: '/src/assets/school-logos/yotes.png',
+      homeTeamImg: 'assets/nic-athletics-logo-64x.png',
+      guestTeamImg: 'assets/school-logos/yotes.png',
     },
     {
       id: 10,
@@ -143,8 +143,7 @@ export interface Event {
       homeTeam: 'NIC Men',
       guestTeam: 'UBC',
       result: '1:2',
-      homeTeamImg: '/src/assets/nic-athletics-logo-64x.png',
-      guestTeamImg: '/src/assets/school-logos/ubc.png',
+      homeTeamImg: 'assets/nic-athletics-logo-64x.png',
+      guestTeamImg: 'assets/school-logos/ubc.png',
     },
   ];
-  
