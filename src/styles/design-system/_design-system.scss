@@ -63,6 +63,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    border-top: 4px solid $color-primary-300;
+    padding: 1.6rem 0;
     li {
       list-style-position: inside;
     }
@@ -79,4 +81,10 @@
       width: 100%;
     }
   }
+}
+
+.divider-ds {
+  background-color: $color-neutral-100;
+  height: 0.4rem;
+  margin: 1.6rem 0;
 }
