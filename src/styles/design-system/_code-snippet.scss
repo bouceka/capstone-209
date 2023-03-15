@@ -6,6 +6,11 @@
   & > * {
     margin-bottom: 3.2rem;
   }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+  }
   &__label {
     background: #2c7ad6;
     color: #fefefe;
@@ -13,12 +18,30 @@
     display: inline-block;
     border-radius: 2px 2px 0 0;
   }
+  &__label-button {
+    display: none;
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
 
   &__content {
     max-height: 36rem;
     overflow-y: auto;
+    transition: all 0.2s;
     & > pre {
       padding: 0.8rem;
+    }
+
+    @include respond(tab-port) {
+      display: block;
+
+      &.open {
+        max-height: 36rem;
+      }
+      &.closed {
+        max-height: 4rem;
+      }
     }
   }
 }
