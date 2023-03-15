@@ -28,56 +28,42 @@ export const ColorsDS = (props: Props) => {
         neutral colors are shades of grey for various purposes.
       </p>
 
-      <table className='colors-ds__table'>
-        <thead>
-          <tr>
-            <th>Primary Colors</th>
-            <th>Secondary Colors</th>
-            <th>Warning Colors</th>
-            <th>Neutral Colors</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Array(6)
-            .fill(null)
-            .map((_, index) => (
-              <tr key={index}>
-                <td
-                  style={{
-                    backgroundColor: PrimaryColors[index] ? PrimaryColors[index].hex : 'white',
-                    color: PrimaryColors[index] ? getContrastYIQ(PrimaryColors[index].hex) : 'black',
-                  }}
-                >
-                  {PrimaryColors[index] ? PrimaryColors[index].hex : null}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: SecondaryColors[index] ? SecondaryColors[index].hex : 'white',
-                    color: SecondaryColors[index] ? getContrastYIQ(SecondaryColors[index].hex) : 'black',
-                  }}
-                >
-                  {SecondaryColors[index] ? SecondaryColors[index].hex : null}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: WarningColors[index] ? WarningColors[index].hex : 'white',
-                    color: WarningColors[index] ? getContrastYIQ(WarningColors[index].hex) : 'black',
-                  }}
-                >
-                  {WarningColors[index] ? WarningColors[index].hex : null}
-                </td>
-                <td
-                  style={{
-                    backgroundColor: NeutralColors[index] ? NeutralColors[index].hex : 'white',
-                    color: NeutralColors[index] ? getContrastYIQ(NeutralColors[index].hex) : 'black',
-                  }}
-                >
-                  {NeutralColors[index] ? NeutralColors[index].hex : null}
-                </td>
-              </tr>
-            ))}
-        </tbody>
-      </table>
+      <h6 className='heading'>Primary Color</h6>
+      <div className='color-row'>
+        {PrimaryColors.map((color, index) => (
+          <div className='color-card-ds' key={index}>
+            <div className='color-sample' style={{ backgroundColor: color.hex }}></div>
+            <div className='hex'>{color.hex}</div>
+          </div>
+        ))}
+      </div>
+      <h6 className='heading'>Secondary Color</h6>
+      <div className='color-row'>
+        {SecondaryColors.map((color, index) => (
+          <div className='color-card-ds' key={index}>
+            <div className='color-sample' style={{ backgroundColor: color.hex }}></div>
+            <div className='hex'>{color.hex}</div>
+          </div>
+        ))}
+      </div>
+      <h6 className='heading'>Neutral Color</h6>
+      <div className='color-row'>
+        {NeutralColors.map((color, index) => (
+          <div className='color-card-ds' key={index}>
+            <div className='color-sample' style={{ backgroundColor: color.hex }}></div>
+            <div className='hex'>{color.hex}</div>
+          </div>
+        ))}
+      </div>
+      <h6 className='heading'>Warning Color</h6>
+      <div className='color-row'>
+        {WarningColors.map((color, index) => (
+          <div className='color-card-ds' key={index}>
+            <div className='color-sample' style={{ backgroundColor: color.hex }}></div>
+            <div className='hex'>{color.hex}</div>
+          </div>
+        ))}
+      </div>
       <h6 className='heading'>Usage</h6>
       <p className='paragraph--medium'>
         A developer can use the colors as <span className='paragraph--medium--bold'>variable</span> in syntax:{' '}
