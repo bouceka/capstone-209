@@ -24,7 +24,7 @@ export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
     if (!!props.width) {
       setCarouselWidth(props.width);
     } else {
-      setCarouselWidth(width < 1024 ? `${width-16}px` : '115.2rem');
+      setCarouselWidth(width < 1024 ? `${width - 16}px` : '115.2rem');
     }
   }, [width]);
 
@@ -63,7 +63,7 @@ export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
 
   return (
     <div className='carousel-wrapper ' style={{ width: carouselWidth }}>
-      <section className='carousel' >
+      <section className='carousel'>
         {POSTS_DATA.map((slide, index) => {
           return (
             <div className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`} key={index}>
@@ -75,7 +75,7 @@ export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
                     <h5 className='heading carousel__title'>{slide.title}</h5>
                   </div>
                   <div className='carousel__cta'>
-                    <Button className='primary'>Learn more</Button>
+                    <Button className='secondary'>Learn more</Button>
                   </div>
                 </div>
               </div>

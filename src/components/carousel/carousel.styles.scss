@@ -23,12 +23,12 @@
     }
   }
   &-wrapper {
-		@include respond(tab-land) {
-			padding: 0 5%;
-		}
-		@include respond(phone) {
-			padding: 0 2%;
-		}
+    @include respond(tab-land) {
+      padding: 0 5%;
+    }
+    @include respond(phone) {
+      padding: 0 2%;
+    }
   }
 
   &__content {
@@ -50,11 +50,12 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    color: $text-white-primary;
   }
 
   &__category {
     width: fit-content;
-    border-bottom: 2px solid $color-primary-600;
+    border-bottom: 2px solid $color-secondary-600;
   }
 }
 
@@ -91,11 +92,6 @@
   height: 100%;
   width: 100%;
   border-radius: 0.4rem;
-  background-image: linear-gradient(
-      6deg,
-      rgba(255, 255, 255, 0.75) 22.46%,
-      rgba(230, 215, 0, 0.3) 35.46%,
-      rgba(230, 214, 0, 0) 99.34%
-    ),
+  background-image: linear-gradient(6deg, rgb(0 0 0 / 60%) 22.46%, rgba(230, 214, 0, 0) 99.34%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
