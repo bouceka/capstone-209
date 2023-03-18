@@ -83,7 +83,7 @@ export const MOCK_EVENTS: Event[] = [
     guestTeam: 'Ice Hockey',
     homeTeam: 'Golden Bears',
     result: '4:2',
-    guestTeamImg : '/assets/school-logos/golden-bear.png',
+    guestTeamImg: '/assets/school-logos/golden-bear.png',
     homeTeamImg: '/assets/nic-athletics-logo-64x.png',
   },
   {

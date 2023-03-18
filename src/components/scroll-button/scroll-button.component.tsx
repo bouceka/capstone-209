@@ -1,8 +1,9 @@
 // @flow
-import * as React from 'react';
 import './scroll-button.styles.scss';
+
+import * as React from 'react';
 import * as Scroll from 'react-scroll';
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { animateScroll as scroll, Link, scroller, scrollSpy } from 'react-scroll';
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
@@ -17,9 +18,9 @@ export const ScrollButton = ({ children, size = 'medium', to = '#!', offset = 0,
       spy={true}
       smooth={true}
       duration={500}
-    //   offset={offset}
+      //   offset={offset}
       offset={-80}
-      activeClass='active'
+      activeClass="active"
       className={`scroll-link paragraph--${size} ${props.className!}`}
     >
       {children}

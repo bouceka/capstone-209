@@ -1,6 +1,7 @@
 // @flow
 import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
+
 import { BlogPost } from '../../models/blog-post';
 import { BlogCardHorizontalComponent } from './blog-card-horizontal.component';
 import { BlogCardLarge } from './blog-card-large.component';
@@ -31,9 +32,9 @@ export const BlogMediumGroup = ({ blogPosts }: Props) => {
   const restPosts = blogPosts.filter((_, index) => index !== currentItem);
 
   return (
-    <div className='blog-medium-group'>
+    <div className="blog-medium-group">
       <BlogCardLarge blogPost={blogPosts[currentItem]} />
-      <aside className='blog-medium-group__aside'>
+      <aside className="blog-medium-group__aside">
         {restPosts.map((blogPost, index) => (
           <BlogCardHorizontalComponent blogPost={blogPost} key={index} />
         ))}

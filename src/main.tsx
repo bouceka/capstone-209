@@ -1,6 +1,9 @@
+import './styles/main.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import { CalendarPage } from './pages/calendar-page/calendar-page.component';
 import { DesignSystem } from './pages/design-system/design-system.component';
 import Homepage from './pages/homepage/homepage.component';
@@ -11,7 +14,6 @@ import { StaffDirectors } from './pages/inside-athletics/staff-directors/staff-d
 import { Layout } from './pages/Layout';
 import { Login } from './pages/login/login.component';
 import { Teams } from './pages/teams/teams.component';
-import './styles/main.scss';
 
 const router = createBrowserRouter([
   {
@@ -51,5 +53,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

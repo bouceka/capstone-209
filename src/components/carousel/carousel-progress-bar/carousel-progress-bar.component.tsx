@@ -8,7 +8,7 @@ interface Props {
 
 export const CarouselProgressBar = ({ size, currentIndex }: Props) => {
   return (
-    <div className='carousel-progress-bar'>
+    <div className="carousel-progress-bar">
       {Array(size + 1)
         .fill(null)
         .map((dot, index) => (

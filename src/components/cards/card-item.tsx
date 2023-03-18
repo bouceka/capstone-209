@@ -8,10 +8,10 @@ type Props = {
 };
 export const CardItem = (props: Props) => {
   return (
-    <Link to={props.link} className='cards__item'>
+    <Link to={props.link} className="cards__item">
       <img src={props.imageURL} alt={props.title} />
-      <div className='cards__title'>
-        <h4 className='heading--bold'>{props.title}</h4>
+      <div className="cards__title">
+        <h4 className="heading--bold">{props.title}</h4>
       </div>
     </Link>
   );

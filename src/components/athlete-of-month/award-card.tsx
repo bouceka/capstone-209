@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+
 import { SportType } from '../../mock/events-mock';
 import { LinkButton } from '../link-button/link-button.component';
 
@@ -10,15 +11,15 @@ export interface AoM {
 }
 
 type Props = {
-    athleteOfMonth:AoM
+  athleteOfMonth: AoM;
 };
-export const AwardCard = ({athleteOfMonth}: Props) => {
+export const AwardCard = ({ athleteOfMonth }: Props) => {
   return (
-    <div className='award-card'>
-      <img src={athleteOfMonth.imageURL} alt='' />
-      <p className='paragraph--large--bold'>{athleteOfMonth.name}</p>
-      <span className='caption--large'>{athleteOfMonth.sportType}</span>
-      <LinkButton size='medium'>Read More</LinkButton>
+    <div className="award-card">
+      <img src={athleteOfMonth.imageURL} alt="" />
+      <p className="paragraph--large--bold">{athleteOfMonth.name}</p>
+      <span className="caption--large">{athleteOfMonth.sportType}</span>
+      <LinkButton size="medium">Read More</LinkButton>
     </div>
   );
 };

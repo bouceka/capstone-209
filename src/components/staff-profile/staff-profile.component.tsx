@@ -15,16 +15,16 @@ type Props = {
 };
 export const StaffProfile = ({ staffProfile }: Props) => {
   return (
-    <div className='staff-profile'>
+    <div className="staff-profile">
       <img src={staffProfile.imagURL} alt={staffProfile.name} />
-      <div className='staff-profile__content'>
-        <div className='staff-profile__title'>
-          <h4 className='heading'>{staffProfile.name}</h4>
-          <h4 className='heading--medium'>{staffProfile.position}</h4>
+      <div className="staff-profile__content">
+        <div className="staff-profile__title">
+          <h4 className="heading">{staffProfile.name}</h4>
+          <h4 className="heading--medium">{staffProfile.position}</h4>
         </div>
-        <p className='paragraph--medium'>{staffProfile.bio}</p>
-        <p className='paragraph--medium'>{staffProfile.phoneNumber}</p>
-        <p className='paragraph--medium'>{staffProfile.email}</p>
+        <p className="paragraph--medium">{staffProfile.bio}</p>
+        <p className="paragraph--medium">{staffProfile.phoneNumber}</p>
+        <p className="paragraph--medium">{staffProfile.email}</p>
       </div>
     </div>
   );

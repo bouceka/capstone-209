@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+
 import { Button } from '../button/button.component';
 
 type Props = {
@@ -24,27 +25,27 @@ export const Modal = ({
   secondaryBtnContent,
 }: Props) =>
   !open ? null : (
-    <div onClick={onClose} className='modal__overlay'>
+    <div onClick={onClose} className="modal__overlay">
       <div
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className='modal__container'
+        className="modal__container"
       >
-        <div className='modal'>
-          <button className='modal__close-btn' onClick={onClose}>
+        <div className="modal">
+          <button className="modal__close-btn" onClick={onClose}>
             X
           </button>
-          <div className='modal__content'>
-            <h2 className='heading'>{title}</h2>
-            <p className='paragraph--medium'>{desc}</p>
+          <div className="modal__content">
+            <h2 className="heading">{title}</h2>
+            <p className="paragraph--medium">{desc}</p>
           </div>
-          <div className='modal__btn-container'>
-            <Button className='primary' onClick={primaryAction}>
+          <div className="modal__btn-container">
+            <Button className="primary" onClick={primaryAction}>
               {primaryBtnContent}
             </Button>
             {secondaryAction ? (
-              <Button className='outline' onClick={secondaryAction}>
+              <Button className="outline" onClick={secondaryAction}>
                 {secondaryBtnContent}
               </Button>
             ) : null}

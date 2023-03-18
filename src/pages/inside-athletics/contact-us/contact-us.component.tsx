@@ -1,52 +1,53 @@
 // @flow
 import * as React from 'react';
+
+import { Breadcrumbs } from '../../../components/breadcrumbs/breadcrumbs.component';
 import { Button } from '../../../components/button/button.component';
+import Footer from '../../../components/footer/footer.component';
+import { Header } from '../../../components/header/header.component';
 import { Input } from '../../../components/input/input.component';
 import { Textarea } from '../../../components/textarea/textarea.component';
 import { Title } from '../../../components/title/title.component';
-import { Header } from '../../../components/header/header.component';
-import { Breadcrumbs } from '../../../components/breadcrumbs/breadcrumbs.component';
-import Footer from '../../../components/footer/footer.component';
-type Props = {};
-export const ContactUs = (props: Props) => {
+
+export const ContactUs = () => {
   return (
-    <div className='page'>
+    <div className="page">
       <Header />
       <Breadcrumbs />
       <Title>Contact Us</Title>
-      <div className='row'>
-        <section className='contact-page'>
-          <div className='contact-page__wrapper'>
-            <h2 className='heading'>We’d love to hear from you</h2>
-            <p className='paragraph--medium'>
+      <div className="row">
+        <section className="contact-page">
+          <div className="contact-page__wrapper">
+            <h2 className="heading">We’d love to hear from you</h2>
+            <p className="paragraph--medium">
               Whether you’re interested in our sport programs or a volunteering, we’re here to help you find the right
               solution to support your need. Tell us about you and we’ll be in touch.
             </p>
-            <form action=''>
-              <div className='form-group'>
-                <Input label='First Name' name='firstName' placeholder='e.g. John' />
-                <Input label='Last Name' name='lastName' placeholder='e.g. Doe' />
+            <form action="">
+              <div className="form-group">
+                <Input label="First Name" name="firstName" placeholder="e.g. John" />
+                <Input label="Last Name" name="lastName" placeholder="e.g. Doe" />
               </div>
-              <div className='form-group'>
-                <Input label='Email Address' name='email' placeholder='e.g. john.doe@example.com' />
+              <div className="form-group">
+                <Input label="Email Address" name="email" placeholder="e.g. john.doe@example.com" />
               </div>
-              <div className='form-group'>
-                <Textarea label='Message' name='message' placeholder='Type a message here...' />
+              <div className="form-group">
+                <Textarea label="Message" name="message" placeholder="Type a message here..." />
               </div>
 
-              <p className='caption--medium'>
+              <p className="caption--medium">
                 This form is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
               </p>
-              <Button className='primary'>Submit</Button>
+              <Button className="primary">Submit</Button>
             </form>
             <hr />
-            <div className='contact-page__address'>
-              <p className='paragraph--medium--bold'>North Island College Athletics</p>
-              <div className=' paragraph--medium'>
+            <div className="contact-page__address">
+              <p className="paragraph--medium--bold">North Island College Athletics</p>
+              <div className=" paragraph--medium">
                 <p>2300 Ryan Road</p>
                 <p>Courtenay BC V9N 8N6</p>
               </div>
-              <div className='paragraph--medium'>
+              <div className="paragraph--medium">
                 <p>Phone: 250-334-5000 </p>
                 <p>Fax: 250-334-5018</p>
               </div>
@@ -54,7 +55,7 @@ export const ContactUs = (props: Props) => {
           </div>
         </section>
       </div>
-			<Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,12 +1,14 @@
 // @flow
+import './carousel.styles.scss';
+
 import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
+
 import { useWindowDimensions } from '../../hooks/window-dimensions';
 import { BlogPost, POSTS_DATA } from '../../mock/posts-mock';
 import { Button } from '../button/button.component';
 import { CarouselButtons } from './carousel-buttons/carousel-buttons.component';
 import { CarouselProgressBar } from './carousel-progress-bar/carousel-progress-bar.component';
-import './carousel.styles.scss';
 
 type Props = {
   autoplay?: boolean;
@@ -21,7 +23,7 @@ export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
   const [carouselWidth, setCarouselWidth] = useState('100%');
 
   useEffect(() => {
-    if (!!props.width) {
+    if (props.width) {
       setCarouselWidth(props.width);
     } else {
       setCarouselWidth(width < 1024 ? `${width - 16}px` : '115.2rem');
@@ -62,20 +64,20 @@ export const Carousel = ({ autoplay = true, posts, ...props }: Props) => {
   }, []);
 
   return (
-    <div className='carousel-wrapper ' style={{ width: carouselWidth }}>
-      <section className='carousel'>
+    <div className="carousel-wrapper " style={{ width: carouselWidth }}>
+      <section className="carousel">
         {POSTS_DATA.map((slide, index) => {
           return (
             <div className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`} key={index}>
-              <div className='carousel-item'>
-                <img src={slide.featuredImage} alt='travel image' className='image' />
-                <div className='carousel__content'>
-                  <div className='carousel__text'>
-                    <p className='carousel__category paragraph--large--bold '>{slide.category}</p>
-                    <h5 className='heading carousel__title'>{slide.title}</h5>
+              <div className="carousel-item">
+                <img src={slide.featuredImage} alt={slide.title} className="image" />
+                <div className="carousel__content">
+                  <div className="carousel__text">
+                    <p className="carousel__category paragraph--large--bold ">{slide.category}</p>
+                    <h5 className="heading carousel__title">{slide.title}</h5>
                   </div>
-                  <div className='carousel__cta'>
-                    <Button className='secondary'>Learn more</Button>
+                  <div className="carousel__cta">
+                    <Button className="secondary">Learn more</Button>
                   </div>
                 </div>
               </div>

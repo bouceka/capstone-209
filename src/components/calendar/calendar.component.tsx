@@ -1,12 +1,6 @@
 // @flow
-import * as React from 'react';
-import { Button } from '../button/button.component';
-import { ReactComponent as ChevronLeft } from '../../assets/icons/chevron-left.svg';
-import { ReactComponent as ChevronRight } from '../../assets/icons/chevron-right.svg';
-import { ReactComponent as FilterIcon } from '../../assets/icons/filter.svg';
-import { CalendarDayItem } from './calendar-day-item/calendar-day-item.component';
-import { CalendarThItem } from './calendar-th-item/calendar-th-item.component';
 import './calendar.styles.scss';
+
 import {
   add,
   eachDayOfInterval,
@@ -15,20 +9,25 @@ import {
   format,
   isSameMonth,
   parse,
-  startOfMonth,
   startOfToday,
   startOfWeek,
 } from 'date-fns';
+import * as React from 'react';
 import { useState } from 'react';
+
+import { ReactComponent as ChevronLeft } from '../../assets/icons/chevron-left.svg';
+import { ReactComponent as ChevronRight } from '../../assets/icons/chevron-right.svg';
+import { ReactComponent as FilterIcon } from '../../assets/icons/filter.svg';
 import { useWindowDimensions } from '../../hooks/window-dimensions';
+import { Button } from '../button/button.component';
+import { CalendarDayItem } from './calendar-day-item/calendar-day-item.component';
+import { CalendarThItem } from './calendar-th-item/calendar-th-item.component';
 
 const daysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const daysFull = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-type Props = {};
-export const Calendar = (props: Props) => {
+export const Calendar = () => {
   const today = startOfToday();
-  const [selectedDay, setSelectedDay] = useState(today);
   const [currentMonth, setCurrentMonth] = useState(format(today, 'MMMM yyyy'));
   const { windowWidth } = useWindowDimensions();
 
@@ -51,35 +50,35 @@ export const Calendar = (props: Props) => {
   };
 
   return (
-    <div className='row calendar'>
-      <div className='calendar-head'>
-        <div className='calendar-header'>
-          <div className='calendar-header__buttons'>
-            <button className='calendar__button' onClick={previousMonth}>
+    <div className="row calendar">
+      <div className="calendar-head">
+        <div className="calendar-header">
+          <div className="calendar-header__buttons">
+            <button className="calendar__button" onClick={previousMonth}>
               <ChevronLeft />
             </button>
-            <button className='calendar__button' onClick={nextMonth}>
+            <button className="calendar__button" onClick={nextMonth}>
               <ChevronRight />
             </button>
           </div>
-          <div className='calendar-header__month '>
-            <h2 className='heading'>{currentMonth}</h2>
+          <div className="calendar-header__month ">
+            <h2 className="heading">{currentMonth}</h2>
           </div>
-          <div className='calendar-header__filter'>
-            <Button className='outline'>
+          <div className="calendar-header__filter">
+            <Button className="outline">
               <FilterIcon />
               Filter
             </Button>
           </div>
         </div>
-        <div className='calendar-th-group'>
+        <div className="calendar-th-group">
           {header.map((th, index) => (
             <CalendarThItem key={index} day={th} />
           ))}
         </div>
       </div>
-      <div className='calendar-body'>
-        <div className='calendar-body-group'>
+      <div className="calendar-body">
+        <div className="calendar-body-group">
           {days.map((day, index) => (
             <CalendarDayItem isCurrentMonth={isSameMonth(day, firstDayCurrentMonth)} key={index} date={day} />
           ))}

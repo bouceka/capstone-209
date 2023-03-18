@@ -1,5 +1,3 @@
-
-
 export const NavbarCSSSample = `.header {
   background-color: $color-primary-900;
   position: fixed;

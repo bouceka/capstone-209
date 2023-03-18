@@ -1,6 +1,7 @@
 // @flow
-import * as React from 'react';
 import './link-button.styles.scss';
+
+import * as React from 'react';
 
 interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
