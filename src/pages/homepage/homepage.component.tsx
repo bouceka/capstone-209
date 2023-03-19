@@ -1,6 +1,7 @@
 import './homepage.styles.scss';
 
 import * as React from 'react';
+import { SuperSEO } from 'react-super-seo';
 
 import { BlogPostsAside } from '../../components/blog-posts-aside/blog-posts-aside.component';
 import { Carousel } from '../../components/carousel/carousel.component';
@@ -14,20 +15,27 @@ import { POSTS_DATA } from '../../mock/posts-mock';
 
 const Homepage: React.FunctionComponent = () => {
   return (
-    <div className="page">
-      <Header />
-      <div className="row tiles">
-        <Carousel posts={POSTS_DATA} autoplay={false} />
-        <div className="col-2x1">
-          <TableResultsLarge />
-          <BlogPostsAside />
+    <>
+      <SuperSEO
+        title="Homepage | NIC Athletics"
+        description="This is the (not) official web of NIC Athletics. You can find all the sport activities at NIC here."
+        lang="en"
+      />
+      <div className="page">
+        <Header />
+        <div className="row tiles">
+          <Carousel posts={POSTS_DATA} autoplay={false} />
+          <div className="col-2x1">
+            <TableResultsLarge />
+            <BlogPostsAside />
+          </div>
         </div>
+        <CTA />
+        <VideoCarousel />
+        <TrustedCompanies />
+        <Footer />
       </div>
-      <CTA />
-      <VideoCarousel />
-      <TrustedCompanies />
-      <Footer />
-    </div>
+    </>
   );
 };
 

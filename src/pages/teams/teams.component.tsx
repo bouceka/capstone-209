@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { SuperSEO } from 'react-super-seo';
 
 import { AthleteOfMonth } from '../../components/athlete-of-month/athlete-of-month.component';
 import { BlogContainer } from '../../components/blog-container/blog-container.component';
@@ -16,17 +17,24 @@ export const Teams = () => {
   // TODO rename to TeamsPage
   const { windowWidth } = useWindowDimensions();
   return (
-    <div className="page">
-      <Header />
-      <Breadcrumbs />
-      <Title>Teams</Title>
-      <div className="row col-2x1">
-        <Cards cardData={SPORT_DATA} />
-        {windowWidth <= 1024 ? <TableResultsLarge /> : <EventResultsAside />}
+    <>
+      <SuperSEO
+        title="Teams | NIC Athletics"
+        description="Explore all our NIC teams. Support your friends or join one of our teams."
+        lang="en"
+      />
+      <div className="page">
+        <Header />
+        <Breadcrumbs />
+        <Title>Teams</Title>
+        <div className="row col-2x1">
+          <Cards cardData={SPORT_DATA} />
+          {windowWidth <= 1024 ? <TableResultsLarge /> : <EventResultsAside />}
+        </div>
+        <AthleteOfMonth />
+        <BlogContainer />
+        <Footer />
       </div>
-      <AthleteOfMonth />
-      <BlogContainer />
-      <Footer />
-    </div>
+    </>
   );
 };
