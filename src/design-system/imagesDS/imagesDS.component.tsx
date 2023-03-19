@@ -1,8 +1,8 @@
 // @flow
 import * as React from 'react';
 
-import PixelatedRuleImg from '/assets/illustrative-img/pixelated-rule.png';
-import RatioRuleImg from '/assets/illustrative-img/ratio-rule.png';
+import PixelatedRuleImg from '/assets/illustrative-img/pixel-rule.webp';
+import RatioRuleImg from '/assets/illustrative-img/ratio-rule.webp';
 
 import { Highlight } from '../highlight/highlight.component';
 

@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 
-import inputGrid from '/assets/illustrative-img/input-grid.png';
+import inputGrid from '/assets/illustrative-img/input-grid.webp';
 
 import { Button } from '../../components/button/button.component';
 import { Input } from '../../components/input/input.component';
