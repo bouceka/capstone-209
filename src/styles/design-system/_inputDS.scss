@@ -1,9 +1,16 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+
 .input-ds {
   img {
     width: 100%;
     margin: 1.6rem 0;
     height: 40rem;
     object-fit: contain;
+    @include respond(phone) {
+      height: auto;
+    }
   }
   &__examples {
     margin-top: 10px;
