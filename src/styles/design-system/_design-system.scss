@@ -100,3 +100,11 @@
   height: 0.4rem;
   margin: 1.6rem 0;
 }
+
+.images-ds {
+  img {
+    height: 60rem;
+    object-fit: contain;
+    width: 100%;
+  }
+}
