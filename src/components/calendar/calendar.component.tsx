@@ -55,17 +55,17 @@ export const Calendar = () => {
         <div className="calendar-header">
           <div className="calendar-header__buttons">
             <button className="calendar__button" onClick={previousMonth}>
-              <ChevronLeft />
+              <ChevronLeft aria-label="Previous month" />
             </button>
             <button className="calendar__button" onClick={nextMonth}>
-              <ChevronRight />
+              <ChevronRight aria-label="Next month" />
             </button>
           </div>
           <div className="calendar-header__month ">
             <h2 className="heading">{currentMonth}</h2>
           </div>
           <div className="calendar-header__filter">
-            <Button className="outline">
+            <Button aria-label="Filter" className="outline">
               <FilterIcon />
               Filter
             </Button>

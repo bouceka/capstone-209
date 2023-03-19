@@ -69,10 +69,10 @@ export const VideoCarousel = () => {
           </div>
         </div>
         <div className="video-carousel__buttons">
-          <button className="video-carousel__button" onClick={() => prevItem()}>
+          <button className="video-carousel__button" aria-label="previous post" onClick={() => prevItem()}>
             <ChevronLeft />
           </button>
-          <button className="video-carousel__button" onClick={() => nextItem()}>
+          <button className="video-carousel__button" aria-label="next post" onClick={() => nextItem()}>
             <ChevronRight />
           </button>
         </div>
