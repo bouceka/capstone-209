@@ -29,7 +29,7 @@ export const Layout = () => {
         open={openModal}
         onClose={() => setOpenModal(false)}
         title="READ ME!"
-        desc="This is not a real website of NIC Athletics! This is a school project from Adam Boucek."
+        desc="This is not an actual website of NIC Athletics! This is a school project from Adam Boucek in 2023."
       />
       <Outlet />
       {/* <Footer /> */}

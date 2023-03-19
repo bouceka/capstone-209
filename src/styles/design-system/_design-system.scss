@@ -106,5 +106,8 @@
     height: 60rem;
     object-fit: contain;
     width: 100%;
+    @include respond(phone) {
+      height: auto;
+    }
   }
 }
