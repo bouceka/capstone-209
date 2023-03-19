@@ -31,7 +31,7 @@ export const BlogCardLarge = ({ blogPost }: Props) => {
           </div>
         </div>
         <Button className="link">
-          Read More <IconArrowRight />
+          Learn More <IconArrowRight />
         </Button>
       </div>
     </div>

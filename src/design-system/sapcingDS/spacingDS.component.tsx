@@ -16,7 +16,9 @@ export const SpacingDS = () => {
         what every measurement will be a multiple of. This easies work between developers and designers. The recommended
         unit for this project will be <span className="paragraph--medium--bold">8px</span>. The reason is that because
         the most screen resolutions are dividable by 8 and itself it is dividable by 2 and 4.{' '}
-        <LinkButton to="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">Read more</LinkButton>
+        <LinkButton to="https://medium.com/swlh/the-comprehensive-8pt-grid-guide-aa16ff402179">
+          Learn more about this rule.
+        </LinkButton>
       </p>
       <p className="paragraph--medium">
         In addition I will use 4px rules for some elements, icons, and text to align spacing areas and make

@@ -17,7 +17,7 @@ export const BlogCardHorizontalComponent = ({ blogPost }: Props) => {
           <span className="blog-card-horizontal__category">{blogPost.category}</span>
         </div>
         <Button className="link--small">
-          Read More
+          Learn More
           <IconArrowRight />
         </Button>
       </div>
