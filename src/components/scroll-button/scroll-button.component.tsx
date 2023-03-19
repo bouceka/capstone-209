@@ -14,6 +14,7 @@ interface Props extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 export const ScrollButton = ({ children, size = 'medium', to = '#!', offset = 0, ...props }: Props) => {
   return (
     <Link
+      href={to}
       to={to}
       spy={true}
       smooth={true}
