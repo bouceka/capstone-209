@@ -4,11 +4,11 @@ export const ATHLETE_OF_MONTH_MOCK: AoM[] = [
   {
     name: 'Josh Smith',
     sportType: 'Soccer',
-    imageURL: '/assets/illustrative-img/man-illustration.png',
+    imageURL: '/assets/illustrative-img/man-illustration.jpg',
   },
   {
     name: 'Jocelyn Levin',
     sportType: 'Basketball',
-    imageURL: '/assets/illustrative-img/woman-illustration.png',
+    imageURL: '/assets/illustrative-img/woman-illustration.jpg',
   },
 ];

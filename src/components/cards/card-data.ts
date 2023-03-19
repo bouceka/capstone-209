@@ -11,7 +11,7 @@ export const SPORT_DATA: CardData[] = [
     link: '/teams/volleyball',
   },
   {
-    imageURL: '/assets/illustrative-img/joshua-hoehne-3NyXqusbMsU-unsplash.jpeg',
+    imageURL: '/assets/illustrative-img/joshua-hoehne-3NyXqusbMsU-unsplash.jpg',
     title: 'Soccer',
     link: '/teams/soccer',
   },
