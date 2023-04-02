@@ -1,11 +1,12 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-
 .buttons-ds {
   img {
     width: 64%;
-    margin: 1.6rem 0 ;
+    margin: 1.6rem 0;
+		border: 1px solid $color-neutral-300;
+
   }
   &__examples {
     margin-top: 10px;
@@ -17,7 +18,6 @@
       grid-auto-flow: column;
       @include respond(tab-port) {
         grid-template-rows: 4.4rem 4.4rem 4.4rem 4.4rem;
-  
       }
     }
   }

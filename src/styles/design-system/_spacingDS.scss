@@ -5,10 +5,12 @@
   img {
     width: 100%;
     margin: 1.6rem 0;
-    height: 40rem;
+    margin: 8rem 0;
     object-fit: contain;
+    border: 1px solid $color-neutral-300;
+
     @include respond(phone) {
-      height: auto;
+			margin: 4rem 0;
     }
   }
 }
