@@ -12,12 +12,16 @@ export const SidebarDS = ({ openMenu }: Props) => {
   return (
     <aside className={`sidebarDS card ${openMenu ? '' : 'closed'}`}>
       <ul className="sidebarDS__title">
-        <ScrollButton size="large" to={'start-ds'}>
-          <li>Getting started</li>
-        </ScrollButton>
-        <ScrollButton size="large" to={'atoms-ds'}>
-          <li>Atoms</li>
-        </ScrollButton>
+        <li>
+          <ScrollButton size="large" to={'start-ds'}>
+            Getting started
+          </ScrollButton>
+        </li>
+        <li>
+          <ScrollButton size="large" to={'atoms-ds'}>
+            Atoms
+          </ScrollButton>
+        </li>
         <li>
           <ul>
             <li className="sidebarDS__items">
@@ -42,9 +46,11 @@ export const SidebarDS = ({ openMenu }: Props) => {
             </li>
           </ul>
         </li>
-        <ScrollButton size="large" to={'molecules-ds'}>
-          <li>Molecules</li>
-        </ScrollButton>
+        <li>
+          <ScrollButton size="large" to={'molecules-ds'}>
+            Molecules
+          </ScrollButton>
+        </li>
         <li>
           <ul>
             <li className="sidebarDS__items">
@@ -64,9 +70,11 @@ export const SidebarDS = ({ openMenu }: Props) => {
             </li>
           </ul>
         </li>
-        <ScrollButton size="large" to={'components-ds'}>
-          <li>Components</li>
-        </ScrollButton>
+        <li>
+          <ScrollButton size="large" to={'components-ds'}>
+            Components
+          </ScrollButton>
+        </li>
         <li>
           <ul>
             <li className="sidebarDS__items">
