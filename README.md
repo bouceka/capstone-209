@@ -1,6 +1,6 @@
 # Adam Boucek - North Island College Capstone Project 209 
 
-![Project Summary](https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-project-summary_lcgy0v.png)
+![Project Summary](https://res.cloudinary.com/boucekdev/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-project-summary_lcgy0v.png)
 
 ## Project summary 
 
@@ -18,13 +18,13 @@ Before I started sketching, I did a little research on how other colleges and un
 I started by making a mood board that would communicate the visual feelings of my site. I wanted to go with colours that NIC already uses, which are primarily blue and secondarily yellow. Also, I wanted to illustrate the mood where the college is located, which is the wild nature countryside of Vancouver Island and combine it with a sporting spirit.
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680846684/github/adam-boucek-209-moodboard_rlhpt6.jpg" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/c_fill,h_630,w_1200/v1680846684/github/adam-boucek-209-moodboard_rlhpt6.jpg" height="auto" width="700">
 </p>
 
 The next step was to design wireframes for my design system, where I would communicate how to code and create elements for the NIC Athletics site. The layout of the design system was fairly straightforward. I designed one-page documentation that breaks down all the essential guides for creating NIC Athletics.  
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680846682/github/adam-boucek-design-system-wireframe_msoahp.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/c_fill,h_630,w_1200/v1680846682/github/adam-boucek-design-system-wireframe_msoahp.png" height="auto" width="700">
 </p>
 
 
@@ -33,10 +33,10 @@ I created three example pages for my site, illustrating crucial app elements suc
 
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-desktop-wireframe-1_wnbopx.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-desktop-wireframe-1_wnbopx.png" height="auto" width="700">
 </p>
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-mobile-wireframe-1_uxsqtz.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-mobile-wireframe-1_uxsqtz.png" height="auto" width="700">
 </p>
 
 
@@ -46,6 +46,6 @@ Finally, when I finished designing my app, I started developing it. For this pro
 
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-design-system_ttzbhp.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/c_fill,h_630,w_1200/v1680846681/github/adam-boucek-design-system_ttzbhp.png" height="auto" width="700">
 </p>
 
